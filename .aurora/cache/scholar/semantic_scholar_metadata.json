@@ -9382,6 +9382,110 @@
         "year": 2026
       }
     },
+    "arxiv:2609.24974": {
+      "cached_at": "2026-09-27T05:36:05.186113+00:00",
+      "data": {
+        "abstract": "Agent harnesses, the external systems that mediate model-environment interaction, can substantially improve agent performance, but their gains remain tied to the harness at deployment. Because the best harness varies across domains, instances, and models, a general-purpose agent must either settle for a suboptimal shared harness or route among an ever-growing set of specialized ones. We therefore study agent harness distillation: using a domain- or instance-optimized harness as training-time guidance and transferring the behaviors it induces into model weights, so that its gains survive under a single fixed target harness. The challenge is that the two harnesses differ in action space and available information, so guidance from the optimized harness cannot serve directly as supervision for the target one. We introduce Harness-Zero, which enables harness distillation through agent-as-harness. Guided by the optimized harness, a harnessing agent corrects student responses before execution in the target harness's action space, turning harness guidance into training demonstrations. Fine-tuning on the resulting trajectories internalizes harness-induced behavior into the model, so the specialized harness can be removed at deployment. Our experiments spanning knowledge work, tool use, and science domains show that: (1) For frontier LLMs using the same evolved harness, agent-as-harness outperforms code-as-harness. (2) With the specialized harness removed at deployment, Harness-Zero improves the base model's macro-average task success from 23.3% to 44.3%, even exceeding the 41.7% it reaches with that harness still attached. (3) Harness-Zero recovers harness-induced behaviors absent from the base model, with 82.3% average recovery across 28 patterns in the three domains.",
+        "authors": [
+          {
+            "authorId": "2305525473",
+            "name": "Hao-Ran Ye"
+          },
+          {
+            "authorId": "2220675861",
+            "name": "Yuxing Lu"
+          },
+          {
+            "authorId": "2365446117",
+            "name": "Hao-Nan Dong"
+          },
+          {
+            "authorId": "2391115799",
+            "name": "Zhao-Chen Su"
+          },
+          {
+            "authorId": "2282505480",
+            "name": "Guo-Jie Song"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2609.24974",
+          "CorpusId": 292220195
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2609.24974, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "4b69bb6013b619adf35886db4a8a1364307e8d41",
+        "title": "Harness-Zero: Harness Distillation via Agent-as-Harness",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "This work introduces Harness-Zero, which enables harness distillation through agent-as-harness, and shows that for frontier LLMs using the same evolved harness, agent-as-harness outperforms code-as-harness."
+        },
+        "url": "https://www.semanticscholar.org/paper/4b69bb6013b619adf35886db4a8a1364307e8d41",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2609.25325": {
+      "cached_at": "2026-09-27T05:34:58.098615+00:00",
+      "data": {
+        "abstract": "Large language models (LLMs) enable automated algorithm design (AAD) through reasoning and code synthesis. However, most existing LLM-based AAD methods separate algorithm design from target optimization, deploying a fixed design even as the optimization state evolves. Conventional adaptive optimizers can respond to such changes, but their adjustments remain confined to predefined parameters, operators, or strategies. To address these limitations, we introduce online LLM-based AAD, a novel optimization paradigm that treats the algorithm itself as a state-dependent decision variable. At each stage, LLM agents synthesize an algorithm with new behavior logic from the current optimization state. Executing the generated algorithm advances the search and provides feedback for subsequent designs, coupling algorithm design with target optimization without requiring a separate offline algorithm pretraining stage. To implement this paradigm, we propose OnDesign, a multi-agent framework that reconciles competing design perspectives to synthesize executable algorithms and uses execution feedback to refine how runtime evidence is interpreted for subsequent designs. We evaluate OnDesign across two mainstream black-box optimization paradigms on three scenarios: Bayesian optimization, evolutionary continuous optimization, and evolutionary mixed-variable optimization. Extensive experiments on six benchmark suites and one engineering problem across multiple problem dimensions demonstrate superior overall performance over conventional optimizers and offline LLM-based AAD methods.",
+        "authors": [
+          {
+            "authorId": "2298716632",
+            "name": "Zhi-Yao Zhang"
+          },
+          {
+            "authorId": "2450922192",
+            "name": "Yi-Chen Li"
+          },
+          {
+            "authorId": "2267908970",
+            "name": "Xing-Yu Wu"
+          },
+          {
+            "authorId": "2396803513",
+            "name": "Liang Feng"
+          },
+          {
+            "authorId": "2265959263",
+            "name": "Kay Chen Tan"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2609.25325",
+          "CorpusId": 292223440
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2609.25325, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "b083b44d86c2a90ba7d5eb40235e95737186f8ec",
+        "title": "Online Automated Algorithm Design with Large Language Models",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "This work introduces online LLM-based AAD, a novel optimization paradigm that treats the algorithm itself as a state-dependent decision variable and proposes OnDesign, a multi-agent framework that reconciles competing design perspectives to synthesize executable algorithms and uses execution feedback to refine how runtime evidence is interpreted for subsequent designs."
+        },
+        "url": "https://www.semanticscholar.org/paper/b083b44d86c2a90ba7d5eb40235e95737186f8ec",
+        "venue": "",
+        "year": 2026
+      }
+    },
     "arxiv:2609.25498": {
       "cached_at": "2026-09-25T05:13:44.368467+00:00",
       "data": {
@@ -9423,6 +9527,110 @@
           "text": "The Universal Fractal Natural Language Decision Map is presented, realized via the werr machine-native edge reflex runtime and the production answerr platform and achieves 92.6% macro-accuracy."
         },
         "url": "https://www.semanticscholar.org/paper/e0f50bc37c56cdb7f0bcf264127953d6b754e2c2",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2609.26297": {
+      "cached_at": "2026-09-27T05:35:14.096908+00:00",
+      "data": {
+        "abstract": "Spiking Transformers inherit token interaction mechanisms from conventional Transformers, yet their sparse binary representations fundamentally alter how token-to-token communication is established. In particular, spike-based query-key matching produces highly sparse and input-dependent interaction patterns, coupling information propagation to the instantaneous availability of matching spike events. This motivates a different interaction paradigm in which long-range communication does not rely solely on pairwise spike coincidence. We therefore propose Gated Spike Axial Propagation (GSAP), a spike-native token interaction mechanism that decouples information propagation from context selection. Instead of directly determining communication through query-key matching, GSAP first propagates spike-based context along the horizontal and vertical axes, allowing information to reach distant tokens through structured sequential propagation. A receiver-conditioned gate then determines how much of the propagated context is incorporated at each token, while a lightweight local pathway preserves fine-grained neighborhood information. In this way, GSAP reformulates token interaction as a propagate-then-select process, enabling structured long-range communication while retaining the sparse event-driven nature of spiking representations. Code is available at https://github.com/Fancyssc/GSAP.",
+        "authors": [
+          {
+            "authorId": "2280370662",
+            "name": "Si-Cheng Shen"
+          },
+          {
+            "authorId": "1384251928",
+            "name": "Dongcheng Zhao"
+          },
+          {
+            "authorId": "2447579338",
+            "name": "Zhi-Yuan Li"
+          },
+          {
+            "authorId": "2281881156",
+            "name": "Jin-Yang Yu"
+          },
+          {
+            "authorId": "2145947498",
+            "name": "Qian Zhang"
+          },
+          {
+            "authorId": "2243444886",
+            "name": "Dengpeng Xing"
+          },
+          {
+            "authorId": "2502614752",
+            "name": "Zhi-Tong Zhang"
+          },
+          {
+            "authorId": "2952471",
+            "name": "Tielin Zhang"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2609.26297",
+          "CorpusId": 292227038
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2609.26297, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "9a6f0a9b5116c2c53a963b02ae5a19c1c7605eac",
+        "title": "Rethinking Pairwise Token Interaction in Spiking Transformers",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "Gated Spike Axial Propagation (GSAP), a spike-native token interaction mechanism that decouples information propagation from context selection, is proposed, enabling structured long-range communication while retaining the sparse event-driven nature of spiking representations."
+        },
+        "url": "https://www.semanticscholar.org/paper/9a6f0a9b5116c2c53a963b02ae5a19c1c7605eac",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2609.28409": {
+      "cached_at": "2026-09-27T05:35:48.812369+00:00",
+      "data": {
+        "abstract": "Vector Symbolic Algebras project data structures into a hyperdimensional vector space through the application of their vector algebras to randomly generated atomic vector symbols and fractional power encodings of real-valued data. Embedding unstructured data remains an open question. We present \\textit{Clifford-VAE}, a variational autoencoder that learns to project data onto a Clifford torus in arbitrary dimensions. Experiments using the MNIST, FashionMNIST, and CIFAR-10 datasets demonstrate that Clifford-VAE produces representations that are competitive with those produced by Gaussian and Hyperspherical VAEs for semi-supervised classification tasks while outperforming Gaussian and Hyperspherical counterparts in the VSA benchmark tests of self-binding and unbinding, role-filler recovery, and bundle capacity. Clifford-VAE provides a principled technique for grounding perceptual data into a symbolic reasoning framework, providing a new approach to a long-standing problem in the VSA literature.",
+        "authors": [
+          {
+            "authorId": "2500788262",
+            "name": "M. Abid"
+          },
+          {
+            "authorId": "2315090604",
+            "name": "P. Furlong"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2609.28409",
+          "CorpusId": 292267937
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2609.28409, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "41355f7d6450ca35a380edfce7fda175c407d22f",
+        "title": "Learning Holographic Reduced Representations with Clifford Variational Autoencoders",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "Clifford-VAE provides a principled technique for grounding perceptual data into a symbolic reasoning framework, providing a new approach to a long-standing problem in the VSA literature."
+        },
+        "url": "https://www.semanticscholar.org/paper/41355f7d6450ca35a380edfce7fda175c407d22f",
         "venue": "",
         "year": 2026
       }
@@ -9562,6 +9770,55 @@
           "text": "A Graph-based Faithful sTep-level credit-assignment framework (GRAFT) that grafts all rollout trajectories into a trajectory graph, recovering node state-values via Bellman iteration on the graph, and assigning credit to each edge by the node value difference is proposed."
         },
         "url": "https://www.semanticscholar.org/paper/657972c81764e1e0a33487db41bf7ba047ff6a48",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2609.29350": {
+      "cached_at": "2026-09-27T05:35:11.962260+00:00",
+      "data": {
+        "abstract": "Explicit geometric references offer a direct way to structure self-supervised representations. Existing adversarial distribution-matching formulations, however, require costly encoder-critic optimization. We introduce Flow-Based Distribution Matching (FBDM), a non-adversarial framework that learns this reference-directed geometry through spherical conditional velocity regression. An ETF-inspired reference allows its number of components K'to exceed the auxiliary flow dimension d* while retaining structured geometric separation. We assign both augmented views of each image to the same target, while limiting how many images each reference center can receive. An explicit alignment loss further pulls the two views'representations closer together. Experiments across benchmarks ranging from CIFAR to ImageNet show that FBDM achieves performance nearly on par with DM and remains competitive with existing SSL methods. Matched training-cost comparisons show a 1.48- to 1.83-fold speedup over DM with a negligible increase in GPU memory usage. We also provide a theoretical explanation for the usefulness of the learned representations: under stated conditions, we bound the downstream misclassification rate in terms of the FBDM pretraining loss.",
+        "authors": [
+          {
+            "authorId": "2149629602",
+            "name": "Yu-Ling Jiao"
+          },
+          {
+            "authorId": "2316447557",
+            "name": "Wen-Sen Ma"
+          },
+          {
+            "authorId": "2313047595",
+            "name": "Hou-Duo Qi"
+          },
+          {
+            "authorId": "2349948622",
+            "name": "De-Feng Sun"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2609.29350",
+          "CorpusId": 292287680
+        },
+        "fieldsOfStudy": [
+          "Computer Science",
+          "Mathematics"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2609.29350, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "c8d58ef5e224f22af3403f0ad5999eb8b9a0f35a",
+        "title": "Learning a Flow to Self-Supervised Representations",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "Flow-Based Distribution Matching is introduced, a non-adversarial framework that learns this reference-directed geometry through spherical conditional velocity regression that achieves performance nearly on par with DM and remains competitive with existing SSL methods."
+        },
+        "url": "https://www.semanticscholar.org/paper/c8d58ef5e224f22af3403f0ad5999eb8b9a0f35a",
         "venue": "",
         "year": 2026
       }
@@ -9742,6 +9999,270 @@
         "year": 2026
       }
     },
+    "arxiv:2609.30059": {
+      "cached_at": "2026-09-27T05:35:16.352029+00:00",
+      "data": {
+        "abstract": "Deep learning inference and training performance depends critically on GPU kernel efficiency. Modern compilers such as PyTorch Inductor automatically generate GPU kernels from high-level model code, but frequently underperform expert-written implementations by wide margins. Recent LLM-assisted kernel optimizers can close this gap for standalone kernels, yet treat compiled models as black boxes, generally optimizing individual standalone kernels without respecting the compiler's structural decisions or verifying the model end-to-end. We present KernelOPT, a multi-agent system that treats compiled models as structured artifacts. It preserves vendor library calls (cuBLAS, cuDNN) and exclusively targets generated Triton sub-kernels using five profiling-guided LLM agents. A four-gate verification cascade of static validation, multi-seed correctness, model-level float64-fallback verification, and performance gating filters candidates during optimization and verifies the re-stitched model end-to-end. If no candidate passes all four gates, the system preserves the compiler baseline. The system accepts PyTorch nn.Modules, standalone Triton kernels, and Helion kernels. Evaluated on 250 KernelBench problems, KernelOPT achieves geometric mean speedups over \\texttt{torch.compile} of 1.40$\\times$ (Level 1: 51/100), 1.15$\\times$ (Level 2: 31/100), and 1.07$\\times$ (Level 3: 12/50) across all problems.",
+        "authors": [
+          {
+            "authorId": "2398800861",
+            "name": "Aheli Poddar"
+          },
+          {
+            "authorId": "2503434214",
+            "name": "Sanskar Prasad"
+          },
+          {
+            "authorId": "2503099095",
+            "name": "Arindam Samanta"
+          },
+          {
+            "authorId": "2503105834",
+            "name": "Subha Chakraborty"
+          },
+          {
+            "authorId": "2503102952",
+            "name": "Vishal Goyal"
+          },
+          {
+            "authorId": "2503098302",
+            "name": "Rohit Singh Rathaur"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2609.30059",
+          "CorpusId": 292287153
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2609.30059, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "fc3422eaeb7bc0d0cbd951a793acf560e5d511e3",
+        "title": "KernelOPT: Dispatch-Aware Agentic Search for GPU Kernel Optimization",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "KernelOPT is a multi-agent system that treats compiled models as structured artifacts and exclusively targets generated Triton sub-kernels using five profiling-guided LLM agents and achieves geometric mean speedups over PyTorch."
+        },
+        "url": "https://www.semanticscholar.org/paper/fc3422eaeb7bc0d0cbd951a793acf560e5d511e3",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2609.30100": {
+      "cached_at": "2026-09-27T05:35:09.728880+00:00",
+      "data": {
+        "abstract": "Recent advances in paraphrase detection reveal a fundamental trade-off: large language models achieve high accuracy but require high computation, while efficient Siamese-BERT variants offer practical scalability with reduced transparency in rationale generation. We present R-DEIM Net, a 76M-parameter dual-expert architecture exploring whether moderate-scale models can achieve competitive accuracy on paraphrase detection while enabling human-readable rationale generation. The architecture combines two specialized components: an Interaction Expert that captures token-level similarity patterns through multi-scale 2D convolutions and attention head allowing variable input length, and a Reasoning Expert that uses a Flan-T5-small decoder to generate rationales as auxiliary supervision. Rather than re-encoding generated text, we extract and pool decoder hidden states as complementary features for classification. On the Quora Question Pairs dataset, R-DEIM Net achieves 90.07\\% accuracy and 90.16\\% F1-score via 10-fold cross-validation. This represents competitive performance with strong transformer-based baselines (e.g., MFAE BERT: 90.54\\% accuracy) and recent large language model based approaches (LLaMA-70B) while using a substantially smaller parameter budget. The model generates rationales alongside predictions, providing potential for auxiliary human-readable descriptions.",
+        "authors": [
+          {
+            "authorId": "2503108428",
+            "name": "Pushp"
+          },
+          {
+            "authorId": "101378280",
+            "name": "Vaibhav D. Prajapati"
+          },
+          {
+            "authorId": "2333664130",
+            "name": "Himangshu Sarma"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2609.30100",
+          "CorpusId": 292287677
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2609.30100, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "6094fd812783ec3474d3744a5d66f9db3560b127",
+        "title": "R-DEIM Net: An Efficient Rationale-Augmented Dual-Expert Interaction Model for Paraphrase Detection",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "R-DEIM Net is presented, a 76M-parameter dual-expert architecture exploring whether moderate-scale models can achieve competitive accuracy on paraphrase detection while enabling human-readable rationale generation, providing potential for auxiliary human-readable descriptions."
+        },
+        "url": "https://www.semanticscholar.org/paper/6094fd812783ec3474d3744a5d66f9db3560b127",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2609.30130": {
+      "cached_at": "2026-09-27T05:35:39.523537+00:00",
+      "data": {
+        "abstract": "Current vision-language models (VLMs) excel at visual content understanding and text-based reasoning, yet their structure limits the advancement of incorporating images into the reasoning chain. Though Omnimodal models have made efforts in unifying text and image generation, they focus on visual tasks in the open-domain, lacking tractability due to rasterized or latent representations of images. We introduce SVGLM, a framework that uses scalable vector graphics (SVG) primitives to connect text and image in reasoning tasks. We exploit the duality of SVG as both image description and text instructions, yielding a more compact, interpretable solution to equip general VLMs with the capability of generating images within the reasoning process. We provide a large curated dataset of SVG-based image editing dataset, as well as the paradigm to tune open-source VLMs. Experiments on a mathematical reasoning benchmark demonstrate that SVGLM achieves strong SVG generation power as well as think-with-image intelligence. Our results highlight SVG as a suitable medium for building more robust digital domain agents, bridging the gap between text-based thinking and pixel-based images.",
+        "authors": [
+          {
+            "authorId": "2261356954",
+            "name": "Sun-Li Chen"
+          },
+          {
+            "authorId": "2420185560",
+            "name": "Ding Zhong"
+          },
+          {
+            "authorId": "2151006930",
+            "name": "Ziqiao Ma"
+          },
+          {
+            "authorId": "2376143221",
+            "name": "Jiaxin Liu"
+          },
+          {
+            "authorId": "2306127072",
+            "name": "Ze-Yuan Yang"
+          },
+          {
+            "authorId": "2504299429",
+            "name": "Hao Zhang"
+          },
+          {
+            "authorId": "40659377",
+            "name": "Lie Lu"
+          },
+          {
+            "authorId": "2261082210",
+            "name": "Joyce Chai"
+          },
+          {
+            "authorId": "2335558975",
+            "name": "Chuang Gan"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2609.30130",
+          "CorpusId": 292287942
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2609.30130, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "140d24d5b3e2213c92c8aefb4ffad51b51df51e9",
+        "title": "Multimodal Thinking with Renderable Programs",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "This work introduces SVGLM, a framework that uses scalable vector graphics (SVG) primitives to connect text and image in reasoning tasks, and exploits the duality of SVG as both image description and text instructions, yielding a more compact, interpretable solution to equip general VLMs with the capability of generating images within the reasoning process."
+        },
+        "url": "https://www.semanticscholar.org/paper/140d24d5b3e2213c92c8aefb4ffad51b51df51e9",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2609.30137": {
+      "cached_at": "2026-09-27T05:35:07.486892+00:00",
+      "data": {
+        "abstract": "Customer experience (CX) agents use tools and large language models to address customer requests and guide conversational interactions with an organization's products. Improving these agents, especially in regulated industries, is difficult: they must detect intent, follow complex operational policies and use tools reliably. Manual end-to-end testing offers limited coverage, while live experiments expose customers to failures that can erode trust. We present a hypothesis-driven simulation workflow for screening candidate CX agents before deployment. Synthetic customers react to agent responses and simulated tool outputs enable multi-step agentic workflows without invoking production backends. We use the Snowglobe simulator on Nubank's Card Delivery agent and its expanded successor, Card Management - Nubank's highest-volume chat-support agent in Brazil. Across 4 deployed versions, simulated and production version-level binary evaluator scores show high correlation. Simulation-guided iteration increased transactional net promoter score (tNPS) by 36.69 points in a live A/B test. We also screened open-weight configurations in over 16,000 simulated conversations. In a subsequent live A/B test, the selected model increased self-service rate (SSR) by 8.82 percentage points to the highest level observed at Nubank, with no statistically significant change in tNPS. Simulation made broad exploration of models, reasoning settings, and prompts feasible without customer exposure, enabling production improvements that would have been impractical to pursue through live experimentation alone.",
+        "authors": [
+          {
+            "authorId": "2503102699",
+            "name": "Edesio Alcoba"
+          },
+          {
+            "authorId": "2441458713",
+            "name": "Kevin Rossell"
+          },
+          {
+            "authorId": "2301752883",
+            "name": "Aman Gupta"
+          },
+          {
+            "authorId": null,
+            "name": "Shao Tang"
+          },
+          {
+            "authorId": "2290955335",
+            "name": "Jiwoo Hong"
+          },
+          {
+            "authorId": "2503099188",
+            "name": "Pabel Carrillo-Mendoza"
+          },
+          {
+            "authorId": "2503114957",
+            "name": "Wanderson Concei\u00e7\u00e3o Ferreira"
+          },
+          {
+            "authorId": "2503103138",
+            "name": "Alvaro Tedeschi"
+          },
+          {
+            "authorId": "2503094581",
+            "name": "Zayd Simjee"
+          },
+          {
+            "authorId": "2191999698",
+            "name": "Shreyaa Rajpal"
+          },
+          {
+            "authorId": "2503120890",
+            "name": "Bruno Finardi Hime"
+          },
+          {
+            "authorId": "2503100058",
+            "name": "Christian Sousa"
+          },
+          {
+            "authorId": "2143794122",
+            "name": "Luis Moneda"
+          },
+          {
+            "authorId": "2441364373",
+            "name": "Herbert Fei"
+          },
+          {
+            "authorId": "2374181307",
+            "name": "Daniel Silva"
+          },
+          {
+            "authorId": "2051517",
+            "name": "R. Ramanath"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2609.30137",
+          "CorpusId": 292287871
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2609.30137, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "a687cbac61973c4c1e0bc960faaefbc285228fff",
+        "title": "Screen Before You Serve: Simulation for Production Customer Experience AI Agents at 140M Scale",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "Simulation made broad exploration of models, reasoning settings, and prompts feasible without customer exposure, enabling production improvements that would have been impractical to pursue through live experimentation alone."
+        },
+        "url": "https://www.semanticscholar.org/paper/a687cbac61973c4c1e0bc960faaefbc285228fff",
+        "venue": "",
+        "year": 2026
+      }
+    },
     "arxiv:2609.30150": {
       "cached_at": "2026-09-26T05:19:03.183834+00:00",
       "data": {
@@ -9846,6 +10367,198 @@
         "year": 2026
       }
     },
+    "arxiv:2609.30205": {
+      "cached_at": "2026-09-27T05:35:37.400320+00:00",
+      "data": {
+        "abstract": "Large language model (LLM)-based clinical assistants are increasingly being integrated into electronic health record (EHR) systems, transforming how clinicians retrieve and synthesize information from patient records. Their safety and utility depend on rigorous evaluation, yet existing benchmarks are manually curated, costly to update, and rapidly become obsolete with evolving technological advancements. We present a scalable framework that automatically generates question--answer pairs from longitudinal EHR notes. Nineteen clinicians validate the benchmark generator, producing the Benchmark for Retrieving Information in EHRs (BRIE), a continuously maintainable evaluation dataset. Across nine LLMs and five inference strategies, state-of-the-art systems frequently omit clinically important information, particularly for questions requiring synthesis across multiple documents and encounters. Because the generator itself is validated, BRIE supports evaluations that static benchmarks cannot, including the generation of multiple answers that reflect variation in clinician reasoning for robust performance assessment and continuously refreshing benchmark content to guard against leakage. Our results demonstrate that scalable benchmark generation enables rigorous, up-to-date evaluation of clinical LLMs as they are deployed in rapidly evolving healthcare settings.",
+        "authors": [
+          {
+            "authorId": "2394310165",
+            "name": "J. Cahoon"
+          },
+          {
+            "authorId": "2410742024",
+            "name": "C. Stanwyck"
+          },
+          {
+            "authorId": "2210643529",
+            "name": "Sulaiman Somani"
+          },
+          {
+            "authorId": "2334020997",
+            "name": "Philip Chung"
+          },
+          {
+            "authorId": "2299149699",
+            "name": "Kevin R. Keet"
+          },
+          {
+            "authorId": "2144552475",
+            "name": "K. Black"
+          },
+          {
+            "authorId": "2502947399",
+            "name": "Andrea T. Fisher"
+          },
+          {
+            "authorId": "2374489569",
+            "name": "Sarita Khemani"
+          },
+          {
+            "authorId": "2341480049",
+            "name": "Jerry Liu"
+          },
+          {
+            "authorId": "2342645704",
+            "name": "Stephen P. Ma"
+          },
+          {
+            "authorId": "2371053254",
+            "name": "Saloni K. Maharaj"
+          },
+          {
+            "authorId": "2424426817",
+            "name": "Rita Pandya"
+          },
+          {
+            "authorId": "2296190571",
+            "name": "Eduardo J. P\u00e9rez-Guerrero"
+          },
+          {
+            "authorId": "66155783",
+            "name": "Priyanka Pillai"
+          },
+          {
+            "authorId": "2293250114",
+            "name": "Lisa Shieh"
+          },
+          {
+            "authorId": "2304168690",
+            "name": "David Wu"
+          },
+          {
+            "authorId": "2109725044",
+            "name": "James Xie"
+          },
+          {
+            "authorId": "1393602658",
+            "name": "James C. McAvoy"
+          },
+          {
+            "authorId": "2265681326",
+            "name": "Teresa P. Nguyen"
+          },
+          {
+            "authorId": "2378774236",
+            "name": "Jessica Tran"
+          },
+          {
+            "authorId": "2390207758",
+            "name": "Lu-Xing Yin"
+          },
+          {
+            "authorId": "2316632707",
+            "name": "Bridget Lin"
+          },
+          {
+            "authorId": "2265631900",
+            "name": "A. Callahan"
+          },
+          {
+            "authorId": "31592365",
+            "name": "Jason Alan Fries"
+          },
+          {
+            "authorId": "2262093570",
+            "name": "Nigam H. Shah"
+          },
+          {
+            "authorId": "2268015621",
+            "name": "E. Alsentzer"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2609.30205",
+          "CorpusId": 292286958
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2609.30205, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "70b45df89369682635b5b218034d819c72590715",
+        "title": "A Living Benchmark for Information Retrieval from Electronic Health Records",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "A scalable framework that automatically generates question--answer pairs from longitudinal EHR notes that supports evaluations that static benchmarks cannot, including the generation of multiple answers that reflect variation in clinician reasoning for robust performance assessment and continuously refreshing benchmark content to guard against leakage."
+        },
+        "url": "https://www.semanticscholar.org/paper/70b45df89369682635b5b218034d819c72590715",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2609.30217": {
+      "cached_at": "2026-09-27T05:35:35.259127+00:00",
+      "data": {
+        "abstract": "A central concern in AI safety is that agents may treat oversight as an obstacle when it conflicts with completing their goals. We study instrumental evasion, the propensity of LLM agents to circumvent runtime monitoring as a means of completing ordinary tasks. We introduce EvasionBench, a benchmark of 50 diverse task-policy pairs in which completing the task requires an operation prohibited by a runtime monitor. Agents know that their tool calls are monitored and are prompted to continue working when they pause. Across our evaluations, best-of-3 evasion attempt rates reach up to 98% and success rates up to 88%, with substantial variance across models. Claude Fable 5.1 succeeds less often, but frequently makes creative attempts to circumvent the monitor. Evasion generally increases with test-time compute, with higher evasion rates at greater reasoning effort and token use. Traces show that agents encode prohibited commands, decompose operations across tool calls, and retry until relevant context leaves the monitor's history. We also find that GPT-6 Astra's low evasion rate comes with overrefusal, as it frequently abandons otherwise solvable tasks under a denial-of-service prompt injection. Our findings show that ordinary task pressure can lead to adaptive attempts to evade runtime monitors without an explicit adversarial objective. Effective oversight must therefore remain robust against repeated attempts, as the persistence that helps agents solve difficult tasks can also drive them to circumvent their guardrails.",
+        "authors": [
+          {
+            "authorId": "2389396630",
+            "name": "David Schmotz"
+          },
+          {
+            "authorId": "2304751077",
+            "name": "Derck W. E. Prinzhorn"
+          },
+          {
+            "authorId": "2150869869",
+            "name": "Luca Beurer-Kellner"
+          },
+          {
+            "authorId": "1443432623",
+            "name": "Anselm Paulus"
+          },
+          {
+            "authorId": "39012223",
+            "name": "Ameya Prabhu"
+          },
+          {
+            "authorId": "2389401391",
+            "name": "Maksym Andriushchenko"
+          }
+        ],
+        "citationCount": 1,
+        "externalIds": {
+          "ArXiv": "2609.30217",
+          "CorpusId": 292287882
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2609.30217, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "5a9158bc736ec57c798543e86f721bf69015a96d",
+        "title": "Instrumental Monitor Evasion Emerges Under Ordinary Task Pressure",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "It is found that GPT-6 Astra's low evasion rate comes with overrefusal, as it frequently abandons otherwise solvable tasks under a denial-of-service prompt injection."
+        },
+        "url": "https://www.semanticscholar.org/paper/5a9158bc736ec57c798543e86f721bf69015a96d",
+        "venue": "",
+        "year": 2026
+      }
+    },
     "arxiv:2609.30227": {
       "cached_at": "2026-09-26T05:18:56.789639+00:00",
       "data": {
@@ -9938,6 +10651,46 @@
           "text": "This work introduces Robot Agentic Programming from Demonstrations (RAPID), which automatically generates, verifies, and refines robot programs, given a single visual human demonstration, using an object-centric relational program representation."
         },
         "url": "https://www.semanticscholar.org/paper/8be895e09d09c8ca55f5ae5764c41c7add015b3f",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2609.30250": {
+      "cached_at": "2026-09-27T05:35:18.611834+00:00",
+      "data": {
+        "abstract": "Conspiratorial discourse on social media is not always expressed through explicit claims or stable lexical markers. The same surface content may express endorsement, legitimate concerns, criticism, satire, or mockery. The main challenge is therefore not only recognizing conspiracy-related claims, but inferring the speaker's intent -- the utterance's illocutionary force. We argue that this can be achieved through the use of relevant social contexts and propose an agentic framework, equipped with a set of tools supporting social queries. We demonstrate the benefits of our approach on a unique dataset of Hebrew tweets, covering 80\\%--90\\% of the public Hebrew tweets published over a four-year span (late 2018-- early 2023), encompassing several election cycles as well as the COVID pandemic years and related vaccination campaigns. This extensive coverage can be used in recovering different social contexts. Evaluating our framework on a manually-annotated adversarial dataset, we find that context-aware workflows consistently outperform text-only classification and that the agentic framework performs significantly better than other frameworks and settings, including a non-agentic model exposed to the same contexts available to the agent. We further provide an analysis of the results, the errors and efficiency (token economy) tradeoffs. These findings support viewing the task of conspiracy detection as a socially embedded interpretation task, in which effective classification depends not only on access to contexts, but also on adaptive reasoning in which the agent uses tools on a per-case basis, asking only for evidence relevant to its current reasoning step.",
+        "authors": [
+          {
+            "authorId": "2503112430",
+            "name": "Lior Biton"
+          },
+          {
+            "authorId": "2285596160",
+            "name": "Oren Tsur"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2609.30250",
+          "CorpusId": 292287338
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2609.30250, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "3df8df6c85fad1e30c4a758c65e52ded8d3ba904",
+        "title": "Agentic Detection of Online Conspiracies",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "The findings support viewing the task of conspiracy detection as a socially embedded interpretation task, in which effective classification depends not only on access to contexts, but also on adaptive reasoning in which the agent uses tools on a per-case basis, asking only for evidence relevant to its current reasoning step."
+        },
+        "url": "https://www.semanticscholar.org/paper/3df8df6c85fad1e30c4a758c65e52ded8d3ba904",
         "venue": "",
         "year": 2026
       }
