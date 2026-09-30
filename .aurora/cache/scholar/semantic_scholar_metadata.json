@@ -10751,6 +10751,50 @@
         "year": 2026
       }
     },
+    "arxiv:2609.32537": {
+      "cached_at": "2026-09-30T05:50:59.251321+00:00",
+      "data": {
+        "abstract": "Spiking-Mamba hybrids reach strong accuracy on event-based vision, but existing designs often require tens of millions of parameters. Much of that cost comes from how the spiking front-end is connected to the state-space backbone rather than from the hybrid architecture itself. In a representative model, a single resolution-dependent projection accounts for 33.55M of 36.25M parameters. To that end, we introduce RIPE-MambaSpike (Resolution-Independent, Parameter-Efficient), which replaces that projection with a hierarchical multi-resolution bridge of fixed channel width. Its deployed footprint is 0.870M parameters, constant at fixed time steps and widths across a 43x range of input areas. Reparameterized spiking stages, temporal decoupled modulation, and a dynamic convex-hull-bounded dual-stream membrane-potential attention preserve accuracy under this compact design. Result-wise, RIPE-MambaSpike is pareto-optimal on CIFAR10-DVS, N-Caltech101, and DailyDVS-200. Notably, on the 200-class DailyDVS-200, a scaled 8.04M configuration achieves 45.7% top-1 accuracy, the best reported spiking result on that benchmark, and outperforms prior spiking methods with 3.0-15.1x fewer parameters than dense ANNs. Overall, our findings demonstrate that competitive event-based recognition does not require resolution-dependent parameter growth. Code is available at https://github.com/MuhiminOsim/RIPE-MambaSpike.",
+        "authors": [
+          {
+            "authorId": null,
+            "name": "Md Muhiminul Islam"
+          },
+          {
+            "authorId": "2166004741",
+            "name": "Shoaib Ahmed Dipu"
+          },
+          {
+            "authorId": null,
+            "name": "Sayeed Shafayet Chowdhury"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2609.32537",
+          "CorpusId": 292435485
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2609.32537, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "ca45a1c8e22334a8aed785724b4cf008ae072161",
+        "title": "RIPE-MambaSpike: Resolution-Independent Spiking-State-Space Interfaces for Parameter-Efficient Event-Based Vision",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "RIPE-MambaSpike (Resolution-Independent, Parameter-Efficient), which replaces that projection with a hierarchical multi-resolution bridge of fixed channel width, demonstrates that competitive event-based recognition does not require resolution-dependent parameter growth."
+        },
+        "url": "https://www.semanticscholar.org/paper/ca45a1c8e22334a8aed785724b4cf008ae072161",
+        "venue": "",
+        "year": 2026
+      }
+    },
     "title:acesearcher bootstrapping reasoning and search for llms via reinforced self play": {
       "cached_at": "2026-06-29T05:15:21.571589+00:00",
       "data": {
