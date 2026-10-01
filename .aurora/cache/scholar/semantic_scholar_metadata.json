@@ -10795,6 +10795,70 @@
         "year": 2026
       }
     },
+    "arxiv:2609.36773": {
+      "cached_at": "2026-10-01T06:23:24.794003+00:00",
+      "data": {
+        "abstract": "Clinical scalp electroencephalography (EEG) offers a noninvasive window into neural dynamics of neuropsychiatric disorders. However, discriminative deep models often lack anatomically indexed physiological interpretability. We propose NeuroDyn-EEG, a pretraining framework integrating generative priors from neural dynamics. It couples an extended Jansen-Rit neural mass model, leadfield-based source projection, and simulation-based parameter inversion. Trained on synthetic parameter-EEG pairs within physiological ranges, NeuroDyn-EEG estimates 11 regional parameter families across 90 AAL regions plus one global parameter from standard 19-channel EEG, using only ~2.43M trainable parameters. We evaluate the framework across three levels. First, controlled simulations demonstrate robust parameter recovery under diverse noise conditions, while real resting-state EEG evaluations confirm spectral and phase consistency in an inverse-forward closed loop. Second, on four clinical benchmarks (AD65, PD31, Figshare MDD, and TUAB), NeuroDyn-EEG achieves competitive classification performance, securing the highest BACC, AUROC, and AUCPR on PD31 and MDD, and highest BACC on AD65. Third, post hoc regional analyses reveal disease-specific alterations: local synaptic connectivity C_1 involves the most altered regions in AD65, whereas the firing threshold theta ranks first in MDD, offering testable mechanistic hypotheses. Overall, NeuroDyn-EEG maps scalp EEG to anatomically indexed dynamical parameters, bridging representation learning and mechanistic neurophysiology. Code: https://github.com/Gnosis-Neurodynamics/NeuroDyn-EEG.",
+        "authors": [
+          {
+            "authorId": "2284301776",
+            "name": "Yi Cui"
+          },
+          {
+            "authorId": "2284334247",
+            "name": "Tong Zhao"
+          },
+          {
+            "authorId": "1491243543",
+            "name": "Jia-Xin Lei"
+          },
+          {
+            "authorId": "2500250866",
+            "name": "Chu-Yi Yang"
+          },
+          {
+            "authorId": "2284301776",
+            "name": "Yi Cui"
+          },
+          {
+            "authorId": "2271791507",
+            "name": "Ling Zhang"
+          },
+          {
+            "authorId": "2284325195",
+            "name": "Yu-Xiang Yan"
+          },
+          {
+            "authorId": "2331365904",
+            "name": "Bo Hong"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2609.36773",
+          "CorpusId": 292440978
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2609.36773, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "4afc5366e08f36f73d8217caf9e0d69b5050630d",
+        "title": "NeuroDyn-EEG: An Interpretable Pre-trained Model for EEG Based on Neural Dynamics",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "NeuroDyn-EEG is proposed, a pretraining framework integrating generative priors from neural dynamics that maps scalp EEG to anatomically indexed dynamical parameters, bridging representation learning and mechanistic neurophysiology."
+        },
+        "url": "https://www.semanticscholar.org/paper/4afc5366e08f36f73d8217caf9e0d69b5050630d",
+        "venue": "",
+        "year": 2026
+      }
+    },
     "title:acesearcher bootstrapping reasoning and search for llms via reinforced self play": {
       "cached_at": "2026-06-29T05:15:21.571589+00:00",
       "data": {
