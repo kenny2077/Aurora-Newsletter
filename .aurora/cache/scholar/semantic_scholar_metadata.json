@@ -10859,6 +10859,102 @@
         "year": 2026
       }
     },
+    "arxiv:2610.01985": {
+      "cached_at": "2026-10-03T05:35:11.680210+00:00",
+      "data": {
+        "abstract": "Environmental robotic sampling requires considering the dual influence of water currents on robotic motion and particle transport. Existing marine robotics simulators generally model flow, autonomy, and sampling targets separately, limiting joint evaluation of mission cost and sampling performance. H-SPAR integrates spatially and temporally varying velocity fields, Lagrangian particle transport, probabilistic sampling, and ROS 2/Gazebo-based uncrewed surface vehicle (USV) autonomy. In this work, shared precomputed flow fields drive particle advection and current-induced forces during closed-loop vehicle execution. Path-planning experiments show that the existing current-aware planner SVF-RRT* achieves 69.4% lower upstream cost than conventional RRT* at the planning level, but this reduction falls to 41.7% during execution under time-varying currents, reflecting temporal flow variation, vehicle motion constraints, and path deviation omitted during planning. Coverage experiments show that sweep orientation changes the particle-sampling rate by up to 22.2% under the complete H-SPAR configuration. These findings highlight the importance of evaluating planning, vehicle execution, particle transport, and sampling together under consistent hydrodynamic conditions. The project webpage is available at https://sites.google.com/view/h-spar, and the open-source code is available on GitHub at https://github.com/naviiidz/h-spar-sim.",
+        "authors": [
+          {
+            "authorId": "2322098598",
+            "name": "Navid Zarrabi"
+          },
+          {
+            "authorId": "2341238776",
+            "name": "Nariman Yousefi"
+          },
+          {
+            "authorId": "8838574",
+            "name": "Sajad Saeedi"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2610.01985",
+          "CorpusId": 292526013
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2610.01985, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "e7717d0c4115f7ad6abbba79e6da11407f5ae83a",
+        "title": "H-SPAR: Hydrodynamic-aware Simulation for Particle Transport and Autonomous Robots",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "H-SPAR integrates spatially and temporally varying velocity fields, Lagrangian particle transport, probabilistic sampling, and ROS 2/Gazebo-based uncrewed surface vehicle (USV) autonomy to improve environmental robotic sampling performance."
+        },
+        "url": "https://www.semanticscholar.org/paper/e7717d0c4115f7ad6abbba79e6da11407f5ae83a",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2610.02117": {
+      "cached_at": "2026-10-03T05:35:13.799220+00:00",
+      "data": {
+        "abstract": "On-policy self-distillation has recently emerged as an effective approach for improving language-model reasoning by supervising students with a frozen or EMA version of themselves that receives privileged information. Its application to multimodal large language models (MLLMs), however, remains largely unexplored. Recent approaches use privileged visual information, such as image crops corresponding to a question, to improve fine-grained perception, but their gains are confined to tasks that benefit from such visual zooming and require either human-annotated grounding data or external teacher models. We introduce a different form of on-policy self-distillation for MLLMs that provides the teacher with textual, spatially grounded guidance identifying the visual elements relevant to a query. We use procedurally generated scenes with automatically available object identities and spatial coordinates, enabling scalable and annotation-free post-training. The teacher uses this spatial guidance to locate and integrate evidence from multiple relevant image regions, while the student learns to reproduce the resulting behavior from the image and question alone. Our approach consistently improves performance on counting, document and chart understanding benchmarks across multiple models. Importantly, although post-training uses only synthetic scenes, the resulting improvements transfer to real-world perception benchmarks, yielding a 3.23-point gain in average performance across CVBench, V*, ZoomBench, BLINK, HR-Bench, and MME-RealWorld. These results show that spatially grounded privileged information can induce broader perceptual capabilities through on-policy self-distillation, enabling substantial synthetic-to-real transfer beyond the task and data distribution used for post-training. Project page: https://github.com/sirkosophia/Where-OPD",
+        "authors": [
+          {
+            "authorId": "2297765856",
+            "name": "Sophia Sirko-Galouchenko"
+          },
+          {
+            "authorId": "1443777474",
+            "name": "M. Wysocza\u0144ska"
+          },
+          {
+            "authorId": "2370933469",
+            "name": "Andrei Bursuc"
+          },
+          {
+            "authorId": "2302780318",
+            "name": "Nicolas Thome"
+          },
+          {
+            "authorId": "2475428",
+            "name": "Spyros Gidaris"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2610.02117",
+          "CorpusId": 292525073
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2610.02117, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "199f2d99c40d05d44066f67e27ca89a2db06a6ee",
+        "title": "Where-OPD: Spatially Guided On-Policy Self-Distillation of MLLMs with Synthetic Scenes",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "Results show that spatially grounded privileged information can induce broader perceptual capabilities through on-policy self-distillation, enabling substantial synthetic-to-real transfer beyond the task and data distribution used for post-training."
+        },
+        "url": "https://www.semanticscholar.org/paper/199f2d99c40d05d44066f67e27ca89a2db06a6ee",
+        "venue": "",
+        "year": 2026
+      }
+    },
     "title:acesearcher bootstrapping reasoning and search for llms via reinforced self play": {
       "cached_at": "2026-06-29T05:15:21.571589+00:00",
       "data": {
