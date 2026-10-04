@@ -10859,6 +10859,258 @@
         "year": 2026
       }
     },
+    "arxiv:2610.01510": {
+      "cached_at": "2026-10-04T06:12:13.546941+00:00",
+      "data": {
+        "abstract": "Robust perception in intelligent vehicles demands 3D object detectors that remain dependable under domain shifts, such as changes in time of day, location, or weather. However, due to costly annotation and rare shifts, some environments lack sufficient data to train a standalone detector. Federated learning offers a privacy-preserving framework for collaborative model training, enabling clients to benefit from shared learning across diverse environments. Yet, this framework traditionally relies on a single global consensus model, which struggles to perform across heterogeneous local data distributions. Local conditions are better captured by adapting a subset of the model, but many personalization approaches rely on predefined layer partitions or fixed personalization ratios, thereby limiting adaptation to client-specific divergence. To reduce this rigidity, we propose FedCKA, a Centered Kernel Alignment (CKA)-based strategy that dynamically handles the personalization-globalization trade-off. Specifically, FedCKA computes layer-wise feature similarities between local client models and the global consensus model during training. By converting layer-wise similarity scores into client-specific aggregation masks, FedCKA selectively shares representation-consistent layers. Evaluation on a unified multi-domain benchmark based on nuScenes shows that FedCKA outperforms established federated baselines, including FedBN, FedRep, and FedSelect, improving average NDS by 7 percentage points over the strongest baseline. The findings offer both a comparative benchmark and a promising direction for robust federated 3D perception across shifts in location, weather, and illumination. Code is available at https://github.com/j-verhoog/FedCKA.",
+        "authors": [
+          {
+            "authorId": "2506408695",
+            "name": "Jolle Verhoog"
+          },
+          {
+            "authorId": "1562158724",
+            "name": "Ali Burak \u00dcnal"
+          },
+          {
+            "authorId": "2294871856",
+            "name": "Holger Caesar"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2610.01510",
+          "CorpusId": 292525762
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2610.01510, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "ddab8e384a902bc8b74034519ffc23adde4c76a3",
+        "title": "FedCKA: Representation-Guided Layer Personalization for Federated 3D Perception Across Driving Domains",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "FedCKA is proposed, a Centered Kernel Alignment (CKA)-based strategy that dynamically handles the personalization-globalization trade-off, and outperforms established federated baselines, including FedBN, FedRep, and FedSelect, improving average NDS by 7 percentage points over the strongest baseline."
+        },
+        "url": "https://www.semanticscholar.org/paper/ddab8e384a902bc8b74034519ffc23adde4c76a3",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2610.01682": {
+      "cached_at": "2026-10-04T06:12:48.595372+00:00",
+      "data": {
+        "abstract": "Mobile robots operating among pedestrians need trajectories that become available quickly, remain spatially credible through missed observations, preserve identity, and fit within an embedded computing budget. Aggregate tracking scores provide limited insight into when and how trajectories fail, while varying detector inputs can confound tracker and detector quality. We present a deployment-focused, tracker-only evaluation protocol that uses shared detections to isolate tracker behavior and directly evaluates initialization, detector-gap continuation, identity recovery, close-neighbor association, and load-dependent tracker-step runtime, while Higher Order Tracking Accuracy (HOTA) is retained as a complementary aggregate measure. We apply the protocol to the JackRabbot Dataset and Benchmark (JRDB) using six open-source trackers and our lightweight Pedestrian Reference Tracker (PedRefTrack), together with a GT-assisted variant that estimates the remaining tracker-side gap under idealized association and motion. Under fixed detections, the non-GT trackers span only 24.26%-29.67% HOTA yet exhibit markedly different capability profiles. After 1.0 s without detector support, no tracker without GT assistance maintains spatially correct, same-identity output in more than half of eligible cases, making missing-observation continuation the dominant limitation among the tested properties. Close-neighbor failures are smaller and increase mainly at the shortest separations. Tracker-step runtime on an NVIDIA Jetson Orin is heavy-tailed and load-sensitive, causing several trackers to fall below the 10 Hz real-time target in crowded frames. The protocol provides a reproducible way to characterize tracker behavior and deployment suitability in pedestrian-centric environments. Code and evaluation scripts are released at https://github.com/SCAI-Lab/tracker_eval.",
+        "authors": [
+          {
+            "authorId": "2455700269",
+            "name": "Dominik Wojcikiewicz"
+          },
+          {
+            "authorId": "1410828561",
+            "name": "Diego F. Paez-Granados"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2610.01682",
+          "CorpusId": 292525279
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2610.01682, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "eadf1fcbaf44c07d41b713e0c3e4fe6c5e0bbb64",
+        "title": "Beyond Leaderboard Scores: A Deployment-Focused Protocol for Interpretable Tracking Evaluation in Pedestrian-Centric Environments",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "A deployment-focused, tracker-only evaluation protocol that uses shared detections to isolate tracker behavior and directly evaluates initialization, detector-gap continuation, identity recovery, close-neighbor association, and load-dependent tracker-step runtime, while Higher Order Tracking Accuracy (HOTA) is retained as a complementary aggregate measure is presented."
+        },
+        "url": "https://www.semanticscholar.org/paper/eadf1fcbaf44c07d41b713e0c3e4fe6c5e0bbb64",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2610.01847": {
+      "cached_at": "2026-10-04T06:11:33.869078+00:00",
+      "data": {
+        "abstract": "Model specifications define how large language models (LLMs) should behave, guiding alignment training, inference-time behavior, and evaluation. Yet these specifications may themselves contain defects: two individually reasonable principles may prescribe incompatible behavior when applied to the same situation, leaving no response that satisfies both. Detecting such inconsistencies is challenging. Formalizing natural-language specifications risks losing subtle distinctions, while behavior-based testing cannot reliably distinguish specification defects from differences in model behavior. We introduce VeriSpec, the first approach to directly detect inconsistencies in model specifications by auditing the specification text itself. Our key insight is to preserve the specification in natural language while using an LLM as a verifier. VeriSpec extracts structured, context-aware rules, constructs a topic-guided graph to cluster behaviorally related rules at the same authority level, and applies LLM-as-verifier reasoning to detect inconsistencies. Applying VeriSpec to the OpenAI Model Spec, we extract 405 rules and manually validate five inconsistencies, all reported to its developers, who responded positively and have initiated internal discussions. Compared with five baselines, VeriSpec identifies the most validated inconsistencies, achieves the highest precision (38.5%), and incurs the lowest cost per validated inconsistency ($11.12). These results establish direct specification auditing as a practical complement to behavioral alignment evaluation, catching defects at the source before they shape any model. The code is available at https://github.com/HIPREL-Group/VeriSpec.",
+        "authors": [
+          {
+            "authorId": "2312892103",
+            "name": "Zi-Chen Xie"
+          },
+          {
+            "authorId": "2273929254",
+            "name": "Mrigank Pawagi"
+          },
+          {
+            "authorId": "2407258171",
+            "name": "Li-Ze Shao"
+          },
+          {
+            "authorId": "2113666979",
+            "name": "Yang Hu"
+          },
+          {
+            "authorId": "47824878",
+            "name": "Wen-Xi Wang"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2610.01847",
+          "CorpusId": 292525322
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2610.01847, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "152b05192ca3d74e620568f977ea4edd00d0e82a",
+        "title": "Detecting Inconsistencies in Model Specifications with LLM-as-Verifier Reasoning",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "VeriSpec is introduced, the first approach to directly detect inconsistencies in model specifications by auditing the specification text itself, and establishes direct specification auditing as a practical complement to behavioral alignment evaluation, catching defects at the source before they shape any model."
+        },
+        "url": "https://www.semanticscholar.org/paper/152b05192ca3d74e620568f977ea4edd00d0e82a",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2610.01863": {
+      "cached_at": "2026-10-04T06:12:23.127266+00:00",
+      "data": {
+        "abstract": "We present LiteReality-Agent, an agentic system for reconstructing real indoor environments as realistic, articulated, and simulation-ready 3D scenes from RGB-D scans. At its core, LiteReality-Agent formulates 3D reconstruction as a coding problem, in which a coding agent gathers evidence using specialised tools and iteratively edits a Python script, Room.py, which can be executed to produce a 3D digital twin of the room. With this formulation, we develop a robust observe-edit-verify harness that supports evidence gathering, measurement, verification, layout optimisation, simulation readiness, and quality control throughout the reconstruction process. LiteReality-Agent produces high-quality reconstructions suitable for simulation and downstream embodied AI tasks. Furthermore, as agent capabilities continue to improve rapidly, the system introduced by LiteReality-Agent remains a strong orchestration framework for future agents: it equips them with specialised tools, structured workflows, and robust verification mechanisms that substantially improve reconstruction quality and reliability. We demonstrate that LiteReality-Agent produces reconstructions that are more geometrically accurate, visually realistic, and simulation-compatible than those generated by recent frontier models, such as Astra and Fable. We therefore view LiteReality-Agent as a practical and important building block for robust real-to-sim systems. Both the source code and the data-capture application are publicly available. Code:https://github.com/LiteReality/LiteReality-Agent/",
+        "authors": [
+          {
+            "authorId": "2287168934",
+            "name": "Zhe-Ning Huang"
+          },
+          {
+            "authorId": "2479760180",
+            "name": "Yue-Yan Li"
+          },
+          {
+            "authorId": "1381321337",
+            "name": "Johnathan Chiu"
+          },
+          {
+            "authorId": "2238952101",
+            "name": "Xiaoyang Lyu"
+          },
+          {
+            "authorId": "2392237652",
+            "name": "Matt Zhou"
+          },
+          {
+            "authorId": "2313182176",
+            "name": "Yu-Xin Yao"
+          },
+          {
+            "authorId": "2295905884",
+            "name": "J. Lasenby"
+          },
+          {
+            "authorId": "2146648",
+            "name": "Shangzhe Wu"
+          }
+        ],
+        "citationCount": 1,
+        "externalIds": {
+          "ArXiv": "2610.01863",
+          "CorpusId": 292525780
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 1,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2610.01863, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "8f47c1151a63b64104a1e79dcb966c15aeb88711",
+        "title": "LiteReality-Agent: An Agentic System for Interactable 3D Indoor Scene Reconstruction",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "LiteReality-Agent is viewed as a practical and important building block for robust real-to-sim systems and produces reconstructions that are more geometrically accurate, visually realistic, and simulation-compatible than those generated by recent frontier models, such as Astra and Fable."
+        },
+        "url": "https://www.semanticscholar.org/paper/8f47c1151a63b64104a1e79dcb966c15aeb88711",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2610.01927": {
+      "cached_at": "2026-10-04T06:12:25.245278+00:00",
+      "data": {
+        "abstract": "Feedforward foundation models have recently shown remarkable 3D reconstruction capabilities. However, existing models exhibit large tracking drift in long-context streaming reconstruction due to error accumulation. In this paper, we revisit loop closure with streaming reconstruction foundation models to enable accurate, drift-free, kilometer-scale reconstruction. Specifically, our method detects loop candidates through global descriptor retrieval, and constructs loop-conditioned windows to estimate the relative poses between looped frames. Given the observation that our adopted streaming reconstruction backbone produces a globally consistent scale, we optimize all frame poses on the SE(3) manifold with sequential and loop closure constraints, avoiding the pose graph optimization on the Sim(3) or higher-dimensional SL(4) manifolds employed in prior works. Extensive experiments show that our method reduces drift and produces consistent geometry on kilometer-scale sequences, significantly outperforming the state of the art. Code is available at https://github.com/MoyangLi00/CLoSeR.git.",
+        "authors": [
+          {
+            "authorId": "2381403990",
+            "name": "Mo-Yang Li"
+          },
+          {
+            "authorId": "2121394801",
+            "name": "Zihan Zhu"
+          },
+          {
+            "authorId": "2298871720",
+            "name": "Wei Zhang"
+          },
+          {
+            "authorId": "2300182737",
+            "name": "Marc Pollefeys"
+          },
+          {
+            "authorId": "2395767088",
+            "name": "Daniel Barath"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2610.01927",
+          "CorpusId": 292525151
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2610.01927, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "77426eb47696b310630e6b93e76eee204ff2cffa",
+        "title": "CLoSeR: Closing the Loop for Long-Context Streaming Reconstruction",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "This paper revisits loop closure with streaming reconstruction foundation models to enable accurate, drift-free, kilometer-scale reconstruction, and reduces drift and produces consistent geometry on kilometer-scale sequences, significantly outperforming the state of the art."
+        },
+        "url": "https://www.semanticscholar.org/paper/77426eb47696b310630e6b93e76eee204ff2cffa",
+        "venue": "",
+        "year": 2026
+      }
+    },
     "arxiv:2610.01985": {
       "cached_at": "2026-10-03T05:35:11.680210+00:00",
       "data": {
@@ -10899,6 +11151,266 @@
           "text": "H-SPAR integrates spatially and temporally varying velocity fields, Lagrangian particle transport, probabilistic sampling, and ROS 2/Gazebo-based uncrewed surface vehicle (USV) autonomy to improve environmental robotic sampling performance."
         },
         "url": "https://www.semanticscholar.org/paper/e7717d0c4115f7ad6abbba79e6da11407f5ae83a",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2610.02002": {
+      "cached_at": "2026-10-04T06:11:45.386968+00:00",
+      "data": {
+        "abstract": "Large Language Model (LLM) agents now take part in organizational work, where many authors record decisions across documents over months. Because a revised decision arrives as a new document rather than an edit, answering a question requires knowing which version held at a given time. However, most memory systems compress the record at write time. By distilling each document into facts, notes or graph edges, these methods fix what can be answered before any question is asked. To address this, we propose Mem++, a non-destructive memory framework shifting from write-time distillation to read-time selection. Mem++ stores every document whole with its date and author, and it calls no generative model at write time. At read time, it retrieves only documents dated up to the time a question asks about and fuses lexical and semantic rankings. Unlike systems that overwrite older versions, Mem++ keeps them and leaves the choice to the answering model. Evaluations on the organizational benchmark OrgMemBench demonstrate that Mem++ surpasses the strongest memory system baseline by 8.0 to 13.1 points across two answering models. With gpt-4.1-mini, it also achieves the best overall score, 2.6 points above RAG. In addition, Mem++ achieves the best average LLM-judge score on LoCoMo and ranks second on LongMemEval-S, behind only its entity-graph variant. Code for benchmark evaluation is available at https://github.com/AIDAChip-Inc/mem-plus-plus.",
+        "authors": [
+          {
+            "authorId": "2397173119",
+            "name": "Ahmad Yehia"
+          },
+          {
+            "authorId": "2357974880",
+            "name": "Aly O. Abdelkareem"
+          },
+          {
+            "authorId": "2506406969",
+            "name": "Islam Ahmed"
+          },
+          {
+            "authorId": "2506404341",
+            "name": "Hesham Omran"
+          },
+          {
+            "authorId": "2506404299",
+            "name": "Khaled Alashmouny"
+          },
+          {
+            "authorId": "2367196908",
+            "name": "Christian G. Claudel"
+          },
+          {
+            "authorId": "2305647401",
+            "name": "Abduallah A. Mohamed"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2610.02002",
+          "CorpusId": 292525451
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2610.02002, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "6789a23ef1e7cb044f2b342298186ac303545159",
+        "title": "Mem++: Non-Destructive Memory for Long-Term Organizational LLM Agents",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "This work proposes Mem++, a non-destructive memory framework shifting from write-time distillation to read-time selection, which achieves the best average LLM-judge score on LoCoMo and ranks second on LongMemEval-S, behind only its entity-graph variant."
+        },
+        "url": "https://www.semanticscholar.org/paper/6789a23ef1e7cb044f2b342298186ac303545159",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2610.02019": {
+      "cached_at": "2026-10-04T06:12:27.400501+00:00",
+      "data": {
+        "abstract": "The rapid growth of video-based social media has increased users'exposure to harmful content, creating a need for reliable automated video safety detection. Although recent Vision-Language Models (VLMs) show strong video understanding capabilities, existing harmful video detection systems face two key limitations: they typically reduce safety detection to binary classification, overlooking the inherently multi-label nature of unsafe videos, and they rely on static training objectives that do not support controllable precision-recall trade-offs, though the desired operating point may vary across moderation pipelines and unsafe categories. To address these gaps, we propose Adaptive Tversky Policy Optimization (ATPO), a reinforcement learning framework for Multi-label Video Safety Detection (Multi-VSD). ATPO introduces the Adaptive Tversky Reward (ATR), which dynamically adjusts false-positive and false-negative penalties during training to enable controllable precision-recall trade-offs. Experiments on SafeWatch-Bench and XD-Violence show that ATPO substantially improves multi-label performance, increasing the Jaccard Index from 40.66 to 75.44 on SafeWatch-Bench-Real. Moreover, ATR enables reliable steering of the precision-recall operating point, supporting deployment scenarios with heterogeneous policy requirements. Code and checkpoints are provided at https://bruceyg.github.io/ATPO-project-page/ .",
+        "authors": [
+          {
+            "authorId": "2266469580",
+            "name": "Guang-Yu Yang"
+          },
+          {
+            "authorId": "2249533742",
+            "name": "Jing-Biao Mei"
+          },
+          {
+            "authorId": "3296363",
+            "name": "Ming-Shen Sun"
+          },
+          {
+            "authorId": "2443598371",
+            "name": "Jing-Hong Chen"
+          },
+          {
+            "authorId": "2506404910",
+            "name": "Ying-Tong Bu"
+          },
+          {
+            "authorId": "2279735967",
+            "name": "Peng-Da Qin"
+          },
+          {
+            "authorId": "2340385411",
+            "name": "Da Chen"
+          },
+          {
+            "authorId": "2249539574",
+            "name": "Bill Byrne"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2610.02019",
+          "CorpusId": 292525230
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2610.02019, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "03d3b19b2aa0e9edb0f723692ef6dafa6d76b49a",
+        "title": "Controllable Multi-label Video Safety Detection via Adaptive Tversky Policy Optimization",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "Adaptive Tversky Policy Optimization (ATPO) is proposed, a reinforcement learning framework for Multi-label Video Safety Detection (Multi-VSD), which introduces the Adaptive Tversky Reward (ATR), which dynamically adjusts false-positive and false-negative penalties during training to enable controllable precision-recall trade-offs."
+        },
+        "url": "https://www.semanticscholar.org/paper/03d3b19b2aa0e9edb0f723692ef6dafa6d76b49a",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2610.02023": {
+      "cached_at": "2026-10-04T06:12:02.070617+00:00",
+      "data": {
+        "abstract": "While Large Language Models (LLMs) advance 3D indoor scene synthesis, current pipelines fail to retain user-specific preferences across sessions, making immersive authoring a repetitive and physically fatiguing process. We present SPHERE, an adaptive VR generation framework that transforms isolated synthesis into continuous human-AI co-creation. SPHERE extracts persistent spatial preferences from natural multimodal interactions (speech and controller edits). To ensure geometric resilience against spatial distortions, it abstracts these raw edits into hierarchical constraints modeling both local functional and global topological contexts. Furthermore, a human-in-the-loop reinforcement learning mechanism dynamically updates retrieval policies based on the user's final edited scenes. A mixed-design user study ($N=42$) and an offline ablation demonstrate that SPHERE significantly reduces corrective edits and physical demand, preventing bias toward shallow object-level traits to yield geometrically resilient, profile-aligned layouts. Ultimately, SPHERE demonstrates how capturing demonstrated spatial logic enables controlled spatial adaptation, establishing a reliable, governed human-AI collaboration framework for immersive authoring. Project page and source code will be available at: https://github.com/hyeonmin11/SPHERE",
+        "authors": [
+          {
+            "authorId": "2118422748",
+            "name": "Hyeonmin Lee"
+          },
+          {
+            "authorId": "2300828676",
+            "name": "Zheng Wei"
+          },
+          {
+            "authorId": "2275308447",
+            "name": "Kyungmin Kwon"
+          },
+          {
+            "authorId": "2356487689",
+            "name": "Jumin Seo"
+          },
+          {
+            "authorId": "2288032944",
+            "name": "Jiwon Park"
+          },
+          {
+            "authorId": "2244415430",
+            "name": "Hayoung Oh"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2610.02023",
+          "CorpusId": 292525556
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2610.02023, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "461f9b6f3d82414b25fa39b12df8e784355ee5aa",
+        "title": "SPHERE: Adaptive VR Indoor Scene Generation via LLM-Enhanced Spatial Preference Learning and Human-in-the-Loop RL",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "SPHERE demonstrates how capturing demonstrated spatial logic enables controlled spatial adaptation, establishing a reliable, governed human-AI collaboration framework for immersive authoring."
+        },
+        "url": "https://www.semanticscholar.org/paper/461f9b6f3d82414b25fa39b12df8e784355ee5aa",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2610.02089": {
+      "cached_at": "2026-10-04T06:12:44.272628+00:00",
+      "data": {
+        "abstract": "As robotic hardware and learning methods advance, humanoids need tools to perform tasks beyond their inherent physical limits. Successful tool use requires selecting a suitable tool and coordinating manipulation and, when needed, locomotion to complete the task. Existing benchmarks do not jointly evaluate these capabilities on a humanoid. We introduce HumanoidToolBench, an 18-task benchmark spanning three scenarios, three execution levels, and two tool-set modes, together with ToolBook, a dataset of 3.1k demonstrations collected in simulation and on a real Unitree G1. Evaluation of seven policies in simulation and three on the real robot reveals substantial gaps between selecting a suitable tool and completing the task. Focused GR00T N1.7 probes show reduced selection accuracy on unseen tools and continued task execution under unrelated instructions. Code and data are available at https://snu-pi.github.io/HumanoidToolBench/.",
+        "authors": [
+          {
+            "authorId": "2304479297",
+            "name": "Kyochul Jang"
+          },
+          {
+            "authorId": "2245054158",
+            "name": "S. Park"
+          },
+          {
+            "authorId": "2506407138",
+            "name": "Ohchul Kwon"
+          },
+          {
+            "authorId": "2506650164",
+            "name": "Sangjun Park"
+          },
+          {
+            "authorId": "2505034790",
+            "name": "Junhyeok Choi"
+          },
+          {
+            "authorId": "2392686939",
+            "name": "Seungyeop Yi"
+          },
+          {
+            "authorId": "2396003321",
+            "name": "C. Kim"
+          },
+          {
+            "authorId": "2284690114",
+            "name": "Sangkyu Lee"
+          },
+          {
+            "authorId": "1711977",
+            "name": "Idan Szpektor"
+          },
+          {
+            "authorId": "2288816486",
+            "name": "Avi Caciularu"
+          },
+          {
+            "authorId": "2498926212",
+            "name": "Jongmin Park"
+          },
+          {
+            "authorId": "2385782381",
+            "name": "Youngjae Yu"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2610.02089",
+          "CorpusId": 292525789
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2610.02089, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "95b29ff407027bbe50cbc81b4e13822dc14ba554",
+        "title": "HumanoidToolBench: Benchmarking Humanoid Tool Use from Selection to Mobile Execution",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "This work introduces HumanoidToolBench, an 18-task benchmark spanning three scenarios, three execution levels, and two tool-set modes, together with ToolBook, a dataset of 3.1k demonstrations collected in simulation and on a real Unitree G1."
+        },
+        "url": "https://www.semanticscholar.org/paper/95b29ff407027bbe50cbc81b4e13822dc14ba554",
         "venue": "",
         "year": 2026
       }
@@ -10951,6 +11463,175 @@
           "text": "Results show that spatially grounded privileged information can induce broader perceptual capabilities through on-policy self-distillation, enabling substantial synthetic-to-real transfer beyond the task and data distribution used for post-training."
         },
         "url": "https://www.semanticscholar.org/paper/199f2d99c40d05d44066f67e27ca89a2db06a6ee",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2610.02189": {
+      "cached_at": "2026-10-04T06:11:36.095564+00:00",
+      "data": {
+        "abstract": "Intrinsically disordered protein regions (IDRs) play central roles in cellular processes such as transcriptional regulation, signal transduction, and subcellular localization, yet their functional design remains challenging. Structure-based design methods do not readily apply to IDRs, and existing protein language models are trained on full-length protein sequences, thus learning a prior that is biased towards folded domains. Here, we present IDiom, an autoregressive protein language model trained on IDiom-DB, a dataset of 54 million predicted IDRs curated from the AlphaFold Database. IDiom generates diverse sequences that recapitulate the composition, patterning, motifs, and predicted disorder of natural IDRs. To control function-associated sequence patterns, we also introduce reinforcement learning with sparse autoencoder features (RL-SAE), a post-training method that rewards the generation of sequences that activate specified feature sets. Across eight IDR design tasks, RL-SAE sequences activate, on average, 90% of 30 targeted features, compared to 24% for activation steering. We demonstrate that RL-SAE improves the predicted subcellular localization and transcriptional activity of generated IDRs compared to steering and supervised fine-tuning, and enables features associated with distinct biological functions to be combined within individual sequences. Thus, IDiom and RL-SAE enable interpretable and composable IDR design through explicit control of function-associated sequence features. More broadly, RL-SAE could extend to other protein design settings where interpretable features provide useful design targets. Code is available at https://github.com/rotskoff-group/idiom.",
+        "authors": [
+          {
+            "authorId": "2119081469",
+            "name": "J. Liu"
+          },
+          {
+            "authorId": "2302407082",
+            "name": "Sebastian Ibarraran"
+          },
+          {
+            "authorId": "2220287790",
+            "name": "Frank Hu"
+          },
+          {
+            "authorId": "2109001200",
+            "name": "Soojung Yang"
+          },
+          {
+            "authorId": "2499359163",
+            "name": "Xin-Yu A. Feng"
+          },
+          {
+            "authorId": "2429678554",
+            "name": "A. Park"
+          },
+          {
+            "authorId": "2352259203",
+            "name": "Anagha Aneesh"
+          },
+          {
+            "authorId": "3642002",
+            "name": "Lacramioara Bintu"
+          },
+          {
+            "authorId": "2339064216",
+            "name": "Alexander R. Dunn"
+          },
+          {
+            "authorId": "2424069226",
+            "name": "Grant M. Rotskoff"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2610.02189",
+          "CorpusId": 292525365
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2610.02189, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "dbf91fc9cade96bac1280c5ef87a8d548b235921",
+        "title": "Generative modeling of intrinsically disordered protein regions by reinforcing sparse autoencoder features",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "IDiom and RL-SAE enable interpretable and composable IDR design through explicit control of function-associated sequence features, and could extend to other protein design settings where interpretable features provide useful design targets."
+        },
+        "url": "https://www.semanticscholar.org/paper/dbf91fc9cade96bac1280c5ef87a8d548b235921",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2610.02190": {
+      "cached_at": "2026-10-04T06:12:11.377489+00:00",
+      "data": {
+        "abstract": "Step-size selection remains a central challenge in large-scale neural network optimization; conservative steps slow convergence, while aggressive steps can destabilize it. We combine \\textbf{Z}ero-and-\\textbf{F}irst-\\textbf{O}rder optimization~(ZFO) and propose a lightweight framework that decouples direction selection from step-size. ZFO uses a trusted first-order optimizer to determine the direction and performs zeroth-order evaluations only along this one-dimensional subspace to choose how far to move. Using the current {gradient information} and two additional objective function evaluations, ZFO instances construct a local model of the objective function along the proposed direction and select a curvature-aware step within a bounded search interval. This yields an adaptive step-selection mechanism that costs less than a full line search. We provide theoretical guarantees to show that shared-sample evaluations produce reliable finite-difference curvature estimates, that the induced local model selects a near-optimal step along the search interval, and that ZFO converges to a neighborhood of a stationary point. Across the evaluated settings, language models and datasets, ZFO frequently improves optimization and final performance relative to fixed-step first-order baselines, with the magnitude and preferred local model depending on the objective. Our code is publicly available at: https://github.com/nizswan/Zeroth-First-Order-Framework.",
+        "authors": [
+          {
+            "authorId": "2441477609",
+            "name": "Cristian McGee"
+          },
+          {
+            "authorId": "2579015",
+            "name": "El Houcine Bergou"
+          },
+          {
+            "authorId": "5741235",
+            "name": "Aritra Dutta"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2610.02190",
+          "CorpusId": 292525699
+        },
+        "fieldsOfStudy": [
+          "Computer Science",
+          "Mathematics"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2610.02190, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "91388ae21cb00638e63303cea12b66ceec0dd25f",
+        "title": "Trust the Direction, Search the Step: Zero-and-First-Order Methods for LLM Fine-Tuning",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "It is provided theoretical guarantees to show that shared-sample evaluations produce reliable finite-difference curvature estimates, that the induced local model selects a near-optimal step along the search interval, and that ZFO converges to a neighborhood of a stationary point."
+        },
+        "url": "https://www.semanticscholar.org/paper/91388ae21cb00638e63303cea12b66ceec0dd25f",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2610.02193": {
+      "cached_at": "2026-10-04T06:12:46.429894+00:00",
+      "data": {
+        "abstract": "Discrete diffusion language models offer a compelling alternative to autoregressive generation for tasks demanding bidirectional reasoning and global constraint satisfaction. Yet they share a structural bottleneck: when decoding in parallel, each token is sampled independently from its marginal, severing the statistical dependencies among the tokens decoded together. Continuous diffusion language models avoid this by denoising a shared continuous state, but their denoiser sees only that state, so nothing ties it to a valid token configuration until it is finally decoded. To address this, we propose Hierarchical Continuous Diffusion Language Models (HC-DLM), which couple discrete token generation with a continuous latent trajectory in a single, principled denoising process, whose training objective is derived from a variational bound on the token likelihood. In contrast to recent methods that attach continuous context to a self-contained discrete chain, HC-DLM makes the latent the only persistent generative state: tokens are read out from it at every step and feed back as a scaffold for the next latent update. On structured reasoning (Sudoku), mathematical planning (Countdown) and language modeling (LM1B), HC-DLM improves over discrete and continuous diffusion baselines at matched model size, in puzzle accuracy on Sudoku and Countdown and in generative perplexity on LM1B. Project page: https://hc-dlm.github.io/.",
+        "authors": [
+          {
+            "authorId": "2114292624",
+            "name": "Hui Ren"
+          },
+          {
+            "authorId": "2504281785",
+            "name": "Zi-Han Li"
+          },
+          {
+            "authorId": "2505037316",
+            "name": "Chang Liu"
+          },
+          {
+            "authorId": "49957558",
+            "name": "Hui-Dong Liu"
+          },
+          {
+            "authorId": "2068227",
+            "name": "A. Schwing"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2610.02193",
+          "CorpusId": 292525189
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2610.02193, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "3b39a9f12e338329f00d7ddf088a5d1ac90a6e73",
+        "title": "Hierarchical Continuous Diffusion Language Models",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "H Hierarchical Continuous Diffusion Language Models (HC-DLM) is proposed, which couple discrete token generation with a continuous latent trajectory in a single, principled denoising process, whose training objective is derived from a variational bound on the token likelihood."
+        },
+        "url": "https://www.semanticscholar.org/paper/3b39a9f12e338329f00d7ddf088a5d1ac90a6e73",
         "venue": "",
         "year": 2026
       }
