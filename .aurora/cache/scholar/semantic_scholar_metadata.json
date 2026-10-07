@@ -11636,6 +11636,66 @@
         "year": 2026
       }
     },
+    "arxiv:2610.05334": {
+      "cached_at": "2026-10-07T06:18:25.500300+00:00",
+      "data": {
+        "abstract": "Frameworks that use large language models for scientific discovery typically rely on a fixed, human-designed algorithm that decides what the model sees at each step, leaving the model only the role of proposer. The model knows nothing of the search beyond what it is shown. As models grow more capable, a question arises: does a search strategy chosen by a human before the run scale better than promoting the model from proposer to planner and letting it own the search? The Bitter Lesson suggests that choosing the strategy in advance is the kind of hand-designed structure that general methods eventually outscale. We introduce AgentDiscover, in which a coding agent plans the search using its context as working memory, runs experiments, and records every attempt in a database of ideas, candidates, and their relations. This database serves as the agent's long-term memory and is structured so that the selection rules of classical algorithms such as MAP-Elites and Monte Carlo tree search each reduce to a single query, which the agent is free to use, combine, or replace. A server maintains the database and steers the agent after every submission, keeping it on course over long runs. In our experiments, AgentDiscover is more cost-efficient than existing frameworks, reaching better scores at lower cost. On tasks in kernel engineering, biology, algorithm design, and mathematics, AgentDiscover outperforms prior discovery frameworks. Its programs would have placed first among human competitors in seven past AtCoder heuristic contests, and on eleven mathematical and systems optimization tasks it matches or exceeds every baseline that uses the same model. Our code is available at https://github.com/mhdfb/AgentDiscover.",
+        "authors": [
+          {
+            "authorId": "2384128804",
+            "name": "Mahdi Farahbakhsh"
+          },
+          {
+            "authorId": "2085906551",
+            "name": "I. Sela"
+          },
+          {
+            "authorId": "2291141822",
+            "name": "Fatemeh Doudi"
+          },
+          {
+            "authorId": "2264463811",
+            "name": "Vishnu Teja Kunde"
+          },
+          {
+            "authorId": "2367516194",
+            "name": "Krishna Narayanan"
+          },
+          {
+            "authorId": "1750037",
+            "name": "Jean-Fran\u00e7ois Chamberland"
+          },
+          {
+            "authorId": "1956081",
+            "name": "D. Kalathil"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2610.05334",
+          "CorpusId": 292655126
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2610.05334, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "91398e34244b35c5bd34461607ca67801241256f",
+        "title": "AgentDiscover: Autonomous Discovery with Minimal Search Scaffolding",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "Agent discover, in which a coding agent plans the search using its context as working memory, runs experiments, and records every attempt in a database of ideas, candidates, and their relations, which serves as the agent's long-term memory and is structured so that the selection rules of classical algorithms each reduce to a single query."
+        },
+        "url": "https://www.semanticscholar.org/paper/91398e34244b35c5bd34461607ca67801241256f",
+        "venue": "",
+        "year": 2026
+      }
+    },
     "title:acesearcher bootstrapping reasoning and search for llms via reinforced self play": {
       "cached_at": "2026-06-29T05:15:21.571589+00:00",
       "data": {
