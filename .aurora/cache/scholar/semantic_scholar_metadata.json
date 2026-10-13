@@ -12500,6 +12500,864 @@
         "year": 2026
       }
     },
+    "arxiv:2610.13309": {
+      "cached_at": "2026-10-13T07:00:34.904935+00:00",
+      "data": {
+        "abstract": "6D pose estimation of novel objects without CAD models remains an open challenge: model-free methods must build the object representation from scratch during onboarding and have long trailed their model-based counterparts. We present NovaSplat, a model-free pipeline that closes this gap. From a short smartphone video captured at onboarding, we train a 3D Gaussian Splatting (3DGS) model that serves both as a template source for detection and coarse pose estimation and as a differentiable backbone for pose refinement. Our refiner optimizes the object-to-camera pose with combined photometric and geometric losses under a continuous rotation parametrization free of gradient singularities. On a household-object benchmark, NovaSplat surpasses all model-based methods. On a challenging industrial benchmark with textureless and specular surfaces, it outperforms all model-free competitors while substantially narrowing the gap to model-based ones. We further introduce NovaSplat-Lite, an inference variant that is $3.1\\times$ faster at negligible accuracy cost. Code will be made available at \\href{https://github.com/POSE-Lab/novasplat}{https://github.com/POSE-Lab/novasplat}.",
+        "authors": [
+          {
+            "authorId": "2084181662",
+            "name": "Georgios Floros"
+          },
+          {
+            "authorId": "74204614",
+            "name": "Evangelos G. Sartinas"
+          },
+          {
+            "authorId": "2509952313",
+            "name": "Orestis Vangelis"
+          },
+          {
+            "authorId": "1984107",
+            "name": "M. Pateraki"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2610.13309",
+          "CorpusId": 292830717
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2610.13309, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "ffc864ca05a6d731f950afc9d8aa6fb2f90cd3d5",
+        "title": "NovaSplat: Model-Free 6D Object Pose Estimation via 3D Gaussian Splatting Onboarding and Refinement",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "The refiner optimizes the object-to-camera pose with combined photometric and geometric losses under a continuous rotation parametrization free of gradient singularities and introduces NovaSplat-Lite, an inference variant that is $3.1\\times faster at negligible accuracy cost."
+        },
+        "url": "https://www.semanticscholar.org/paper/ffc864ca05a6d731f950afc9d8aa6fb2f90cd3d5",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2610.13354": {
+      "cached_at": "2026-10-13T07:00:00.652889+00:00",
+      "data": {
+        "abstract": "The NIST Assembly Task Board #1 remains a challenging benchmark for learning-based methods in robotic manipulation. Over short horizons, it demands precise, contact-rich control of small, tight-fitting parts. Over long horizons, it requires recovery and coordination across extended action sequences. Demonstrations, task decomposition, and dense progress rewards have enabled research advances by providing guidance on how to assemble. But how much of the strategy must be specified? The progression from AlphaGo to AlphaGo Zero showed that RL at scale can discover superhuman strategies without prescribing how to win. AlphaNIST asks whether a sparse binary task reward and task diversity admitted by this task-agnostic reward can similarly let a robot discover how to assemble. In simulation, we train a single policy from scratch across all 20 assembly tasks on the NIST Assembly Task Board #1, reaching 98.2% overall training success without demonstrations, progress shaping, scripted primitives, or per-task tuning. The framework also trains policies to complete ten assembly pairs in a single episode without a prescribed order, with task success rewarded only when all ten pairs are simultaneously complete. The learned policies discover dexterous and planning-like behaviors: choosing grasps for later assembly, using surrounding geometry to reorient parts, and preparing one part, assembling another, then returning to finish the first without an explicit planner. For videos, see our website: https://alpha-nist.github.io/",
+        "authors": [
+          {
+            "authorId": "2391526762",
+            "name": "Octi Zhang"
+          },
+          {
+            "authorId": "2856639",
+            "name": "Iretiayo Akinola"
+          },
+          {
+            "authorId": "2315511167",
+            "name": "Rosario Scalise"
+          },
+          {
+            "authorId": "1384145601",
+            "name": "Mateo Guaman Castro"
+          },
+          {
+            "authorId": "2163582683",
+            "name": "Patrick Yin"
+          },
+          {
+            "authorId": "2037681",
+            "name": "Tobias Widmer"
+          },
+          {
+            "authorId": "2268490059",
+            "name": "Miles Macklin"
+          },
+          {
+            "authorId": "2391514535",
+            "name": "Chris Amevor"
+          },
+          {
+            "authorId": "1782348078",
+            "name": "Dylan Turpin"
+          },
+          {
+            "authorId": "2509950389",
+            "name": "Dirk Van Gelder"
+          },
+          {
+            "authorId": "30474787",
+            "name": "Jan Carius"
+          },
+          {
+            "authorId": "34653454",
+            "name": "Ankur Handa"
+          },
+          {
+            "authorId": "82261827",
+            "name": "Gavriel State"
+          },
+          {
+            "authorId": "2261474616",
+            "name": "Yun-Rong Guo"
+          },
+          {
+            "authorId": "5046361",
+            "name": "Yashraj Narang"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2610.13354",
+          "CorpusId": 292830321
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2610.13354, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "85d41440db13a9a5174cc2da3361b028d82981ea",
+        "title": "AlphaNIST: Emergent Assembly Skills from Binary Task Rewards",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "In simulation, a single policy from scratch is trained across all 20 assembly tasks on the NIST Assembly Task Board #1, reaching 98.2% overall training success without demonstrations, progress shaping, scripted primitives, or per-task tuning."
+        },
+        "url": "https://www.semanticscholar.org/paper/85d41440db13a9a5174cc2da3361b028d82981ea",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2610.13409": {
+      "cached_at": "2026-10-13T06:59:35.613965+00:00",
+      "data": {
+        "abstract": "End-to-end planning in complex scenes must model diverse driving intentions and select the most appropriate trajectory using scene context and future risks. However, multi-query regression may collapse to one mode, while anchor-based and generative planners share a scaling bottleneck: small candidate sets limit maneuver coverage or discovery of high-quality trajectories, whereas large sets increase generation and scoring costs. We propose ManeuverFlow to generate trajectories for distinct intentions in one step and evaluate and refine them using current and future evidence. The model selects relevant maneuver modes, draws corresponding noise from the Gaussian mixture prior, and maps it to intention-specific trajectories through a maneuver-routed mixture-of-experts MeanFlow field. Current features and future features predicted by the world model are aggregated along each candidate path into trajectory-specific evidence for PDM-factor prediction. Using the same evidence, the refiner predicts local Frenet residuals for selected candidates; refined and retained candidates are then jointly re-scored for selection. With a lightweight TransFuser-style ResNet-34 backbone, ManeuverFlow achieves 90.6 PDMS and 90.1 EPDMS on NAVSIM v1/v2 navtest, respectively. On WorldEngine's recent 3DGS closed-loop benchmark, it attains the highest listed PDMS$^\\ast$ scores of 75.19 and 74.58 under logged and IDM-controlled traffic, respectively. Code: https://github.com/wyh-autonomy/maneuverflow.",
+        "authors": [
+          {
+            "authorId": "2290246001",
+            "name": "Yu-Hao Wei"
+          },
+          {
+            "authorId": "2505481326",
+            "name": "Yong Chen"
+          },
+          {
+            "authorId": "2358062448",
+            "name": "Chen Yang"
+          },
+          {
+            "authorId": "47904937",
+            "name": "Ying-Chen Wang"
+          },
+          {
+            "authorId": "2163246067",
+            "name": "De-Lin Ouyang"
+          },
+          {
+            "authorId": "2401765835",
+            "name": "Ling-Feng Qi"
+          },
+          {
+            "authorId": "2295049743",
+            "name": "Qi Lan"
+          },
+          {
+            "authorId": "2336198795",
+            "name": "Zhan-Hua Zhang"
+          },
+          {
+            "authorId": "2360353097",
+            "name": "Jie Li"
+          },
+          {
+            "authorId": "2272344125",
+            "name": "Guo-Fa Li"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2610.13409",
+          "CorpusId": 292830433
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2610.13409, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "1cfe1ca245b60fee9df99808ac080da3dff9c163",
+        "title": "ManeuverFlow: Maneuver Hypothesis Generation with Future Evidence for Trajectory Evaluation and Refinement in End-to-End Autonomous Driving",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "ManeuverFlow is proposed to generate trajectories for distinct intentions in one step and evaluate and refine them using current and future evidence for PDM-factor prediction."
+        },
+        "url": "https://www.semanticscholar.org/paper/1cfe1ca245b60fee9df99808ac080da3dff9c163",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2610.13430": {
+      "cached_at": "2026-10-13T07:00:32.747175+00:00",
+      "data": {
+        "abstract": "Time series causal discovery --- the process of detecting causation between time series --- has its roots in signal processing research from over a half century ago. It has since received active and widespread interest, evolving into different forms across domains such as statistics, dynamical systems and machine learning. Entering this fragmented and constantly evolving research landscape can be daunting. This tutorial provides a unified overview of time series causal discovery across research communities. We introduce the key principles invoked by modern discovery methods, and we discuss their limitations and assumptions. We also discuss how discovery methods are evaluated, benchmarked and fine-tuned. We further discuss how causal discovery for time series is becoming crucial for downstream tasks in agriculture and Earth science, in healthcare, and in artificial intelligence systems. We believe that this tutorial will serve as a valuable resource in navigating the deluge of recent causality research, as well as an invitation to signal processing audiences to contribute to causal problems. To further help readers, we host a companion repository to link to useful code packages and resources at https://github.com/CHAI-UK/Awesome-Time-Series-Causal-Discovery.",
+        "authors": [
+          {
+            "authorId": "2188279130",
+            "name": "Kurt Butler"
+          },
+          {
+            "authorId": "2376200163",
+            "name": "Damian Machlanski"
+          },
+          {
+            "authorId": "2145154790",
+            "name": "Michael P. J. Camilleri"
+          },
+          {
+            "authorId": "2364086051",
+            "name": "Zhi-Hua Liu"
+          },
+          {
+            "authorId": "2272536522",
+            "name": "Panagiotis Dimitrakopoulos"
+          },
+          {
+            "authorId": "2449459877",
+            "name": "Feng-Hua Chen"
+          },
+          {
+            "authorId": "2377741751",
+            "name": "Ricardo Silva"
+          },
+          {
+            "authorId": "1919157",
+            "name": "S. Tsaftaris"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2610.13430",
+          "CorpusId": 292830969
+        },
+        "fieldsOfStudy": [
+          "Engineering",
+          "Computer Science",
+          "Mathematics"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2610.13430, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "2a78c839d92510351259af4c167af2cd30f50f3c",
+        "title": "One Thing Leads to Another: The Essentials of Time Series Causal Discovery",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "This tutorial provides a unified overview of time series causal discovery across research communities, and introduces the key principles invoked by modern discovery methods, and discusses their limitations and assumptions."
+        },
+        "url": "https://www.semanticscholar.org/paper/2a78c839d92510351259af4c167af2cd30f50f3c",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2610.13464": {
+      "cached_at": "2026-10-13T06:59:44.881551+00:00",
+      "data": {
+        "abstract": "The BROJA partial information decomposition provides an operationally motivated way to separate the information that two sources carry about a target into unique, redundant, and synergistic components. For continuous and high-dimensional variables, however, computing the BROJA decomposition requires solving a difficult optimization problem. Previous work showed that, when each source-target pair is jointly Gaussian, the problem can be reduced to finite-dimensional numerical optimization. Here, we derive a closed-form solution to this optimization problem, enabling direct computation of the BROJA decomposition in the general multivariate Gaussian setting. The resulting closed-form expression enables speedups exceeding two orders of magnitude for high-dimensional Gaussian BROJA PID. Code is available at https://github.com/brainsandmachines/Eigen_PID.",
+        "authors": [
+          {
+            "authorId": "2509952591",
+            "name": "Ohad Sheelo"
+          },
+          {
+            "authorId": "47547317",
+            "name": "Tal Golan"
+          },
+          {
+            "authorId": "2347346261",
+            "name": "Ari Pakman"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2610.13464",
+          "CorpusId": 292830777
+        },
+        "fieldsOfStudy": [
+          "Computer Science",
+          "Mathematics"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2610.13464, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "e0d74ffca90e78770939bf9d08cad67b12089937",
+        "title": "Gaussian BROJA Partial Information Decomposition in Closed Form",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "This work derives a closed-form solution to this optimization problem, enabling direct computation of the BROJA decomposition in the general multivariate Gaussian setting and enables speedups exceeding two orders of magnitude for high-dimensional Gaussian BROJA PID."
+        },
+        "url": "https://www.semanticscholar.org/paper/e0d74ffca90e78770939bf9d08cad67b12089937",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2610.13485": {
+      "cached_at": "2026-10-13T06:59:31.320617+00:00",
+      "data": {
+        "abstract": "Agentic orchestration delegates tasks to sub-agents with independent contexts, providing a key path to extending the effective execution horizon of large language model agents. However, existing orchestration methods face two limitations: in execution, current methods fix sub-agents'goals and harnesses at creation time, limiting their adaptability to dynamic real-world environments; in optimization, sparse and delayed feedback constrains effective learning of the orchestration policy. To address these limitations, we introduce POrchestra, an on-the-fly proactive agentic orchestration framework. It allows sub-agents to proactively communicate with the orchestrator at any logical point to request harness adjustments while maintaining continuity of local execution. This mechanism not only enables sub-agents to adapt seamlessly to dynamic environments but also naturally inspires On-Policy Orchestration Distillation (OPOD) based on hindsight feedback. OPOD attributes sub-agents'proactive revision requests back to preceding orchestration decisions to derive targeted improvement signals, and leverages these signals as process supervision alongside the final reward to optimize the orchestration policy. We evaluate POrchestra on three long-horizon agent benchmarks spanning deep research, dynamic digital assistance, and software engineering. POrchestra improves task success by an average of 9.1% relative to the strongest baseline; combined with OPOD, it improves small-orchestrator success by an average of 10.0% relative to existing training baselines. POrchestra also achieves a more favorable cost-performance trade-off. Our code is publicly available at https://github.com/XueyangFeng/POrchestra.",
+        "authors": [
+          {
+            "authorId": "2163940136",
+            "name": "Xue-Yang Feng"
+          },
+          {
+            "authorId": "2245533308",
+            "name": "Chao-Zhuo Li"
+          },
+          {
+            "authorId": "2226446789",
+            "name": "Xiao-He Bo"
+          },
+          {
+            "authorId": "144010962",
+            "name": "Jia-Kai Tang"
+          },
+          {
+            "authorId": "2506226974",
+            "name": "Chen-Xi Li"
+          },
+          {
+            "authorId": "2278433956",
+            "name": "Qi-Wei Ye"
+          },
+          {
+            "authorId": "2391651864",
+            "name": "Xu Chen"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2610.13485",
+          "CorpusId": 292830753
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2610.13485, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "3228d3efb560c5b6d32cd8d41ed6decf99162fde",
+        "title": "Proactive Agentic Orchestration",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "POrchestra is introduced, an on-the-fly proactive agentic orchestration framework that allows sub-agents to proactively communicate with the orchestrator at any logical point to request harness adjustments while maintaining continuity of local execution and naturally inspires On-Policy Orchestration Distillation (OPOD) based on hindsight feedback."
+        },
+        "url": "https://www.semanticscholar.org/paper/3228d3efb560c5b6d32cd8d41ed6decf99162fde",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2610.13578": {
+      "cached_at": "2026-10-13T07:00:30.629435+00:00",
+      "data": {
+        "abstract": "Pre-trained robot policies, such as Vision-Language-Action (VLA) models, provide a strong foundation for generalist robotic manipulation, but adapting them to new tasks with only a few demonstrations remains challenging. Directly fine-tuning a pre-trained policy often achieves strong in-distribution performance, yet it can distort the representations learned during pre-training and weaken the model's generalization ability under out-of-distribution shifts. We propose Retrieval-Anchored Representation Alignment (RARA), a two-stage adaptation method, to address this issue. First, RARA retrieves representation features from pretraining with similar task intent and motion, and aligns the policy's representations of the target demonstrations with the pre-trained representations of the retrieved demonstrations. Second, RARA fine-tunes the policy on the target demonstrations while limiting how much its representations of the retrieved demonstrations change during fine-tuning. By reducing the representation mismatch before action learning and preserving pre-trained knowledge during adaptation, RARA limits unnecessary representation drift during fine-tuning. Experiments with Diffusion Policy and GR00T on 13 tasks in RoboTwin, RoboCasa, and on a real robot show that RARA improves the average success of fine-tuning by 9.5 points in-distribution and 13.6 points out-of-distribution, and outperforms all compared baselines. Project page: https://shua-kang.github.io/RARA_robot/",
+        "authors": [
+          {
+            "authorId": "2325953899",
+            "name": "Xuhui Kang"
+          },
+          {
+            "authorId": "2326968756",
+            "name": "Sung-Wook Lee"
+          },
+          {
+            "authorId": "2497721791",
+            "name": "Yan Zhuang"
+          },
+          {
+            "authorId": "2198488182",
+            "name": "Tian-Le Zhong"
+          },
+          {
+            "authorId": "2325949200",
+            "name": "Yen-Ling Kuo"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2610.13578",
+          "CorpusId": 292830640
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2610.13578, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "7b9249d3ee6701702fb63749a511875a21537445",
+        "title": "RARA: Robust Policy Fine-Tuning through Retrieval-Anchored Representation Alignment for Robotic Manipulation",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "Retrieval-Anchored Representation Alignment (RARA), a two-stage adaptation method, that retrieves representation features from pretraining with similar task intent and motion, and aligns the policy's representations of the target demonstrations with the pre-trained representations of the retrieved demonstrations."
+        },
+        "url": "https://www.semanticscholar.org/paper/7b9249d3ee6701702fb63749a511875a21537445",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2610.13627": {
+      "cached_at": "2026-10-13T06:59:29.179836+00:00",
+      "data": {
+        "abstract": "Evaluating large language models (LLMs) on AMLworld's smallest test splits is costly because each of over a million targets requires a separate graph prompt. Sampling reduces this cost, but small balanced subsets change unweighted precision and F1. We introduce AMLworld-Compact, an evaluation set that retains every illicit test transaction and samples benign transactions from supervised-score strata. Its HT-Coreset protocol reduces evaluation targets by 271x and 611x on HI-Small and LI-Small. Horvitz-Thompson weights give unbiased full-test confusion-count estimates for fixed predictions; recall is exact, while precision and F1 are ratio estimates. In a held-out study using Graph Feature Preprocessor (GFP) features, one boosted-tree family defines strata for evaluating the other over 500 draws per configuration. At the released sizes, F1 RMSE is 0.00-2.58 percentage points versus 4.44-7.41 for uniform sampling with HT weights; conservative intervals remain broad. Under the evaluated graph prompts, seven open-weight LLMs have weighted precision near the predict-all-illicit baseline. In an outcome-stratified audit of 1,000 HI-Small few-shot outputs from one run per model, lexical checks pass for 84.5% of correct and 56.2% of incorrect binary verdicts, so these markers do not establish correctness. We release the evaluation sets, construction code, and audit tools at https://huggingface.co/datasets/typhoon-ai/AMLworldCompactEval and https://github.com/nat-nischw/AMLworld-Compact.",
+        "authors": [
+          {
+            "authorId": "2335860723",
+            "name": "Natapong Nitarach"
+          },
+          {
+            "authorId": "2509952495",
+            "name": "Phume Ngampornsukswadi"
+          },
+          {
+            "authorId": "2146153571",
+            "name": "Pittawat Taveekitworachai"
+          },
+          {
+            "authorId": "2248015255",
+            "name": "Surapon Nonesung"
+          },
+          {
+            "authorId": "51013869",
+            "name": "Warit Sirichotedumrong"
+          },
+          {
+            "authorId": "2275607442",
+            "name": "Kunat Pipatanakul"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2610.13627",
+          "CorpusId": 292830787
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2610.13627, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "fb613dd77d86230fd069538f3269f7143af090e1",
+        "title": "AMLworld-Compact: Importance-Weighted Downsampling for Cost-Effective LLM Evaluation and Error Diagnosis",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "AMLworld-Compact is introduced, an evaluation set that retains every illicit test transaction and samples benign transactions from supervised-score strata and its HT-Coreset protocol reduces evaluation targets by 271x and 611x on HI-Small and LI-Small."
+        },
+        "url": "https://www.semanticscholar.org/paper/fb613dd77d86230fd069538f3269f7143af090e1",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2610.13643": {
+      "cached_at": "2026-10-13T06:59:47.032582+00:00",
+      "data": {
+        "abstract": "Automating biological laboratories requires robots to perform dexterous tool interactions under realistic visual conditions while handling dynamic experimental phenomena, presenting significant challenges for robotic manipulation. To enable systematic evaluation under these conditions, we introduce AutoBio+, a simulation benchmark and framework for dexterous manipulation in realistic biological laboratory environments. AutoBio+ comprises 14 tasks across 4 robot embodiments, spanning functional tool use, precision manipulation, language-conditioned visual grounding, and instrument operation. We introduce controllable dynamic experimental phenomena, including flames, vapor, and bubbles, to capture the evolving visual conditions of laboratory procedures. To further enhance environmental realism, we develop a hybrid rendering pipeline that integrates interactive simulated foreground objects with Gaussian-splatting backgrounds reconstructed from 6 real laboratory scenes. For efficient large-scale data generation and evaluation, we further build a parallel simulation framework on top of mjlab, proposing Parallel Finite-State Machine (PFSM) and integrating batched rendering with decoupled trajectory replay for demonstration generation and model-independent closed-loop policy evaluation. Our evaluation reveals substantial variation in policy performance across tasks, exposing distinct strengths and weaknesses of current manipulation policies. Real-world experiments further demonstrate a reduced sim-to-real gap, supporting the validity of AutoBio+ for realistic manipulation evaluation. Supplementary materials are available at https://autobio-plus.github.io/AutoBioPlus.",
+        "authors": [
+          {
+            "authorId": "2299997068",
+            "name": "Xuan Wu"
+          },
+          {
+            "authorId": "2424484434",
+            "name": "Yue Shi"
+          },
+          {
+            "authorId": "2510015399",
+            "name": "Yong-Can Yang"
+          },
+          {
+            "authorId": "2479443066",
+            "name": "Yi-Qun Wang"
+          },
+          {
+            "authorId": "2510012289",
+            "name": "Zhao-Qi Wan"
+          },
+          {
+            "authorId": "2301861619",
+            "name": "Da-Yu Xia"
+          },
+          {
+            "authorId": "2331576735",
+            "name": "Jie-Zhang Cao"
+          },
+          {
+            "authorId": "2510027960",
+            "name": "Xiang-Fei Li"
+          },
+          {
+            "authorId": "2301922237",
+            "name": "Yao Mu"
+          },
+          {
+            "authorId": "2333365277",
+            "name": "Guang-Tao Zhai"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2610.13643",
+          "CorpusId": 292830452
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2610.13643, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "f37d45d70bef681800ea75855f684a84a7de58ca",
+        "title": "AutoBio+: Benchmarking Dexterous Manipulation with Dynamic Experimental Phenomena in Realistic Laboratories",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "This work introduces AutoBio+, a simulation benchmark and framework for dexterous manipulation in realistic biological laboratory environments, and introduces controllable dynamic experimental phenomena, including flames, vapor, and bubbles, to capture the evolving visual conditions of laboratory procedures."
+        },
+        "url": "https://www.semanticscholar.org/paper/f37d45d70bef681800ea75855f684a84a7de58ca",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2610.13674": {
+      "cached_at": "2026-10-13T07:00:14.204215+00:00",
+      "data": {
+        "abstract": "Linearizing softmax attention offers a route to efficient Transformer inference, but preserving pretrained attention remains challenging. We identify an important source of approximation error overlooked by standard linearization methods: a small number of outlier dimensions contribute disproportionately to query-key dot products and account for a large fraction of the approximation error. Motivated by this heterogeneity, we propose Outlier-Aware Attention Linearization (OAL), a dimension-aware method for constructing quadratic attention approximations. Starting from a second-order Taylor approximation, we introduce a Hadamard-product formulation that makes individual query-key contributions explicit. This formulation relaxes globally shared coefficients to support dimension-specific linear terms and cross-dimensional quadratic interactions while preserving separable evaluation. To retain this flexibility with fewer parameters, OAL groups dimensions with similar contribution scales to share coefficients, while allowing distinct treatment of the few outliers. The resulting positive quadratic kernel is calibrated against pretrained attention outputs and admits linear-time evaluation with respect to sequence length for fixed head dimensions. On Qwen2.5-0.5B, OAL reduces frozen-attention output relative MSE by approximately 8.9% compared with DiJiang. Replacing middle-layer attention modules and jointly fine-tuning the kernel coefficients with LoRA further lowers WikiText-103 perplexity from 31.71 to 27.50 compared with a learned global quadratic, while improving accuracy on PIQA, HellaSwag, and ARC-E. These results demonstrate the value of outlier-aware dimension grouping for both attention approximation and pretrained-model conversion. The code is available at https://github.com/wuqianyue09/OAL",
+        "authors": [
+          {
+            "authorId": "2510013316",
+            "name": "Wei-Qi Sun"
+          },
+          {
+            "authorId": "2510024573",
+            "name": "Qian-Yue Wu"
+          },
+          {
+            "authorId": "2155567647",
+            "name": "Wen-Jia Wang"
+          },
+          {
+            "authorId": "2112911801",
+            "name": "Tianyang Hu"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2610.13674",
+          "CorpusId": 292830530
+        },
+        "fieldsOfStudy": [
+          "Mathematics",
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2610.13674, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "f7842852a0e267728f5c467d81431f92b6e96428",
+        "title": "Not All Dimensions Are Equal: Outlier-Aware Attention Linearization with Grouped Quadratic Kernels",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "Outlier-Aware Attention Linearization (OAL) is proposed, a dimension-aware method for constructing quadratic attention approximations that relaxes globally shared coefficients to support dimension-specific linear terms and cross-dimensional quadratic interactions while preserving separable evaluation."
+        },
+        "url": "https://www.semanticscholar.org/paper/f7842852a0e267728f5c467d81431f92b6e96428",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2610.13772": {
+      "cached_at": "2026-10-13T06:59:33.449375+00:00",
+      "data": {
+        "abstract": "Multi-agent reinforcement learning (MARL) has become a prominent research direction, particularly within collective robotics, where the ARGoS simulator is widely used to study emergent swarm behavior. Yet despite this growth, systematic support for reuse and reproducibility in MARL-based swarm robotics remains limited and insufficiently standardized: a single experiment is assembled from manually aligned simulator files, training scripts, configuration values, paths, seeds, and environment details, so reuse and reproduction stay fragile even within one research group. To address this gap, we introduce MARGoS, a lightweight, configuration-driven platform developed in this project that elevates these experiment-defining inputs to first-class, platform-managed artifacts. MARGoS enables reproducible experimentation through configuration hashing, end-to-end seed propagation, frozen (immutable) configurations, structured logging, environment fingerprinting, and exportable experiment bundles that facilitate sharing, replay, and verification of results across machines and over time. A five-dimension evaluation (architecture, efficiency, reproducibility, usability, and collaboration) supports our claim that managing experiment variation as a platform responsibility makes ARGoS+MARL experiments easier to reuse, reproduce, and hand off. Our code is available at https://github.com/tombackert/margos.",
+        "authors": [
+          {
+            "authorId": "2509952534",
+            "name": "Tom Philipp Backert"
+          },
+          {
+            "authorId": "2353924285",
+            "name": "M. Soorati"
+          },
+          {
+            "authorId": "2617488",
+            "name": "Javad Ghofrani"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2610.13772",
+          "CorpusId": 292830850,
+          "DOI": "10.1007/978-3-032-40421-3_24"
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2610.13772, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": "CLOSED",
+          "url": ""
+        },
+        "paperId": "8eb391e9410b39393d99c9c1326d4ea812e89f4e",
+        "title": "MARGoS: A Configuration-Driven Platform for Reproducible MARL Experiments in ARGoS",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": null
+        },
+        "url": "https://www.semanticscholar.org/paper/8eb391e9410b39393d99c9c1326d4ea812e89f4e",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2610.13829": {
+      "cached_at": "2026-10-13T07:00:12.059419+00:00",
+      "data": {
+        "abstract": "A central challenge in embodied recursive self-improvement is enabling agents to convert interaction history into capabilities that persist beyond one world and transfer to later tasks. A saved memory or successful final action does not by itself establish that a reusable capability was acquired; evaluation must separate capability change from carried-over resources, unequal source exposure, and early execution failures. We construct MC-EvoBench as a controlled Minecraft benchmark with a fixed catalog of 19 registered evolution chains, including 12 primary evaluation chains and seven calibration or probe chains, together with three graph-aligned paired probe families for transfer. The benchmark represents each task as a task-state graph, defines stage-level environment verifiers, assigns matched source and target roles, resets the target world, and permits only a declared agent artifact to cross the source-target boundary. For each probe, no-prior, related, unrelated, and shuffled source conditions are evaluated under matched environment-step budgets and five seeds; we report TSR, WGP, and VMP and retain provenance records. The benchmark reveals a consistent direct-capability gap between controller and planner-backed variants, while related experience yields no stable transfer: it does not improve either tool probe, its small wood-species gain hinges on one seed, and all intervals include zero. Stage audits further show that early wood-collection and crafting bottlenecks often leave later capabilities unobserved. MC-EvoBench thus offers a controlled testbed for durable, transferable embodied capabilities. Code and data are available at https://github.com/xzw-ustc/mc-bench-open-source",
+        "authors": [
+          {
+            "authorId": "2345873396",
+            "name": "Jing-Wei Song"
+          },
+          {
+            "authorId": "2331646186",
+            "name": "Zhi-Sheng Chen"
+          },
+          {
+            "authorId": "2456565420",
+            "name": "Bing-Fan Zeng"
+          },
+          {
+            "authorId": "2501705905",
+            "name": "Jing Tang"
+          },
+          {
+            "authorId": "2297997159",
+            "name": "Yu-Bo Hou"
+          },
+          {
+            "authorId": "2433248029",
+            "name": "Jin-Hao Jing"
+          },
+          {
+            "authorId": "2333410340",
+            "name": "Zhen Xie"
+          },
+          {
+            "authorId": "2403137384",
+            "name": "Lin-Feng Zhang"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2610.13829",
+          "CorpusId": 292830739
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2610.13829, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "0daa73af3e6be8f9e12889bde0f50253eee88e92",
+        "title": "MC-EvoBench: Auditing Experience-Driven Self-Improvement in Minecraft Agents",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "MC-EvoBench is constructed as a controlled Minecraft benchmark with a fixed catalog of 19 registered evolution chains, including 12 primary evaluation chains and seven calibration or probe chains, together with three graph-aligned paired probe families for transfer."
+        },
+        "url": "https://www.semanticscholar.org/paper/0daa73af3e6be8f9e12889bde0f50253eee88e92",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2610.13835": {
+      "cached_at": "2026-10-13T06:59:51.289441+00:00",
+      "data": {
+        "abstract": "An ideal (language) model must continually update its knowledge. Existing work largely focuses on making these updates efficient after training. We investigate how the organization of time-varying knowledge during pre-training shapes the efficiency of subsequent updates. Models trained on chronologically ordered knowledge specialize in the most recently encountered knowledge; we call them specialists. In contrast, models trained on the same knowledge in randomly shuffled order perform well across all represented time periods; we call them generalists. Surprisingly, specialists require far fewer update steps than generalists to acquire new knowledge. To explain this advantage, we derive a law from first principles that relates update cost to the model's optimization dynamics and that closely predicts empirical results. Guided by these findings, we design a strategy for organizing pre-training data that preserves stable historical knowledge while enabling efficient updates to current knowledge. We also show that the benefits of temporal knowledge organization extend to real-world pre-trained models and existing knowledge update tools, and generalize to other knowledge orderings. Project page: https://horizon-lab.org/specialist/",
+        "authors": [
+          {
+            "authorId": "2452180721",
+            "name": "Sheng Zhao"
+          },
+          {
+            "authorId": "2382836097",
+            "name": "Yu-Hao Zhu"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2610.13835",
+          "CorpusId": 292830783
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2610.13835, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "36ca04d918d52d5e2954f522d160dfec545870d1",
+        "title": "Specialists Learn Faster: Knowledge Organization in Pre-training Shapes Knowledge Update Efficiency",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "Surprisingly, specialists require far fewer update steps than generalists to acquire new knowledge, and a law from first principles that relates update cost to the model's optimization dynamics and that closely predicts empirical results is derived."
+        },
+        "url": "https://www.semanticscholar.org/paper/36ca04d918d52d5e2954f522d160dfec545870d1",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2610.13889": {
+      "cached_at": "2026-10-13T06:59:49.153124+00:00",
+      "data": {
+        "abstract": "As AI agents increasingly rely on external tools, accurate retrieval is essential for reliable behavior. Existing methods optimize semantic relevance but largely ignore tool availability during execution. To address this gap, we propose RATED (Reliability-Aware Tool Retrieval via Execution Dynamics), a retrieval framework that combines robust semantic matching with dynamic reliability adaptation. RATED employs a frozen dual-encoder with contrastive fine-tuning for semantic matching, and a lightweight contextual bandit module that re-ranks candidates based on real-time execution feedback. This design enables rapid adaptation to runtime tool failures without expensive model retraining. We introduce EcoAgent, a benchmark of 5,172 real-world tools and over 210,000 query-tool pairs for offline retrieval and dynamic reliability evaluation. Experimental results demonstrate that RATED achieves a 52.2% relative MRR improvement over the ToolLLM API retriever on real-world queries, and reduces fault selection rate from 86.2% to 2.9% under severe API outage scenarios with a 30% failure rate, while incurring negligible latency overhead of less than 1 ms over encode-only inference. The code and dataset are available at https://github.com/Elliotes/EcoAgent.",
+        "authors": [
+          {
+            "authorId": "2510018541",
+            "name": "Wei-Liang Chen"
+          },
+          {
+            "authorId": "2509969605",
+            "name": "Song Liao"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2610.13889",
+          "CorpusId": 292830956,
+          "DOI": "10.1145/3799682.3839887"
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2610.13889, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "6b922e776552da8fe8fa176483cb5bc97a91fa26",
+        "title": "RATED: Reliability-Aware AI Agent Tool Retrieval via Execution Dynamics",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "This paper introduces EcoAgent, a benchmark of 5,172 real-world tools and over 210,000 query-tool pairs for offline retrieval and dynamic reliability evaluation, and proposes RATED, a retrieval framework that combines robust semantic matching with dynamic reliability adaptation."
+        },
+        "url": "https://www.semanticscholar.org/paper/6b922e776552da8fe8fa176483cb5bc97a91fa26",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2610.13909": {
+      "cached_at": "2026-10-13T07:00:02.765892+00:00",
+      "data": {
+        "abstract": "While deep learning models for tabular data have recently received significant research attention, the choice of objective functions for regression tasks remains an understudied degree of freedom. Several lines of research offer alternatives to the standard Mean Squared Error (MSE), but differences in datasets, backbones, and evaluation protocols make their practical benefits difficult to compare. In this work, we address this gap by performing a systematic re-evaluation of regression objectives across a broad collection of established tabular datasets and multiple neural backbones. Our comparison reveals that many proposed objectives provide limited or inconsistent gains over a properly tuned MSE baseline, while quantile loss yields consistent aggregate improvements over MSE across the tested backbones. We then identify a limitation that remains even with this strong objective: regions with different levels of target noise can reach their best predictive performance at different training epochs. Consequently, a single global early-stopping checkpoint can impose a compromise between uncertainty regions, even when the objective can represent heteroskedastic target distributions. Motivated by this limitation, we introduce a heteroskedasticity-aware extension of quantile loss that uses input-dependent label smoothing as a potential remedy and improves over quantile loss on several backbones. Overall, our results provide a modern empirical picture of regression objectives for tabular deep learning and highlight how differences in optimal stopping times across uncertainty regions can limit the effectiveness of global early stopping. The code is available at https://github.com/yandex-research/tabular-regression.",
+        "authors": [
+          {
+            "authorId": "101655138",
+            "name": "D. Rudenko"
+          },
+          {
+            "authorId": "2051334417",
+            "name": "Georgii Bulgakov"
+          },
+          {
+            "authorId": "2308469176",
+            "name": "Nikolay Kartashev"
+          },
+          {
+            "authorId": "2114431113",
+            "name": "Ivan Rubachev"
+          },
+          {
+            "authorId": "2439656974",
+            "name": "Daniil Krasylnikov"
+          },
+          {
+            "authorId": "2308467583",
+            "name": "Artem Babenko"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2610.13909",
+          "CorpusId": 292830736
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2610.13909, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "df78058806e4968da443f30a6e4c341ae6265171",
+        "title": "Revisiting Tabular Deep Regression: Objectives and the Limits of Global Early Stopping",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "A heteroskedasticity-aware extension of quantile loss is introduced that uses input-dependent label smoothing as a potential remedy and improves over quantile loss on several backbones and highlights how differences in optimal stopping times across uncertainty regions can limit the effectiveness of global early stopping."
+        },
+        "url": "https://www.semanticscholar.org/paper/df78058806e4968da443f30a6e4c341ae6265171",
+        "venue": "",
+        "year": 2026
+      }
+    },
     "title:acesearcher bootstrapping reasoning and search for llms via reinforced self play": {
       "cached_at": "2026-06-29T05:15:21.571589+00:00",
       "data": {
