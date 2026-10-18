@@ -13358,6 +13358,114 @@
         "year": 2026
       }
     },
+    "arxiv:2610.21984": {
+      "cached_at": "2026-10-18T04:56:19.737562+00:00",
+      "data": {
+        "abstract": "Autonomous driving planning requires selecting trajectories that remain safe, rule-compliant, and comfortable under complex multi-agent interactions, yet robust closed-loop decision making in planning-critical scenes remains challenging. Existing diffusion- and RL-based planners often rely on generic rewards and use relational structure mainly for representation, limiting how planning-critical rollouts shape policy improvement. We present GRID-Planner, a graph--reward integrated diffusion planning framework that aligns generative planning with structured relational signals. Specifically, GRID-Planner combines graph-aware importance weighting, a time-indexed relational reward surrogate, and an advantage-weighted diffusion objective with on-policy self-distillation, forming a rollout-return-advantage-update loop without explicit likelihoods. Experiments on nuPlan and interPlan show that, compared with the diffusion-only baseline, GRID-Planner reduces collision rate, lane deviation, and jerk by 35.8\\%, 60.8\\%, and 27.4\\%, respectively, and improves the planning score by 3.4\\%. Project website: https://github.com/yangzhaojason/GRID-Planner.",
+        "authors": [
+          {
+            "authorId": "2327890025",
+            "name": "Zhao Yang"
+          },
+          {
+            "authorId": "2348734638",
+            "name": "Ze-Zhong Qian"
+          },
+          {
+            "authorId": "2348741875",
+            "name": "Yi-Nan Shi"
+          },
+          {
+            "authorId": "2348580066",
+            "name": "Long-Jun Liu"
+          },
+          {
+            "authorId": "2311117886",
+            "name": "Yawei Jueluo"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2610.21984",
+          "CorpusId": 293003489
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2610.21984, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "9ae81cf683a9f7814ce86b40b17c1be8af214759",
+        "title": "GRID-Planner: Graph-Structured Relational Reward Shaping for Diffusion Planning",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "GRID-Planner is presented, a graph--reward integrated diffusion planning framework that aligns generative planning with structured relational signals and forms a rollout-return-advantage-update loop without explicit likelihoods."
+        },
+        "url": "https://www.semanticscholar.org/paper/9ae81cf683a9f7814ce86b40b17c1be8af214759",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2610.22158": {
+      "cached_at": "2026-10-18T04:56:17.640362+00:00",
+      "data": {
+        "abstract": "Recent advances in large language models (LLMs) have substantially improved Text-to-SQL performance, yet existing NL2SQL systems largely assume that user queries are valid and answerable. As a result, models often generate executable SQL even for queries with flawed premises. We introduce premise critique ability in NL2SQL, namely the ability to recognize flawed queries and abstain from generating misleading SQL. To evaluate this capability, we propose PremiseSQL, a benchmark containing 1,800 flawed NL2SQL queries across four categories of premise failures, along with their 1,800 original queries. We further design an evaluation framework to measure intrinsic and prompt-induced premise-aware behavior across three prompting settings. Experiments on frontier LLMs show that current models are strongly premise-trusting by default and rarely critique flawed premises. Stronger critique-oriented prompting improves detection and abstention on flawed queries, but also increases false invalid judgments and suppresses SQL generation on originals. The code is available at https://github.com/vegeet/PremiseSQL.",
+        "authors": [
+          {
+            "authorId": "2447007366",
+            "name": "Shu-Xia Lin"
+          },
+          {
+            "authorId": "2346332434",
+            "name": "Jin-Zhe Li"
+          },
+          {
+            "authorId": "2282250059",
+            "name": "Chen-Lu Guo"
+          },
+          {
+            "authorId": "2512461089",
+            "name": "Yan-Han Li"
+          },
+          {
+            "authorId": "2346334517",
+            "name": "Yuan Wu"
+          },
+          {
+            "authorId": "2281762754",
+            "name": "Yi Chang"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2610.22158",
+          "CorpusId": 293004072
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2610.22158, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "bc1b45607f5dd1d37c2f2dfc6b3d429e071c7a22",
+        "title": "PremiseSQL: Evaluating Premise Critique and Abstention in Text-to-SQL Systems",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "This work introduces premise critique ability in NL2SQL, namely the ability to recognize flawed queries and abstain from generating misleading SQL, and proposes PremiseSQL, a benchmark containing 1,800 flawed NL2SQL queries across four categories of premise failures, along with their 1,800 original queries."
+        },
+        "url": "https://www.semanticscholar.org/paper/bc1b45607f5dd1d37c2f2dfc6b3d429e071c7a22",
+        "venue": "",
+        "year": 2026
+      }
+    },
     "title:acesearcher bootstrapping reasoning and search for llms via reinforced self play": {
       "cached_at": "2026-06-29T05:15:21.571589+00:00",
       "data": {
