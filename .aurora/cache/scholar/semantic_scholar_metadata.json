@@ -13761,6 +13761,517 @@
         "year": 2026
       }
     },
+    "arxiv:2610.36751": {
+      "cached_at": "2026-10-29T06:13:48.855290+00:00",
+      "data": {
+        "abstract": "Computationally expensive simulations and real-world observations often provide data at a lower temporal resolution than downstream tasks require. Averaging observations at fixed grid points can introduce errors, and motion estimates alone do not determine how the physical field values change. In this work, we study whether learning to correct a simple numerical interpolation improves the reconstruction of intermediate scientific fields. Our model, interpolative FLow EXpert (iFLEX), first estimates the missing field by taking a weighted average of the two observations at each grid point, giving more weight to the observation closer to the requested time. During training, subtracting this estimate from an observed intermediate field gives the residual that a conditional diffusion model learns to generate. Both observations condition the model, together with the target time, the interval between observations, and available physical parameters. To reconstruct an unobserved intermediate field, the generated residual is added to the weighted average. We evaluate iFLEX on Navier-Stokes Kraichnan turbulence, Shanghai radar precipitation, and sea surface temperature. Across these datasets, iFLEX achieves lower reconstruction error than the evaluated baselines, including optical-flow and diffusion models developed for video frame interpolation in computer vision. In a controlled turbulence comparison at a Reynolds number of 36,000, learning the residual reduces relative Frobenius norm error from about 13.7 for direct field generation to 10.5, with the diffusion backbone and training setup held fixed. Code is available at https://github.com/paulpuren/iflex.",
+        "authors": [
+          {
+            "authorId": "2061531076",
+            "name": "Pu Ren"
+          },
+          {
+            "authorId": "2253590421",
+            "name": "Michael W. Mahoney"
+          },
+          {
+            "authorId": null,
+            "name": "N. Benjamin Erichson"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2610.36751",
+          "CorpusId": 294621762
+        },
+        "fieldsOfStudy": [
+          "Computer Science",
+          "Physics",
+          "Mathematics"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2610.36751, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "c83c1e593bb65331c1eed02e6ade2d0f0165ddca",
+        "title": "Generative Refinement Learning for Temporal Interpolation in Scientific Machine Learning",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "iFLEX achieves lower reconstruction error than the evaluated baselines, including optical-flow and diffusion models developed for video frame interpolation in computer vision, including optical-flow and diffusion models developed for video frame interpolation in computer vision."
+        },
+        "url": "https://www.semanticscholar.org/paper/c83c1e593bb65331c1eed02e6ade2d0f0165ddca",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2610.36806": {
+      "cached_at": "2026-10-29T06:13:37.407238+00:00",
+      "data": {
+        "abstract": "Prediction models degrade when the deployment population differs from the one used to train them, and training data cannot say which feature-response relationships will transfer. Expert elicitation is slow and unscalable. We ask whether coefficient priors elicited from large language models (LLMs) improve out-of-distribution (OOD) prediction as the shrinkage target of a regularised regression instead of zero, across five tabular datasets split on real covariates, selecting providers and prior structures by source-domain cross-validation alone. The priors help on four of five datasets, by up to 7.9% OOD mean squared error, and ten of twenty-four prior-informed results resolve the mean improvement at conventional confidence; single-deployment intervals are much wider. On classification the gain is in probabilistic accuracy, not ranking, and control tests with corrupted priors attribute the benefit to feature-specific content rather than scale. Two findings temper this. Variation across candidate priors exceeds the average benefit, yet cross-validation margins fall below their own noise, so selection avoids the worst prior rather than finding the best. On three datasets the prior improves in-domain accuracy as much as out-of-domain, making it better regularisation than shift correction. Only where the training data are large enough that the in-domain gain disappears does elicited knowledge demonstrably improve transfer. Code, priors and results: https://github.com/hugohammer/llm-priors-ood.",
+        "authors": [
+          {
+            "authorId": null,
+            "name": "S\u00f8lve Langseth"
+          },
+          {
+            "authorId": null,
+            "name": "Kristoffer Herland Hellton"
+          },
+          {
+            "authorId": "2290287734",
+            "name": "Hugo L. Hammer"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2610.36806",
+          "CorpusId": 294621890
+        },
+        "fieldsOfStudy": [
+          "Computer Science",
+          "Mathematics"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2610.36806, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "e8bf618c13fc720343a5dcb3eb4c92e8e8b13608",
+        "title": "LLM knowledge for improved Out-of-Distribution Tabular Prediction - A Cross-Validated Regularisation Approach",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "This work asks whether coefficient priors elicited from large language models (LLMs) improve out-of-distribution (OOD) prediction as the shrinkage target of a regularised regression instead of zero, across five tabular datasets split on real covariates, selecting providers and prior structures by source-domain cross-validation alone."
+        },
+        "url": "https://www.semanticscholar.org/paper/e8bf618c13fc720343a5dcb3eb4c92e8e8b13608",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2610.37105": {
+      "cached_at": "2026-10-29T06:14:05.340438+00:00",
+      "data": {
+        "abstract": "Synthetic text generation offers a promising approach to alleviating data scarcity in low-resource languages. However, its effectiveness is inherently limited for languages that are scarcely represented, or entirely absent, in an LLM's pretraining data. At the same time, many such languages have human-curated vocabularies that provide rich lexical and semantic information, often accompanied by grammatical information such as part-of-speech labels. In this work, we ask whether LLMs can leverage these resources to generate coherent text in extremely low-resource and unseen languages. We introduce a framework that combines human-curated vocabularies with a small number of human-written exemplars that provide syntactic signals, while sampling candidate words according to a Zipfian distribution. Across languages with varying levels of resource availability, we evaluate the generated text using lexical diversity, off-target ratio, and human judgments of fluency. Our results show that reasoning-enabled LLMs can generate fluent text even in extremely low-resource languages, with particularly strong results at the sentence level and promising performance at the paragraph level. Our findings highlight a practical pathway for bootstrapping synthetic data in low-resource languages, expanding the amount of usable text even when existing digital resources are extremely limited. Our source code is available at https://github.com/michaelsinanta/vocab2text.",
+        "authors": [
+          {
+            "authorId": null,
+            "name": "Michael Christlambert Sinanta"
+          },
+          {
+            "authorId": null,
+            "name": "Muhammad Dehan Al Kautsar"
+          },
+          {
+            "authorId": null,
+            "name": "Amanda Nurul Izzah"
+          },
+          {
+            "authorId": null,
+            "name": "Thanh-Nhi Nguyen"
+          },
+          {
+            "authorId": "2334743632",
+            "name": "Chau Phuong Mai Phan"
+          },
+          {
+            "authorId": null,
+            "name": "Zheng-Wei Lim"
+          },
+          {
+            "authorId": null,
+            "name": "Fajri Koto Independent Researcher"
+          },
+          {
+            "authorId": null,
+            "name": "Mohamed bin Zayed University of Artificial Intelligence"
+          },
+          {
+            "authorId": null,
+            "name": "University of Amsterdam"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2610.37105",
+          "CorpusId": 294620919
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2610.37105, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "1ed2ccb158e7dcf8ce46746f09aae48a238848b6",
+        "title": "Text Generation in Low-Resource Languages Using Human-Curated Vocabularies",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "The results show that reasoning-enabled LLMs can generate fluent text even in extremely low-resource languages, with particularly strong results at the sentence level and promising performance at the paragraph level, highlighting a practical pathway for bootstrapping synthetic data in low-resource languages."
+        },
+        "url": "https://www.semanticscholar.org/paper/1ed2ccb158e7dcf8ce46746f09aae48a238848b6",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2610.37255": {
+      "cached_at": "2026-10-29T06:14:33.283559+00:00",
+      "data": {
+        "abstract": "Language model agents are post-trained and deployed through a harness, the prompts, tools, and control logic that present a task to the model and execute its outputs. Harnesses are often revised and judged by how an already trained model performs under them, which assumes that what the model learned under one harness carries over to the next. We ask what a policy learns from its harness and what survives when the harness changes. Under KL-regularized control, we show that the log odds of an optimal policy recover how strongly its harness favors each action over the others, so a trained policy carries the preferences of its harness. Deployed return then equals the ceiling of the harness, the best return it offers, minus the mismatch of the policy, the return lost to its own suboptimal decisions. Training changes only the mismatch, while changing the harness moves both terms. Comparing harnesses with a fixed model therefore mixes what each harness offers with how well that model uses it. In MiniWoB++, post-training makes a model's preferences specific to its training harness. Reversing the order of the observation fields leaves every optimal decision unchanged yet lowers a trained model's success from 85.0% to 19.2%. Conversely, every new harness that a fixed-model comparison rejects but that raises the ceiling outperforms the original agent after further training under it, and ceiling and mismatch measured beforehand predict these gains. For coding-agent harnesses on Terminal-Bench Lite, ceiling minus mismatch estimated with a stronger model as a stand-in for the optimum reproduces the accuracy ranking, while either term alone does not. Code is available at https://github.com/2020-qqtcg/HRP.",
+        "authors": [
+          {
+            "authorId": null,
+            "name": "Jian Mu"
+          },
+          {
+            "authorId": null,
+            "name": "Rui-Bo Shen"
+          },
+          {
+            "authorId": null,
+            "name": "Yao Shu"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2610.37255",
+          "CorpusId": 294621262
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2610.37255, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "f79c920bed65caf56464c91858938b506b35643b",
+        "title": "Your Policy Is Secretly a Harness: The Decision Geometry of Agent Interfaces",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "This work asks what a policy learns from its harness and what survives when the harness changes, and shows that the log odds of an optimal policy recover how strongly its harness favors each action over the others, so a trained policy carries the preferences of its harness."
+        },
+        "url": "https://www.semanticscholar.org/paper/f79c920bed65caf56464c91858938b506b35643b",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2610.37378": {
+      "cached_at": "2026-10-29T06:14:37.622031+00:00",
+      "data": {
+        "abstract": "Vision-Language-Action (VLA) models integrate high-level reasoning with low-level action execution for end-to-end robotic control. However, most VLA models target static manipulation in unconstrained environments, overlooking spatial constraints and dynamic obstacles. Fine-tuning VLAs on obstacle-avoidance data is a straightforward solution, but collecting such data is costly, especially for dynamic scenarios, and may degrade their original task capabilities. To address these limitations, we propose VLA-Stem, a lightweight, reinforcement-learning-based safety mechanism for VLA systems. Without fine-tuning the underlying VLA policy, VLA-Stem converts its action chunks into motion references and uses trajectory-level guidance to preserve their spatial intent while allowing flexible motion and timing adjustments. Conditioned on these references, robot proprioception, and local obstacle information, the Stem policy adaptively modifies execution at inference time, preserving the original task intent while enabling responsive adaptation to spatial constraints and dynamic obstacles. For robust and sample-efficient training, we combine teacher-student distillation with curriculum learning. We evaluate VLA-Stem on reference following, static spatial constraints, and dynamic obstacle avoidance. Across six constrained simulation settings, VLA-Stem achieves 52.8% average collision-free task success versus 23.7% for the strongest safety baseline, while preserving base-policy performance in obstacle-free settings; real-world experiments further show consistent collision reductions under static and dynamic obstacles. These results demonstrate that VLA-Stem couples high-level VLA task intent with rapid, reflex-like responses to immediate physical risks, providing a brainstem-inspired mechanism for robust robot execution.",
+        "authors": [
+          {
+            "authorId": null,
+            "name": "Bo-Jun Zou"
+          },
+          {
+            "authorId": "2261366009",
+            "name": "Wen-Hao Yu"
+          },
+          {
+            "authorId": "2336826174",
+            "name": "Jia-Hao Li"
+          },
+          {
+            "authorId": "2448145016",
+            "name": "Jia-Xuan Lin"
+          },
+          {
+            "authorId": "2215636875",
+            "name": "Guan-Ting Ye"
+          },
+          {
+            "authorId": "2510523675",
+            "name": "Hao-Han Geng"
+          },
+          {
+            "authorId": "2312692351",
+            "name": "Wei-Hao Yu"
+          },
+          {
+            "authorId": null,
+            "name": "Yan-Yong Zhang"
+          },
+          {
+            "authorId": null,
+            "name": "Jian-Min Ji"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2610.37378",
+          "CorpusId": 294621854
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2610.37378, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "f9a0b3b8e2fb6215a09fb2f8c2a99dd528acbdfc",
+        "title": "VLA-Stem: A Lightweight Safety Mechanism for Vision-Language-Action Models via Reinforcement Learning",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "Results demonstrate that VLA-Stem couples high-level VLA task intent with rapid, reflex-like responses to immediate physical risks, providing a brainstem-inspired mechanism for robust robot execution."
+        },
+        "url": "https://www.semanticscholar.org/paper/f9a0b3b8e2fb6215a09fb2f8c2a99dd528acbdfc",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2610.37481": {
+      "cached_at": "2026-10-29T06:14:35.493547+00:00",
+      "data": {
+        "abstract": "Fine-tuning Large Language Models (LLMs) on instruction data can quietly erode their safety, even when no training example looks harmful. Because this safety-degrading data looks benign, standard content filters struggle to catch it. We tackle this problem by developing SimpleLoRIF, a scalable gradient embedding method that identifies fine-tuning examples whose gradients align with unsafe behavior. By simplifying a low-rank attribution method and restricting backpropagation to the final four transformer blocks, SimpleLoRIF can embed datasets on the order of a million examples, boosting gradient attribution from a small-scale analysis tool into a practical filter for full post-training datasets. We first validate it on emergent misalignment, where we find that gradients can connect insecure-code training data to the broadly harmful behaviors that appear after fine-tuning, with AUC as high as 0.865 in the gradient space of misaligned models. We then use SimpleLoRIF to build SafeTulu, a version of Tulu 3 with the 20% of examples most gradient-aligned with unsafe responses removed. Training on SafeTulu reduces GCG attack success rate by up to 22% across Qwen, Llama, and Olmo, outperforming both LLM-as-a-judge and prior gradient-based filtering, while largely preserving or even improving capability. Finally, we analyzed the removed data and identify possibly under-studied sources of safety degradation, such as tool-execution failures and narrative arithmetic. We release SafeTulu along with a Hugging Face Space that lets researchers build their own customized versions of SafeTulu to fine-tune on, such as by changing the removal fraction or filtering only certain subsets.",
+        "authors": [
+          {
+            "authorId": null,
+            "name": "Saket Reddy"
+          },
+          {
+            "authorId": null,
+            "name": "Amro Abbas"
+          },
+          {
+            "authorId": null,
+            "name": "Anshuman Suri"
+          },
+          {
+            "authorId": null,
+            "name": "Ari Morcos"
+          },
+          {
+            "authorId": "2376128854",
+            "name": "David Schwab"
+          },
+          {
+            "authorId": null,
+            "name": "Pratyush Maini"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2610.37481",
+          "CorpusId": 294620798
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2610.37481, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "09f2729b63fc19993816d35cb3b0c9fe433748bc",
+        "title": "Follow the Gradient: Tracing Safety Degradation Back to Training Data",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "This work develops SimpleLoRIF, a scalable gradient embedding method that identifies fine-tuning examples whose gradients align with unsafe behavior, and builds SafeTulu, a version of Tulu 3 with the 20% of examples most gradient-aligned with unsafe responses removed."
+        },
+        "url": "https://www.semanticscholar.org/paper/09f2729b63fc19993816d35cb3b0c9fe433748bc",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2610.37543": {
+      "cached_at": "2026-10-29T06:14:14.722199+00:00",
+      "data": {
+        "abstract": "Event cameras offer low latency, high dynamic range, and milliwatt-level power consumption, making them ideal for agile robots such as tiny drones navigating through cluttered environments. However, existing simulators generally render photorealistic images before converting them into events, making large-scale reinforcement learning prohibitively slow. We propose an analytic event simulator that exploits what event cameras fundamentally measure - moving contrast edges - to synthesize event streams directly from scene geometry and ego-motion without visual rendering. Our simulator generates a 64x64 event observation in 17 microseconds on a single GPU - over 400x faster than a state-of-the-art rendering pipeline - enabling end-to-end reinforcement learning for goal-directed obstacle avoidance to converge in under 30 minutes - three orders of magnitude faster than training on rendered events. Policies transfer zero-shot to physically based event simulations (ray-traced Isaac Sim). Our policy reaches 83% success in cluttered courses unseen during training (mid-difficulty, traversability probability approx. 0.57), at 2.4 m/s average goal velocity, and retains 70% in a simulated texture-dense indoor hall. Furthermore, we quantized the policy to a 1.2 MB int8 network running fully onboard a 56-gram Crazyflie equipped with a Prophesee GenX320 event camera and an OpenMV N6 microcontroller board. Without any fine-tuning, external processing, or positioning, the policy achieves an average success rate of 82% (5/5, 5/6, 4/6 flights) across three real-world obstacle courses of increasing difficulty. Code: https://github.com/tudelft/rendering-free-event-nav",
+        "authors": [
+          {
+            "authorId": "2434721867",
+            "name": "De-Quan Ou"
+          },
+          {
+            "authorId": null,
+            "name": "Austin Lopez"
+          },
+          {
+            "authorId": null,
+            "name": "Quentin Missinne"
+          },
+          {
+            "authorId": null,
+            "name": "Christophe De Wagter"
+          },
+          {
+            "authorId": null,
+            "name": "Guido C. H. E. de Croon"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2610.37543",
+          "CorpusId": 294620996
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2610.37543, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "ca2f4b084079fe2293ff81a983cfe02310f06827",
+        "title": "Rendering-Free Event Frame Simulation for Fast Reinforcement Learning of Autonomous Robot Navigation",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "An analytic event simulator that exploits what event cameras fundamentally measure - moving contrast edges - to synthesize event streams directly from scene geometry and ego-motion without visual rendering, enabling end-to-end reinforcement learning for goal-directed obstacle avoidance to converge in under 30 minutes - three orders of magnitude faster than training on rendered events."
+        },
+        "url": "https://www.semanticscholar.org/paper/ca2f4b084079fe2293ff81a983cfe02310f06827",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2610.37545": {
+      "cached_at": "2026-10-29T06:14:23.955123+00:00",
+      "data": {
+        "abstract": "Multi-view or video diffusion models have recently emerged as state-of-the-art approaches for novel-view synthesis from sparse image collections. While they can produce high quality images, they tend to hallucinate unrealistic spatial layouts when synthesizing views outside the input views (scene extrapolation). We propose to address this challenge for outdoor scenes by using satellite images as an additional information source to condition the multi-view generative model. We introduce a new satellite-conditioned multi-view diffusion model that combines conditioning from a satellite image and street-level input images when generating novel-views. Our cross-attention based conditioning allows us to retain pretrained multi-view diffusion priors to generate seamless, realistic, novel views from a handful of source views, while also adhering to the scene layout as seen from satellite images. Our model does not use 3D scene reconstruction, and only relies on posed street and satellite views. Our experiments on outdoor datasets show that our model is better than both satellite-conditioned or street-view conditioned baselines on novel-view synthesis, especially on challenging cases where target views have very little overlap with source views. Project page: https://nianticspatial.github.io/groundcontrol",
+        "authors": [
+          {
+            "authorId": "2297026294",
+            "name": "Akshay Krishnan"
+          },
+          {
+            "authorId": null,
+            "name": "Matias Turkulainen"
+          },
+          {
+            "authorId": null,
+            "name": "Jamie Wynn"
+          },
+          {
+            "authorId": null,
+            "name": "Zawar Qureshi"
+          },
+          {
+            "authorId": "2306259824",
+            "name": "Mohamed Sayed"
+          },
+          {
+            "authorId": null,
+            "name": "Guillermo Garcia-Hernando"
+          },
+          {
+            "authorId": "2306250972",
+            "name": "Sara Vicente"
+          },
+          {
+            "authorId": "2297020005",
+            "name": "James Hays"
+          },
+          {
+            "authorId": "144096365",
+            "name": "Michael Firman"
+          },
+          {
+            "authorId": null,
+            "name": "Daniyar Turmukhambetov"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2610.37545",
+          "CorpusId": 294621035
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2610.37545, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "bca8cec2ca03069cda0d0f8289267f256960a751",
+        "title": "GroundControl: Satellite-Conditioned Multi-View Diffusion for Reconstruction-Free Novel View Synthesis",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "A new satellite-conditioned multi-view diffusion model that combines conditioning from a satellite image and street-level input images when generating novel-views is introduced that is better than both satellite-conditioned or street-view conditioned baselines on novel-view synthesis, especially on challenging cases where target views have very little overlap with source views."
+        },
+        "url": "https://www.semanticscholar.org/paper/bca8cec2ca03069cda0d0f8289267f256960a751",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2610.37602": {
+      "cached_at": "2026-10-29T06:13:46.749371+00:00",
+      "data": {
+        "abstract": "We present RESPLE2, a recursive multi-sensor state estimation framework using non-uniform B-splines for 6-DoF motion representation. By exploiting the knot-clamping boundary property, we propose a theoretically grounded mechanism for exact control-point prediction directly informed by inertial kinematics along the trajectory, with knot placement adapted to motion and measurement availability. Within an iterated extended Kalman filter, we perform this prediction using a subset of inertial measurements. A subsequent reset step preserves trajectory consistency as the knots extend. The update step further incorporates heterogeneous sensor measurements at their native timestamps through continuous-time observation models, supporting flexible combinations of LiDARs, cameras, inertial measurement units, and leg kinematics. We further develop a lightweight global optimization module that directly refines non-uniform B-spline control points by incorporating loop-closure constraints derived from LiDAR-visual cues. We conduct extensive evaluations on public and experimental datasets across handheld, tracked, legged, and hybrid aerial-legged platforms, covering highly dynamic maneuvers with extreme accelerations. Compared with state-of-the-art multi-sensor odometry systems, RESPLE2 achieves competitive or superior estimation accuracy and robustness in the corresponding sensor configurations, particularly under aggressive motion, while maintaining real-time operation. We publicly release our code and experimental datasets at https://github.com/ASIG-X/RESPLE2.",
+        "authors": [
+          {
+            "authorId": null,
+            "name": "Zi-Yu Cao"
+          },
+          {
+            "authorId": "2355655236",
+            "name": "William Talbot"
+          },
+          {
+            "authorId": null,
+            "name": "Song Li"
+          },
+          {
+            "authorId": null,
+            "name": "Pakpong Chirarattananon"
+          },
+          {
+            "authorId": null,
+            "name": "Fredrik Gustafsson"
+          },
+          {
+            "authorId": "2309005217",
+            "name": "Marco Hutter"
+          },
+          {
+            "authorId": "2328916542",
+            "name": "Kai-Lai Li"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2610.37602",
+          "CorpusId": 294621072
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2610.37602, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "6f0d0782ba915aa931f6d80bc813a6cad7fa88d6",
+        "title": "RESPLE2: Inertial-Informed Recursive Non-Uniform Spline Estimation for Multi-Sensor Odometry with Global Refinement",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "This work proposes a theoretically grounded mechanism for exact control-point prediction directly informed by inertial kinematics along the trajectory, with knot placement adapted to motion and measurement availability, within an iterated extended Kalman filter."
+        },
+        "url": "https://www.semanticscholar.org/paper/6f0d0782ba915aa931f6d80bc813a6cad7fa88d6",
+        "venue": "",
+        "year": 2026
+      }
+    },
     "title:acesearcher bootstrapping reasoning and search for llms via reinforced self play": {
       "cached_at": "2026-06-29T05:15:21.571589+00:00",
       "data": {
