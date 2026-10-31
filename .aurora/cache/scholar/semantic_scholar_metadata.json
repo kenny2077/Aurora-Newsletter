@@ -14272,6 +14272,781 @@
         "year": 2026
       }
     },
+    "arxiv:2610.40016": {
+      "cached_at": "2026-10-31T06:07:05.408266+00:00",
+      "data": {
+        "abstract": "Agentic robots must turn a high-level goal into actions while keeping the physical conditions needed for future steps valid. A completed action does not ensure that its effects will persist: a later disturbance can invalidate support that the remaining plan still assumes. We present LOGIV, a graph engineering framework for agentic robot execution that uses an explicit task graph to connect symbolic planning, observation-based verification, and embodied action. LOGIV compiles a validated plan into condition-support and resource-ordering edges, checks their physical validity during execution, and uses dependency tracing to determine what must be restored after a failure. Repair is constrained by retained unfinished actions, and the combined continuation is symbolically validated before execution resumes. The framework operates above existing Vision-Language-Action (VLA) and World Action Model (WAM) policies without adding trainable components. Across 20 dual-arm tasks from RoboTwin~V2 and BiCoord with three execution backbones, LOGIV improves mean task success without injected disturbances by 10.67 and 15.33 percentage points, respectively. Under predefined perturbations, it achieves higher task completion and condition restoration than three adapted recovery baselines for every backbone on both benchmarks. On three real-robot tasks, successful trials increase from 12/30 to 17/30. These results support explicit, continuously checked task dependencies as a practical interface for reliable agentic robot execution.",
+        "authors": [
+          {
+            "authorId": "2461234659",
+            "name": "En-Qiao Lu"
+          },
+          {
+            "authorId": "2524778520",
+            "name": "Yu-Xiang Xie"
+          },
+          {
+            "authorId": "2383164153",
+            "name": "Xing-Rui Yu"
+          },
+          {
+            "authorId": "2524829137",
+            "name": "Yu-Yang Wang"
+          },
+          {
+            "authorId": "2524826094",
+            "name": "Yi-Peng Gu"
+          },
+          {
+            "authorId": "2325006710",
+            "name": "Zheng-Lin Wan"
+          },
+          {
+            "authorId": "2332683169",
+            "name": "P. Zhou"
+          },
+          {
+            "authorId": "2292217857",
+            "name": "Wang-Bo Zhao"
+          },
+          {
+            "authorId": "2282982772",
+            "name": "Yang You"
+          },
+          {
+            "authorId": "2154879185",
+            "name": "Yu-Xiang Gao"
+          },
+          {
+            "authorId": "1807998",
+            "name": "I. Tsang"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2610.40016",
+          "CorpusId": 295372913
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2610.40016, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "53c4e84fd858390611753eea3c8b719af1ea884a",
+        "title": "LOGIV: Graph-Verified Execution with Causal Local Repair for Long-Horizon Robot Tasks",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "LOGIV, a graph engineering framework for agentic robot execution that uses an explicit task graph to connect symbolic planning, observation-based verification, and embodied action, improves mean task success without injected disturbances and achieves higher task completion and condition restoration than three adapted recovery baselines for every backbone on both benchmarks."
+        },
+        "url": "https://www.semanticscholar.org/paper/53c4e84fd858390611753eea3c8b719af1ea884a",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2610.40256": {
+      "cached_at": "2026-10-31T06:06:53.787812+00:00",
+      "data": {
+        "abstract": "To succeed in real-world long-horizon software development, coding agents must satisfy multi-dimensional task specifications, such as interface compatibility and error handling, and do so without breaking existing dependencies. However, current works lack specification in both quantity and diversity, often emphasizing primary goals while ignoring complex constraints. Synthesizing tasks to bridge this gap presents two challenges: naively adding specifications risks reducing tasks to trivial checklists rather than compelling joint reasoning, and verifying these subtle interactions risks overlooking hidden flaws or rejecting valid alternatives. To address these challenges, we introduce CodeSpecWeave, a framework for synthesizing tasks with rich, interdependent specifications. Grounded in real developer seeds, a synthesis agent iteratively develops both coupled task requirements and executable tests, while a review agent audits solution trajectories from multiple models to guarantee test reliability. Using this pipeline, we construct 4,670 training tasks across 2,865 repositories. Applying Reinforcement learning on these tasks significantly improves performance over the base model on DeepSWE-v1.1, largely outperforming existing baselines. Furthermore, we curate CodeSpecWeave-Bench, a rigorous benchmark comprising 100 tasks and 1,044 specifications, which clearly separates frontier models and reveals significant headroom in handling interdependent engineering constraints.",
+        "authors": [
+          {
+            "authorId": "2363879307",
+            "name": "Yi-Shuo Cai"
+          },
+          {
+            "authorId": "2264515707",
+            "name": "Minzheng Wang"
+          },
+          {
+            "authorId": "2385516513",
+            "name": "Liang Zhao"
+          },
+          {
+            "authorId": "2502057010",
+            "name": "Ling-Hao Zhang"
+          },
+          {
+            "authorId": "2391693033",
+            "name": "Lei Li"
+          },
+          {
+            "authorId": null,
+            "name": "Shi-Cheng Li"
+          },
+          {
+            "authorId": "2264243000",
+            "name": "Xu Sun"
+          },
+          {
+            "authorId": "2393217584",
+            "name": "Fu-Li Luo"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2610.40256",
+          "CorpusId": 295372202
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2610.40256, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "50e0b9884c497d0892f0a8daf73a7ef2466aec49",
+        "title": "When Requirements Interact: Scaling Long-Horizon Coding via Interdependent Specifications",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "This work introduces CodeSpecWeave, a framework for synthesizing tasks with rich, interdependent specifications, and curates CodeSpecWeave-Bench, a rigorous benchmark comprising 100 tasks and 1,044 specifications, which clearly separates frontier models and reveals significant headroom in handling interdependent engineering constraints."
+        },
+        "url": "https://www.semanticscholar.org/paper/50e0b9884c497d0892f0a8daf73a7ef2466aec49",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2610.40407": {
+      "cached_at": "2026-10-31T06:06:35.700312+00:00",
+      "data": {
+        "abstract": "Reinforcement learning with verifiable rewards (RLVR) improves language-model reasoning by scoring sampled responses with a rule-based verifier and reinforcing those that pass. Where a classifier's training couples predicted probability to labels, nothing ties an RLVR policy's confidence in a response to its reward: aligned training would drive responses with the same advantage toward equal confidence, yet the advantage is blind to confidence. Under this sequence-confidence misalignment, a success the policy barely found earns the same update as one it produces with near certainty, and a confident error is corrected no harder than an exploratory one. We propose SCARL (Sequence Confidence-Aligned Reinforcement Learning), which reshapes, but never re-signs, each advantage with the alignment gap between the response's group-relative confidence and the outcome its advantage certifies, normalized into shares of each class's advantage budget. Misaligned samples absorb the force, responses with the same advantage are driven toward equal confidence, and repairing the misalignment doubles as a remedy for the entropy collapse that erodes exploration. SCARL provably reduces to its base estimator when a class's confidences agree, adds no extra passes and one hyperparameter. On Qwen3-4B-Base it lifts average Pass@32 by 2.4 points over DAPO and is best among nine compute-matched methods on both coverage and per-draw accuracy; applied unchanged across four estimators and four backbones, it improves 14 of 16 settings while preserving policy entropy and widening the confidence-correctness separation. Our code is available at https://github.com/kezhh163/scarl.",
+        "authors": [
+          {
+            "authorId": "2524788261",
+            "name": "Zheng-Hong Ke"
+          },
+          {
+            "authorId": "2317103435",
+            "name": "Jing-Bo Zhou"
+          },
+          {
+            "authorId": "2383892848",
+            "name": "Hua Wu"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2610.40407",
+          "CorpusId": 295373944
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2610.40407, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "6a623e9b455f4fc74655a63e720800e061c5b998",
+        "title": "SCARL: Sequence Confidence-Aligned Reinforcement Learning",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "SCARL (Sequence Confidence-Aligned Reinforcement Learning), which reshapes, but never re-signs, each advantage with the alignment gap between the response's group-relative confidence and the outcome its advantage certifies, normalized into shares of each class's advantage budget."
+        },
+        "url": "https://www.semanticscholar.org/paper/6a623e9b455f4fc74655a63e720800e061c5b998",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2610.40449": {
+      "cached_at": "2026-10-31T06:06:51.646816+00:00",
+      "data": {
+        "abstract": "Controlling dynamical systems governed by partial differential equations (PDEs) remains a challenging task in scientific computing, owing to high-dimensional state spaces, distributed actuation, nonlinear dynamics, and stringent real-time constraints. Reinforcement learning (RL) has emerged as a promising paradigm for synthesizing feedback controllers that adapt to varying operating conditions and can be deployed efficiently in real-time. This review provides a unified perspective on RL and PDE-constrained optimization, and surveys model-free, model-based, and multi-agent RL approaches to PDE control, with particular emphasis on sample efficiency, generalization across parametric variations, and scalability to high-dimensional problems. Two demonstrative examples, the stabilization of a chaotic system and a flow control problem, illustrate the performance and pitfalls of RL agents in practice. Finally, we discuss evaluation and benchmarking practices, current limitations, and open research directions toward reliable, data-efficient, and scalable RL for scientific computing.",
+        "authors": [
+          {
+            "authorId": "2322095079",
+            "name": "Nicol\u00f2 Botteghi"
+          },
+          {
+            "authorId": "2320312720",
+            "name": "Matteo Tomasetto"
+          },
+          {
+            "authorId": "2305618622",
+            "name": "Andrea Manzoni"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2610.40449",
+          "CorpusId": 295372207
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2610.40449, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "44b34ed191ccb7bbce0619abcfd74ff6f0781d58",
+        "title": "Reinforcement learning for control of partial differential equations",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "A unified perspective on RL and PDE-constrained optimization is provided, and model-free, model-based, and multi-agent RL approaches to PDE control are surveyed, with particular emphasis on sample efficiency, generalization across parametric variations, and scalability to high-dimensional problems."
+        },
+        "url": "https://www.semanticscholar.org/paper/44b34ed191ccb7bbce0619abcfd74ff6f0781d58",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2610.40488": {
+      "cached_at": "2026-10-31T06:06:42.234616+00:00",
+      "data": {
+        "abstract": "Do research agents have taste, the judgment of which experiments are worth running before their outcomes are known? We give six frontier models seven recent NLP papers. Each model, working as a research agent alone or as a team, proposes minimum viable experiments (MVEs), forecasts whether each will pass a threshold it sets and ranks them. A separate executor then attempts every MVE, including those ranked last, and three model auditors judge the results. Of 415 MVEs, 194 are judged sound, valuable and new, but fewer than half of these (73) are also judged beyond the seed paper and non obvious. The agents'first choices match the auditors'most valued experiment more often than a random pick, but are not shown to improve on choosing the experiment written first. Their forecasts beat a base rate but are not measurably more accurate than those of a fresh instance of the same model given only the paper and registrations. Teams cost more without a clear overall improvement in proposal quality. The agents produce many worthwhile experiments, but the evidence that their rankings improve the choice of which to run remains limited. The evaluation harness and a dataset of all 415 MVEs, with their forecasts and audited outcomes, are available at https://github.com/ArtKanke/rTaste.",
+        "authors": [
+          {
+            "authorId": "2344489213",
+            "name": "Art Kanke"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2610.40488",
+          "CorpusId": 295372548
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2610.40488, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "4bae3f8d5144c71cbad6df3281a4ceac34af8901",
+        "title": "rTaste: Do Research Agents Have Taste? Evaluating Early Stage Research Judgment",
+        "tldr": null,
+        "url": "https://www.semanticscholar.org/paper/4bae3f8d5144c71cbad6df3281a4ceac34af8901",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2610.40492": {
+      "cached_at": "2026-10-31T06:06:37.813007+00:00",
+      "data": {
+        "abstract": "Large language models support personalized tutoring, content generation, and adaptive learning paths. However, capability development requires these resources and interactions to form a coherent learning process that evolves with the learner. A central challenge is to align goals, activities, and assessment while using learning evidence to decide what should follow. We introduce Human-Participatory Multi-Agent Organization and instantiate it in Agentic University (AU). In AU, learners participate as organization members and work with specialized agents to maintain a revisable Capability Program. The program connects personal goals, learning activities across modalities, and layered assessment, while learner feedback and performance guide subsequent support. Our evaluation shows advantages in program organization, assessment design, and revision quality. Users achieved larger mean assessment gains (12.19 versus 5.61 points on a 50-point scale) and reported stronger cognitive support. This work contributes an organizational approach to adaptive learning that makes learner participation a continuing basis for multi-agent coordination. The Agentic University project is available at \\href{https://github.com/AgenticOrgLab/AgenticUniversity.git}.",
+        "authors": [
+          {
+            "authorId": "2347555604",
+            "name": "Jing-Ru Fan"
+          },
+          {
+            "authorId": "2385437659",
+            "name": "Tian-Le Zhou"
+          },
+          {
+            "authorId": "2516810807",
+            "name": "Yu-Jie Zhou"
+          },
+          {
+            "authorId": "2524820613",
+            "name": "Zi-Hao He"
+          },
+          {
+            "authorId": "2524800150",
+            "name": "Yi-Xuan Zhou"
+          },
+          {
+            "authorId": "2524796797",
+            "name": "Ke-Zhao Wu"
+          },
+          {
+            "authorId": "2457277392",
+            "name": "Xin-Yu Zheng"
+          },
+          {
+            "authorId": null,
+            "name": "Xi-Yuan Wang"
+          },
+          {
+            "authorId": "2379583715",
+            "name": "Yu-Heng Wang"
+          },
+          {
+            "authorId": "2516245223",
+            "name": "Zhi-Hao Li"
+          },
+          {
+            "authorId": "2275285154",
+            "name": "Song-Hua Liu"
+          },
+          {
+            "authorId": "2302738399",
+            "name": "E. Weinan"
+          },
+          {
+            "authorId": "2404422283",
+            "name": "Chen Qian"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2610.40492",
+          "CorpusId": 295374007
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2610.40492, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "587981962f7f206904db5def065715ce8609d4b9",
+        "title": "Agentic University: Collaborative Agents for Personalized Learning",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "This work contributes an organizational approach to adaptive learning that makes learner participation a continuing basis for multi-agent coordination and shows advantages in program organization, assessment design, and revision quality."
+        },
+        "url": "https://www.semanticscholar.org/paper/587981962f7f206904db5def065715ce8609d4b9",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2610.40511": {
+      "cached_at": "2026-10-31T06:06:29.145640+00:00",
+      "data": {
+        "abstract": "Large language models (LLMs) are increasingly used as computational models of human language processing, yet it remains unclear which components of their representations drive alignment with neural activity. Here, we use ridge reduced-rank regression to identify the brain-predictive subspace of LLM representations: the representational directions that support linear prediction of neural responses. Across three naturalistic language-listening datasets spanning intracranial electrophysiology and fMRI, and six model conditions spanning autoregressive, bidirectional masked, and randomly initialized language models, we find that full linear encoding performance can be recovered using only 1-3% of the original embedding dimensionality. These low-dimensional subspaces generalize across held-out participants and, to a lesser extent, across datasets, suggesting that neural predictivity is concentrated in a compact and partially shared representational space. We next compare these brain-predictive directions with the principal axes of variation in the embeddings. Principal component analysis requires substantially more dimensions to recover neural prediction, demonstrating that the directions most useful for predicting neural activity are distinct from those capturing the most overall variance within LLM representations themselves. Finally, characterizing the learned subspaces allows us to surface interpretable features that are overrepresented in neural activity above and beyond the LLM representations. Together, these results show that LLM-brain alignment is supported by a small, structured subset of model representations and provides a framework for better understanding exactly why these representations align. Code can be found at: https://github.com/thefinnlab/low-rank-alignment",
+        "authors": [
+          {
+            "authorId": "148434078",
+            "name": "Zach Paris"
+          },
+          {
+            "authorId": "2244215699",
+            "name": "Emily S. Finn"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2610.40511",
+          "CorpusId": 295373700
+        },
+        "fieldsOfStudy": [
+          "Computer Science",
+          "Biology"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2610.40511, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "bf08de5bce40e4fa662420537a99979d76e7352c",
+        "title": "A Low-Rank Space Captures Linear Alignment Between LLM and Human Neural Activity During Naturalistic Language Listening",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "This work uses ridge reduced-rank regression to identify the brain-predictive subspace of LLM representations: the representational directions that support linear prediction of neural responses, and characterizing the learned subspaces allows for better understanding exactly why these representations align."
+        },
+        "url": "https://www.semanticscholar.org/paper/bf08de5bce40e4fa662420537a99979d76e7352c",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2610.40516": {
+      "cached_at": "2026-10-31T06:07:24.309121+00:00",
+      "data": {
+        "abstract": "Safety alignment for Large Language Models is heavily focused on English with limited multilingual representation, particularly damaging low-resource language performance. Related open training datasets are often limited in size or do not follow region-localized harmful topics to broaden the scope of alignment beyond cultures. We propose a scalable template-based augmentation pipeline to produce massive multilingual refusal and benign corpora, extracting safe templates from harmful prompts, translating them and then filling in the slots with culturally authentic entities, both harmful and benign. As a result, we release MSafeTemp, a validated corpus spanning 60 languages useful for multilingual safety alignment and evaluation. Using the dataset, we show that English-only evaluation misjudges multilingual safety: for several models, attacks that fail in English succeed once translated, while culturally localized variants expose further failures that translation alone misses. We also confirm that augmenting safety training data through templates allows for higher diversity and quality of alignment, resulting in improved safety performance beyond English. MSafeTemp and the respective pipeline are aimed at facilitating research and development of safer and more responsible models for less-represented cultures.",
+        "authors": [
+          {
+            "authorId": "2373029916",
+            "name": "Max Neuwinger"
+          },
+          {
+            "authorId": "2305683093",
+            "name": "H. Yukhymenko"
+          },
+          {
+            "authorId": "35328044",
+            "name": "Imanol Schlag"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2610.40516",
+          "CorpusId": 295372239
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2610.40516, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "488b6e41b444c457e7146704570b2e94336d7cf2",
+        "title": "How I Aligned Your Model: Scaling Up Multilingual Safety Training with Templates",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "It is confirmed that augmenting safety training data through templates allows for higher diversity and quality of alignment, resulting in improved safety performance beyond English, and a scalable template-based augmentation pipeline is proposed to produce massive multilingual refusal and benign corpora."
+        },
+        "url": "https://www.semanticscholar.org/paper/488b6e41b444c457e7146704570b2e94336d7cf2",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2610.40532": {
+      "cached_at": "2026-10-31T06:07:22.062464+00:00",
+      "data": {
+        "abstract": "How effectively can vision-language-action (VLA) models learn diverse language-conditioned behaviors as training data scales? Investigating this question requires large and varied robot datasets, whose collection on physical robots remains costly. We introduce BURGER, a language-conditioned robotic drawing benchmark with a scalable, prompt-driven pipeline for generating continuous drawing trajectories, both in simulation and the real world. In BURGER, an agent starts from the same blank canvas and controls a robot arm to draw the object or spatial composition specified by language, while each instruction allows an open-ended variety of valid drawings and stroke orders. Using 28,200 simulated demonstrations spanning 282 drawing tasks, we evaluate five representative VLA models across data scales, language grounding, and multimodal behavior. BURGER supports fine-grained analysis of language grounding, spatial composition, and action generation, revealing distinct failure patterns across VLA models. Our experiments suggest that some VLA models can benefit from greater task diversity and demonstration scale, capture multimodal drawing behaviors, and generalize to unseen compositions of familiar objects. Finally, we deploy a trained policy on a Franka Panda arm, demonstrating the ability to draw reactively under human intervention. Project homepage and code can be found at https://siyingzhao.github.io/BURGER/.",
+        "authors": [
+          {
+            "authorId": "2524796652",
+            "name": "Xiang-Yu Xu"
+          },
+          {
+            "authorId": "2524788587",
+            "name": "Bang-Shuai Peng"
+          },
+          {
+            "authorId": "2524829592",
+            "name": "Zi-Yi Liu"
+          },
+          {
+            "authorId": "2524776667",
+            "name": "Meng Zhao"
+          },
+          {
+            "authorId": "2265619607",
+            "name": "Chen-Hao Lu"
+          },
+          {
+            "authorId": "2524837615",
+            "name": "Zheng-Yang Fan"
+          },
+          {
+            "authorId": null,
+            "name": "Hua-Zhe Xu"
+          },
+          {
+            "authorId": "2186875065",
+            "name": "Kaizhe Hu"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2610.40532",
+          "CorpusId": 295373874
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2610.40532, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "a5c2cedf98393a24c95bcd088fb01de8e1c3c705",
+        "title": "BURGER: Benchmarking and Understanding Robotic Generalization via Embodied Drawing",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "BURGER is introduced, a language-conditioned robotic drawing benchmark with a scalable, prompt-driven pipeline for generating continuous drawing trajectories, both in simulation and the real world, revealing distinct failure patterns across VLA models."
+        },
+        "url": "https://www.semanticscholar.org/paper/a5c2cedf98393a24c95bcd088fb01de8e1c3c705",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2610.40541": {
+      "cached_at": "2026-10-31T06:06:40.095787+00:00",
+      "data": {
+        "abstract": "Predicting how many tokens a large language model (LLM) will decode, using only prefill-phase hidden states, is a key primitive for inference scheduling. We show that current benchmarks conflate predictor quality with task hardness: when the target model, dataset, or sampling configuration changes, reported accuracy collapses even though the predictor is unchanged. We trace this instability to an overlooked error source---the inherent stochasticity of autoregressive decoding---and derive bounds that every prefill-side method must obey. Our analysis treats decoding as a stopped stochastic process. The per-step stopping probability of a response is not constant but ramps up over hundreds of steps, so the decode length inherits a central limit theorem from the many local decisions that determine where a response ends; this yields per-prompt normality with an explicit error term, together with an affine variance law $\\sigma=\\alpha\\mu+b$ whose slope is the coefficient of variation of the number of response segments. Empirically, the normal law reproduces the per-prompt MAE and the central mass of the decode-length distribution to within a few percent, and the residual departures from normality (mild right skew, slight excess kurtosis) are the ones predicted by the sampling-noise correction. Under fixed model, data, and sampling conditions, a broad design space of predictors (MLP, EGTP, FiLM, soft-label, and Mixture-of-Experts variants) converges to similar performance close to the bound, confirming that \\emph{system error dominates model error}. We argue for a benchmarking protocol that fixes the model, data, and sampling parameters and that reports relative-error metrics alongside absolute ones. Code and analysis tools are available at https://github.com/ShwStone/DecodingPredict.",
+        "authors": [
+          {
+            "authorId": "2339325802",
+            "name": "Hao-Wen Shi"
+          },
+          {
+            "authorId": "2524256483",
+            "name": "Xu-Zhe Yan"
+          },
+          {
+            "authorId": "2149500615",
+            "name": "Fa-Hao Chen"
+          },
+          {
+            "authorId": "2319207611",
+            "name": "Peng Li"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2610.40541",
+          "CorpusId": 295372590
+        },
+        "fieldsOfStudy": [
+          "Computer Science",
+          "Mathematics"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2610.40541, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "1e1f337b2cf5a78ff51132612b2272b54f698dc3",
+        "title": "On the Fundamental Limits of Prefill-Based Decoding Length Prediction",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "It is argued for a benchmarking protocol that fixes the model, data, and sampling parameters and that reports relative-error metrics alongside absolute ones, confirming that system error dominates model error."
+        },
+        "url": "https://www.semanticscholar.org/paper/1e1f337b2cf5a78ff51132612b2272b54f698dc3",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2610.40574": {
+      "cached_at": "2026-10-31T06:06:31.314701+00:00",
+      "data": {
+        "abstract": "On-policy Self-distillation (OPSD) has proven effective for post-training large language models by constructing a teacher conditioned on privileged references. However, existing approaches keep the teacher fixed either throughout training by consistently exposing it to the full reference, or within each response by adaptively varying partial reference exposure only across responses. In this paper, we argue that neither of them is sufficient. Instead, every token needs its own teacher, as the teacher preference can vary token by token within the same response. Through a teacher-intervention pilot study, we validate that the teacher preference differs across tokens, and reveal that a preferred teacher can be identified for each token through majority voting and KL-based selection. Motivated by these findings, we propose Multi-teacher Adaptive On-policy Self-Distillation (MTA-OPSD), the first token-level adaptive OPSD method. Our method constructs a multi-teacher pool consisting of candidate teachers, and enables every token to adaptively select its preferred teacher during training. Experiments with Qwen3 models on mathematical reasoning tasks show that MTA-OPSD consistently outperforms existing OPSD approaches with an average gain of up to $+5.9$ over the base model, highlighting the importance of adapting teacher supervision at the token level. The code is available at https://github.com/xingzhejun/MTA-OPSD.",
+        "authors": [
+          {
+            "authorId": "2329110581",
+            "name": "Yi-Fu Luo"
+          },
+          {
+            "authorId": "2458858378",
+            "name": "Chuang-Shi Ma"
+          },
+          {
+            "authorId": "2445343814",
+            "name": "Ze-Yu Chen"
+          },
+          {
+            "authorId": "1884159",
+            "name": "Enkelejda Kasneci"
+          },
+          {
+            "authorId": null,
+            "name": "Qi Chen"
+          },
+          {
+            "authorId": "1686448",
+            "name": "Gjergji Kasneci"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2610.40574",
+          "CorpusId": 295372581
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2610.40574, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "2b9f204caf1251ea98c303ee9f3086b5917036b8",
+        "title": "Every Token Needs Its Own Teacher: Multi-teacher Adaptive On-policy Self-distillation",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "Experiments with Qwen3 models on mathematical reasoning tasks show that MTA-OPSD consistently outperforms existing OPSD approaches with an average gain of up to $+5.9$ over the base model, highlighting the importance of adapting teacher supervision at the token level."
+        },
+        "url": "https://www.semanticscholar.org/paper/2b9f204caf1251ea98c303ee9f3086b5917036b8",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2610.40576": {
+      "cached_at": "2026-10-31T06:07:33.896946+00:00",
+      "data": {
+        "abstract": "Reinforcement learning from verifiable rewards (RLVR) is limited by sparse outcome-level feedback on hard reasoning tasks: when all rollouts in a group fail, rewards provide no learning signal. Stronger teachers can provide additional guidance, but this raises a central question: how can such signals be incorporated into RLVR to support successful rollouts while remaining learnable for the student? We distinguish two complementary mechanisms: trajectory-level intervention, which improves access to reward-bearing trajectories, and token-level supervision, which provides dense targets to guide student learning. Our controlled experiments show that either mechanism alone can remain insufficient, motivating their combination. We therefore introduce PIVOT, which inserts teacher-generated corrections into student rollouts and applies token-level KL supervision to these segments alongside the RLVR objective. Beyond their combination, we systematically analyze where to intervene and how to supervise, yielding a recipe for effective guidance. Across hard logic games and mathematical reasoning benchmarks, PIVOT consistently outperforms existing methods, nearly doubling mean avg@8 on logic games from 19.5% for the best-performing baseline to 35.6%.",
+        "authors": [
+          {
+            "authorId": "2484463580",
+            "name": "Zhi-Hao Yang"
+          },
+          {
+            "authorId": "2524785590",
+            "name": "Bo-Yuan Zheng"
+          },
+          {
+            "authorId": "2347613377",
+            "name": "Pu-Hui Tan"
+          },
+          {
+            "authorId": "2323857898",
+            "name": "Yu-Kun Chen"
+          },
+          {
+            "authorId": "2382490514",
+            "name": "Kuan Zhang"
+          },
+          {
+            "authorId": "2303412284",
+            "name": "Long-Ze Chen"
+          },
+          {
+            "authorId": "2308343623",
+            "name": "Jia-Ming Li"
+          },
+          {
+            "authorId": "2357966537",
+            "name": "Renke Shan"
+          },
+          {
+            "authorId": "2356448329",
+            "name": "Lu Wang"
+          },
+          {
+            "authorId": "2118233348",
+            "name": "Xian-Pei Han"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2610.40576",
+          "CorpusId": 295373627
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2610.40576, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "13115adfaf914b3c8f0eca5827a37f23b2785731",
+        "title": "PIVOT: Progressive Intervention via Online Teacher Correction",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "PIVOT is introduced, which inserts teacher-generated corrections into student rollouts and applies token-level KL supervision to these segments alongside the RLVR objective, and consistently outperforms existing methods on hard logic games and mathematical reasoning benchmarks."
+        },
+        "url": "https://www.semanticscholar.org/paper/13115adfaf914b3c8f0eca5827a37f23b2785731",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2610.40578": {
+      "cached_at": "2026-10-31T06:07:03.284920+00:00",
+      "data": {
+        "abstract": "Building and scaling computer-using agents (CUAs) across desktop, mobile, and web environments requires reliable task-completion verification for data curation, evaluation, and reinforcement learning. Typical automated approaches prompt vision-language models (VLMs) to judge trajectories or generate programs to inspect application state. However, both rely on partial views of complex digital environments. VLM judges are restricted to supplied observations, while generated programs depend on accessible state. These views can omit decisive evidence or leave completion judgments unsupported. Tailoring separate verifiers to different platforms and access settings adds further engineering cost. We present VeriCUA, a platform-agnostic framework for verification through agentic exploration. It treats verification as dynamic evidence gathering and assessment within a shared procedure for online and offline settings across platforms and observation modalities. After inspecting the available context to construct a task rubric, the verifier selects GUI or code checks for unresolved requirements and combines their findings under explicit evidence rules. Experiments show improved agreement with reference labels over the compared baselines across these settings, with the largest offline gains on hard cases and stronger rejection of false completion claims online. Further analyses connect these gains to complementary evidence and test-time exploration.",
+        "authors": [
+          {
+            "authorId": "2350520649",
+            "name": "Qiu-Shi Sun"
+          },
+          {
+            "authorId": "2344047844",
+            "name": "Da Yu"
+          },
+          {
+            "authorId": "2336866202",
+            "name": "Alexander Knop"
+          },
+          {
+            "authorId": "2309477594",
+            "name": "Amer Sinha"
+          },
+          {
+            "authorId": "2280992367",
+            "name": "Ling-Peng Kong"
+          },
+          {
+            "authorId": "2337691835",
+            "name": "Ben Kao"
+          },
+          {
+            "authorId": "2237408905",
+            "name": "Ravi Kumar"
+          },
+          {
+            "authorId": "48655887",
+            "name": "Pritish Kamath"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2610.40578",
+          "CorpusId": 295373328
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2610.40578, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "699baa3f526af17a7e1d561bf99e26c8bc98deba",
+        "title": "VeriCUA: Verification as Agentic Exploration for Computer-Using Agents",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "VeriCUA is presented, a platform-agnostic framework for verification through agentic exploration that treats verification as dynamic evidence gathering and assessment within a shared procedure for online and offline settings across platforms and observation modalities."
+        },
+        "url": "https://www.semanticscholar.org/paper/699baa3f526af17a7e1d561bf99e26c8bc98deba",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2610.40616": {
+      "cached_at": "2026-10-31T06:06:33.439720+00:00",
+      "data": {
+        "abstract": "Modern diffusion models are trained on massive datasets that often include copyrighted or private images. Membership inference attacks (MIAs) address this by testing whether a given image was in a model's training set. The standard approach scores an image by its reconstruction loss and flags low-loss images as members. This often fails because some images are simply easier to reconstruct than others, so a simple unseen image can score a lower loss than a complex training image. Difficulty calibration separates memorization from how difficult an image is to begin with. We show how to calibrate along two axes of time: training time and diffusion time. First, across training time, we introduce Reference-Model Calibration (RMC), which compares a fine-tuned model's loss against an earlier checkpoint. This cleanly isolates newly memorized data and gives near-perfect auditing, even without text captions. Since earlier checkpoints are not always available, we next present Temporal Self-Calibration (TSC), which calibrates across diffusion time using only a single model. Our key observation is that an image's difficulty persists across noise levels, whereas memorization is localized in time. By comparing the loss at a target timestep against neighboring timesteps from the same model, TSC attenuates image difficulty using the model's own trajectory. Empirically, our methods beat the state of the art by a wide margin, and unlike most existing attacks, generalize across different model parameterizations such as $x$-, $v$-, and $\\epsilon$-prediction models. Code is available at https://github.com/MichaelJoseph777/TSC.",
+        "authors": [
+          {
+            "authorId": "2059054704",
+            "name": "Michael Joseph"
+          },
+          {
+            "authorId": "2776254",
+            "name": "Yedid Hoshen"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2610.40616",
+          "CorpusId": 295373404
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2610.40616, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "069b66f9425eb99ffd2af8cf2d5e0114ce137dd0",
+        "title": "Difficulty Calibration Across Time for Membership Inference in Diffusion Models",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "Temporal Self-Calibration (TSC), which calibrates across diffusion time using only a single model and beats the state of the art by a wide margin, and generalize across different model parameterizations such as $x, $v, and $\\epsilon$-prediction models."
+        },
+        "url": "https://www.semanticscholar.org/paper/069b66f9425eb99ffd2af8cf2d5e0114ce137dd0",
+        "venue": "",
+        "year": 2026
+      }
+    },
     "title:acesearcher bootstrapping reasoning and search for llms via reinforced self play": {
       "cached_at": "2026-06-29T05:15:21.571589+00:00",
       "data": {
