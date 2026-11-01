@@ -13761,6 +13761,58 @@
         "year": 2026
       }
     },
+    "arxiv:2610.34623": {
+      "cached_at": "2026-11-01T06:38:48.355420+00:00",
+      "data": {
+        "abstract": "Text injection trains speech recognition models on unpaired text alongside paired audio. We feed the speech encoder synthetic input derived from text so the whole model learns from it. Previously, we synthesized this input with a frozen text-to-speech (TTS) model. Here, a simple lookup table replaces the TTS model: a mean log-mel vector (or one-hot encoding) per phoneme, repeated for a random duration drawn from alignment statistics, with silence between words. Training is 1.8 times faster than with the neural TTS, achieving comparable word error rates. With an external language model, our system reaches 1.36 / 2.90 / 1.52 / 3.24 % WER on LibriSpeech {dev,test}-{clean,other}, to our knowledge state-of-the-art using only LibriSpeech paired data, text, and lexicon. We analyze components of synthetic input (durations, acoustic features), compare different HMM aligners, evaluate scaling on the 25 000 h Loquacious dataset, and show that full-encoder injection yields strong relative improvements compared to partial-encoder and decoder methods. The code of the whole pipeline behind every number in this paper is public: github.com/rwth-i6/returnn-experiments/tree/master/2026-text-injection",
+        "authors": [
+          {
+            "authorId": "3423021",
+            "name": "Albert Zeyer"
+          },
+          {
+            "authorId": "2429668816",
+            "name": "Davyd Naveriani"
+          },
+          {
+            "authorId": "2398802760",
+            "name": "Dorian Koch"
+          },
+          {
+            "authorId": "121979316",
+            "name": "R. Schl\u0171ter"
+          },
+          {
+            "authorId": "2242353519",
+            "name": "H. Ney"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2610.34623",
+          "CorpusId": 294365852
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2610.34623, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "9de06a9ccd127fd7258975ca8369cc3d94fb48a5",
+        "title": "One Mean Log-Mel Vector per Phoneme: Simple and Fast Text Injection for Speech Recognition",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "Text injection trains speech recognition models on unpaired text alongside paired audio, analyzes components of synthetic input (durations, acoustic features), compare different HMM aligners, evaluate scaling on the Loquacious dataset, and shows that full-encoder injection yields strong relative improvements compared to partial-encoder and decoder methods."
+        },
+        "url": "https://www.semanticscholar.org/paper/9de06a9ccd127fd7258975ca8369cc3d94fb48a5",
+        "venue": "",
+        "year": 2026
+      }
+    },
     "arxiv:2610.36751": {
       "cached_at": "2026-10-29T06:13:48.855290+00:00",
       "data": {
@@ -14028,6 +14080,51 @@
           "text": "Results demonstrate that VLA-Stem couples high-level VLA task intent with rapid, reflex-like responses to immediate physical risks, providing a brainstem-inspired mechanism for robust robot execution."
         },
         "url": "https://www.semanticscholar.org/paper/f9a0b3b8e2fb6215a09fb2f8c2a99dd528acbdfc",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2610.37470": {
+      "cached_at": "2026-11-01T06:38:29.605780+00:00",
+      "data": {
+        "abstract": "Medium altitude, long endurance unmanned aerial systems such as Shahed-type strike drones are an unanswered threat in modern conflicts. Conventional air defense systems are too expensive to provide a feasible large-scale solution. Quadcopter interceptors are a cheap, battle-proven alternative, but their extremely limited flight time restricts them to low altitude targets at short range, whereas fixed-wing platforms have the endurance to reach higher altitude targets from longer distances. However, such interceptors are still operated manually. Recent developments in learning-based controllers show potential for automation. In this work, a fixed-wing interceptor is presented that is controlled by a neural network that maps filtered monocular vision observations directly to actuator commands. The policy was trained in a custom Python environment using reinforcement learning and proximal policy optimization. The policy was then deployed on a fixed-wing platform and tested in real interception scenarios. As a baseline, two classical guidance controllers were also developed and tested in simulation. The policy is able to intercept targets both in simulation and in real flight. In simulation, the policy outperforms the classical controllers under most conditions. The interceptor was ultimately successfully validated in real flight by intercepting maneuvering fixed-wing targets. This novel system shows the potential of artificial intelligence for autonomous control of fixed-wing interceptor drones.",
+        "authors": [
+          {
+            "authorId": "2522239444",
+            "name": "D. V. van Hamersveld"
+          },
+          {
+            "authorId": "2345637287",
+            "name": "E. Smeur"
+          },
+          {
+            "authorId": "2522239078",
+            "name": "Iurii Kriachko"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2610.37470",
+          "CorpusId": 294621171
+        },
+        "fieldsOfStudy": [
+          "Computer Science",
+          "Engineering"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2610.37470, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "03a86584bc0944a521af5a7bcd2f00c4edd34173",
+        "title": "Autonomous fixed-wing interception using reinforcement learning",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "A fixed-wing interceptor is presented that is controlled by a neural network that maps filtered monocular vision observations directly to actuator commands and is able to intercept targets both in simulation and in real flight."
+        },
+        "url": "https://www.semanticscholar.org/paper/03a86584bc0944a521af5a7bcd2f00c4edd34173",
         "venue": "",
         "year": 2026
       }
@@ -14348,6 +14445,110 @@
         "year": 2026
       }
     },
+    "arxiv:2610.40023": {
+      "cached_at": "2026-11-01T06:38:03.505516+00:00",
+      "data": {
+        "abstract": "Automatic operator design (AOD) has increasingly adopted large language models (LLMs) to generate problem-specific search and variation operators for multi-objective combinatorial optimization (MOCO). Yet most methods evolve the operators while leaving the process that discovers them fixed. This limits adaptation as new Pareto trade-offs and operator interactions change where and how the search should proceed. We introduce HEMO, which makes the AOD harness itself a self-evolving optimization target. HEMO maintains a persistent harness state and updates one module at a time, revising the logic that determines which experience to retrieve, which operators to improve, which parents to select, and how to formulate the orchestration of search steps. Downstream solution quality and runtime guide these updates, while a discounted UCB scheduler directs adaptation toward promising modules as their utility changes. A persistent memory filesystem preserves candidate outcomes and diagnostic feedback across harness states, enabling successive states to build on accumulated optimization experience. Experiments across eight MOCO tasks and two structurally distinct evolutionary backbones demonstrate strong performance against conventional evolutionary, neural, and LLM-based AOD baselines, together with effective transfer to related tasks. HEMO extends automatic operator design beyond evolving individual operators to improving the search process that discovers them.",
+        "authors": [
+          {
+            "authorId": "2386418726",
+            "name": "Jiang-Han Zhu"
+          },
+          {
+            "authorId": "2361434497",
+            "name": "Cong Zhang"
+          },
+          {
+            "authorId": "2348399152",
+            "name": "Ni Zhang"
+          },
+          {
+            "authorId": "2363819040",
+            "name": "Yi-Fan Yang"
+          },
+          {
+            "authorId": "101252726",
+            "name": "Y. Ong"
+          },
+          {
+            "authorId": "2361479767",
+            "name": "Zhi-Guang Cao"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2610.40023",
+          "CorpusId": 295372573
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2610.40023, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "0992d0ffb64f25c65f23ee1d93e3d102ef8f5ec1",
+        "title": "HEMO: Harness Self-Evolution for Multi-Objective Combinatorial Optimization",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "HEMO extends automatic operator design beyond evolving individual operators to improving the search process that discovers them, which makes the AOD harness itself a self-evolving optimization target."
+        },
+        "url": "https://www.semanticscholar.org/paper/0992d0ffb64f25c65f23ee1d93e3d102ef8f5ec1",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2610.40109": {
+      "cached_at": "2026-11-01T06:37:54.024017+00:00",
+      "data": {
+        "abstract": "Guidance methods are essential tools for steering the generation process in diffusion models, improving the generalizability of stochastic robotic controllers and enabling high-quality controlled image synthesis. Despite strong parallels between flow-matching and diffusion, integrating guidance into flow-matching models remains quite challenging. Recent work has proposed general guidance frameworks for flow-matching, however, they are direct adaptations of diffusion guidance methods and can prove unstable. In this work, we conduct a theoretical analysis of guidance in flow-matching and show that a naive translation of diffusion-based guidance to flow-matching breaks the coupling distribution used during training, resulting in weaker control over sampling accuracy. Building on this insight, we propose Coupled Guidance, a flow-matching-specific guidance mechanism derived from a geometric perspective that leverages the coupling structure inherent to flow-matching training. To validate the effectiveness of our approach, we conduct extensive experimentation on a custom robotic collision avoidance task using ManiSkill3, four robotic dexterous manipulation tasks from the Adroit benchmark, and three image generation tasks, namely inpainting, super-resolution, and deblurring, using the ImageNet-128 and CelebA-HQ-256 datasets. Our findings show that our framework improves sample quality and guidance stability across all tasks, without imposing any additional overhead.",
+        "authors": [
+          {
+            "authorId": "2359259561",
+            "name": "Mateo Cl\u00e9mente"
+          },
+          {
+            "authorId": "2276430050",
+            "name": "L. Brunswic"
+          },
+          {
+            "authorId": "2346771941",
+            "name": "Rui Yang"
+          },
+          {
+            "authorId": "2257034443",
+            "name": "Amir Rasouli"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2610.40109",
+          "CorpusId": 295372860
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2610.40109, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "32bc76e46d590f42472047c21d49cf8ca95a61bc",
+        "title": "Coupled Guidance for Flow Matching",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "Coupled Guidance is proposed, a flow-matching-specific guidance mechanism derived from a geometric perspective that leverages the coupling structure inherent to flow-matching training and improves sample quality and guidance stability across all tasks, without imposing any additional overhead."
+        },
+        "url": "https://www.semanticscholar.org/paper/32bc76e46d590f42472047c21d49cf8ca95a61bc",
+        "venue": "",
+        "year": 2026
+      }
+    },
     "arxiv:2610.40256": {
       "cached_at": "2026-10-31T06:06:53.787812+00:00",
       "data": {
@@ -14412,6 +14613,127 @@
         "year": 2026
       }
     },
+    "arxiv:2610.40350": {
+      "cached_at": "2026-11-01T06:37:35.375853+00:00",
+      "data": {
+        "abstract": "Agents powered by large language models (LLMs) have demonstrated remarkable progress in solving complex reasoning tasks. However, LLM agents often falter on long-horizon tasks due to cognitive overload, as their working memory becomes cluttered with expanding and irrelevant information, which dilutes their attention and hinders effective planning and reasoning. To mitigate this challenge, we introduce Cognitive Resource Self-Allocation (CORAL), a novel reasoning paradigm that empowers agents to proactively optimize their context. Implemented as an agent-callable working memory management toolset, CORAL allows an agent to checkpoint its task progress and verified facts, and adaptively initiate a new problem-solving episode by resetting cluttered context while preserving only the checkpointed information, enabling it to resume reasoning from a clean state. We further enhance the agent's checkpointing capabilities using a Multi-episode Agentic Reinforced Policy Optimization algorithm. On the GAIA benchmark, CORAL with an 8B model achieves 42.8% average accuracy, with particularly strong gains on the most challenging long-horizon tasks (Level 2 and Level 3). Crucially, these gains come at a substantially lower inference cost: CORAL consumes 6-7$\\times$ fewer input tokens than a ReAct agent. It also generalizes to multi-hop Knowledge QA benchmarks and to the considerably harder BrowseComp, where it improves a strong proprietary agent by 8.0 points.",
+        "authors": [
+          {
+            "authorId": "2524803252",
+            "name": "Zheng Zhu"
+          },
+          {
+            "authorId": "2153398295",
+            "name": "Xiao-Zhuan Liang"
+          },
+          {
+            "authorId": "2257714495",
+            "name": "Xi Chen"
+          },
+          {
+            "authorId": "2349958453",
+            "name": "Bei Yu"
+          },
+          {
+            "authorId": "2291196160",
+            "name": "Jia-Ya Jia"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2610.40350",
+          "CorpusId": 295373744
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2610.40350, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "b12964ba80f803c9359da1b948e1627c0ae53d14",
+        "title": "Don't Lose the Thread: Empowering Long-Horizon LLM Agents with Cognitive Resource Self-Allocation",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "Cognitive Resource Self-Allocation (CORAL), a novel reasoning paradigm that empowers agents to proactively optimize their context, is introduced and enhances the agent's checkpointing capabilities using a Multi-episode Agentic Reinforced Policy Optimization algorithm."
+        },
+        "url": "https://www.semanticscholar.org/paper/b12964ba80f803c9359da1b948e1627c0ae53d14",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2610.40394": {
+      "cached_at": "2026-11-01T06:38:38.960877+00:00",
+      "data": {
+        "abstract": "Mathematical supervision for language models is typically flattened into isolated problem-solution pairs, discarding the curricular organization and evidential structure of the original sources. We introduce TOME-Math (Textbook-Oriented Mathematical Evidence), a large-scale corpus that converts 2,118 textbooks spanning the core areas of university-level mathematics subjects into approximately 380K structured proof-supervision records while preserving chapter order, proposition-proof links, dependency references, and source provenance. Leveraging these structural signals, we explore curriculum learning across multiple mathematical subjects and characterize scaling patterns with supervision volume and source breadth. At full scale, fine-tuning on TOME-Math raises the unweighted mean score across our held-out evaluations and established public benchmarks by 16.7 percentage points over the base model, while exceeding all three public instruction-data baselines evaluated in aggregate. Our findings highlight structured textbooks as both a scalable source of mathematical supervision and an empirical framework for studying the impact of data organization on mathematical reasoning. We will release the corpus to facilitate further research on structured mathematical supervision.",
+        "authors": [
+          {
+            "authorId": "2392909525",
+            "name": "You-Qing Fang"
+          },
+          {
+            "authorId": "2373284476",
+            "name": "Zhouqi Hua"
+          },
+          {
+            "authorId": "2308733191",
+            "name": "Yin-Hao Tang"
+          },
+          {
+            "authorId": "2293825807",
+            "name": "Yuzhe Gu"
+          },
+          {
+            "authorId": "2401119867",
+            "name": "Ling-Kai Kong"
+          },
+          {
+            "authorId": "2448349447",
+            "name": "Bin Liu"
+          },
+          {
+            "authorId": "2237819504",
+            "name": "Wei-Ming Zhang"
+          },
+          {
+            "authorId": "2275790072",
+            "name": "Kai Chen"
+          },
+          {
+            "authorId": "2445905700",
+            "name": "Ya-Nan Sun"
+          },
+          {
+            "authorId": "2266359401",
+            "name": "Wen-Wei Zhang"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2610.40394",
+          "CorpusId": 295373375
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2610.40394, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "47fb8d3716c3c7b2478be7d69bbebed53ea710ef",
+        "title": "Scaling Mathematical Proof Supervision from Structured Textbooks",
+        "tldr": null,
+        "url": "https://www.semanticscholar.org/paper/47fb8d3716c3c7b2478be7d69bbebed53ea710ef",
+        "venue": "",
+        "year": 2026
+      }
+    },
     "arxiv:2610.40407": {
       "cached_at": "2026-10-31T06:06:35.700312+00:00",
       "data": {
@@ -14452,6 +14774,50 @@
           "text": "SCARL (Sequence Confidence-Aligned Reinforcement Learning), which reshapes, but never re-signs, each advantage with the alignment gap between the response's group-relative confidence and the outcome its advantage certifies, normalized into shares of each class's advantage budget."
         },
         "url": "https://www.semanticscholar.org/paper/6a623e9b455f4fc74655a63e720800e061c5b998",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2610.40421": {
+      "cached_at": "2026-11-01T06:37:24.012983+00:00",
+      "data": {
+        "abstract": "Semiconductor manufacturing is a complex, multi-step process that requires both high precision and low operating costs. Therefore, detecting defects in a high-volume setting is an important component of wafer map analysis for reliable production. However, most state-of-the-art deep learning approaches require a full scan of the surface, which hinders the development of high-throughput inspection systems. To address this problem, we propose Uncertainty-aware Feedback Loop Diagnosis (UFLD), a novel algorithm that employs reinforcement learning for adaptive measurement acquisition and provides a prediction uncertainty level after each step, stopping the process once sufficient information is obtained. Unlike existing methods that rely on ensemble models or auxiliary confidence estimation deep learning models, UFLD utilizes a more parameter-efficient conformal prediction framework to determine the optimal stopping time. The proposed UFLD reduces acquisition time by about $40\\%$ and achieves $98.4\\%$ inspection accuracy, without requiring an additional learned confidence-estimation network. We validated our approach on the MixedWM38 dataset, demonstrating its advantages over existing adaptive acquisition procedures and standard convolutional neural networks.",
+        "authors": [
+          {
+            "authorId": "2127734041",
+            "name": "Aleksandr Dekhovich"
+          },
+          {
+            "authorId": "29740380",
+            "name": "Carlas S. Smith"
+          },
+          {
+            "authorId": "2351215809",
+            "name": "Oleg Soloviev"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2610.40421",
+          "CorpusId": 295371911
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2610.40421, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "35e9c022a26e31822d09c779465413581f47a076",
+        "title": "Uncertainty-aware Feedback Loop Diagnosis: integrating reinforcement learning and conformal prediction for reliable wafer defect classification",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "The proposed Uncertainty-aware Feedback Loop Diagnosis (UFLD), a novel algorithm that employs reinforcement learning for adaptive measurement acquisition and provides a prediction uncertainty level after each step, stopping the process once sufficient information is obtained, is validated."
+        },
+        "url": "https://www.semanticscholar.org/paper/35e9c022a26e31822d09c779465413581f47a076",
         "venue": "",
         "year": 2026
       }
@@ -14815,6 +15181,46 @@
         "year": 2026
       }
     },
+    "arxiv:2610.40565": {
+      "cached_at": "2026-11-01T06:37:26.145158+00:00",
+      "data": {
+        "abstract": "Realistic, fast robotics simulations could enable large-scale training of embodied AI models that transfer to the real world. However, despite decades of progress, available simulations cover only a narrow range of real-world tasks and physical phenomena. The core bottleneck is that creating better simulations requires significant expert effort and therefore does not scale. To address this, we introduce Gym-Anything for Robotics, a framework in which coding agents create realistic robotics simulations. Our core insight is that simulation creation is a coding agent task, so improvements in coding agents translate directly into richer and more faithful simulations. We select simulations based on U.S. GDP data to cover economically valuable physical work, define what makes a good simulation and a good task, and develop an adversarial creation-audit loop that checks each simulation and task against these definitions. Using this pipeline, we build RoboWorld, a set of 25 simulations with 25 test and 175 training RL environments of varying difficulty. Even the best frontier models fail on every RoboWorld test task, achieving an average reward of only 0.06. Building on RoboWorld, we introduce several new ways for frontier models to improve, including in-context learning across repeated attempts, a privileged teacher that reads the simulator state and teaches a student in context, self-assisted learning from the model's own privileged experience, and code policies that generate demonstrations across varied scenes to train vision-language-action models (VLAs) such as $\\pi_{0.5}$. Each of these substantially improves performance. We release our pipeline, RL environments, and benchmark to facilitate future research. Code and data are available at https://gym-anything.github.io/robotics",
+        "authors": [
+          {
+            "authorId": "2114841965",
+            "name": "Pranjal Aggarwal"
+          },
+          {
+            "authorId": "2129663",
+            "name": "S. Welleck"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2610.40565",
+          "CorpusId": 295371813
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2610.40565, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "005a04ba4c307d52051a3d19352197d8aab80812",
+        "title": "Gym-Anything for Robotics: Scaling physical simulations with digital agents",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "Gym-Anything for Robotics is introduced, a framework in which coding agents create realistic robotics simulations and introduces several new ways for frontier models to improve, including in-context learning across repeated attempts, a privileged teacher that reads the simulator state and teaches a student in context, and self-assisted learning from the model's own privileged experience."
+        },
+        "url": "https://www.semanticscholar.org/paper/005a04ba4c307d52051a3d19352197d8aab80812",
+        "venue": "",
+        "year": 2026
+      }
+    },
     "arxiv:2610.40574": {
       "cached_at": "2026-10-31T06:06:31.314701+00:00",
       "data": {
@@ -15043,6 +15449,211 @@
           "text": "Temporal Self-Calibration (TSC), which calibrates across diffusion time using only a single model and beats the state of the art by a wide margin, and generalize across different model parameterizations such as $x, $v, and $\\epsilon$-prediction models."
         },
         "url": "https://www.semanticscholar.org/paper/069b66f9425eb99ffd2af8cf2d5e0114ce137dd0",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2610.40618": {
+      "cached_at": "2026-11-01T06:38:50.684447+00:00",
+      "data": {
+        "abstract": "The marginals of a continuous diffusion model can be reproduced by a deterministic ordinary differential equation (ODE), known as the probability flow ODE, which provides a foundation for accelerated sampling and consistency distillation. In this paper we address the question whether an analogous formulation exists for discrete diffusion models and answer it affirmatively by introducing exponential residual flows (ERFs). Our framework augments the discrete state with a continuous residual variable for each token and position. These residuals evolve deterministically according to piecewise-defined ODEs whose vector fields depend on the current discrete state and the forward and backward rate matrices of the prescribed diffusion model. The discrete state changes whenever a residual reaches zero. We prove that this construction preserves the marginals of the original diffusion. We derive a practical discretization of our sampler and specialize it to masked and uniform diffusion. The deterministic trajectories of ERFs support consistency distillation and yield empirical improvements over previous approaches across a variety of benchmarks including code and text generation tasks.",
+        "authors": [
+          {
+            "authorId": "2402608650",
+            "name": "Samson Gourevitch"
+          },
+          {
+            "authorId": "2056067918",
+            "name": "Yazid Janati"
+          },
+          {
+            "authorId": "2254078684",
+            "name": "E. Moulines"
+          },
+          {
+            "authorId": "143977260",
+            "name": "E. Xing"
+          },
+          {
+            "authorId": "2408533250",
+            "name": "Alain Durmus"
+          },
+          {
+            "authorId": "2366426242",
+            "name": "Giacomo Zanella"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2610.40618",
+          "CorpusId": 295372116
+        },
+        "fieldsOfStudy": [
+          "Computer Science",
+          "Mathematics"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2610.40618, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "722d69204aa02fe65ab3396d0869067a30df379b",
+        "title": "An ODE-based Sampler for Discrete Diffusion Models",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "This paper addresses the question whether an analogous formulation exists for discrete diffusion models and answers affirmatively by introducing exponential residual flows (ERFs), and proves that this construction preserves the marginals of the original diffusion."
+        },
+        "url": "https://www.semanticscholar.org/paper/722d69204aa02fe65ab3396d0869067a30df379b",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2610.40627": {
+      "cached_at": "2026-11-01T06:38:05.734435+00:00",
+      "data": {
+        "abstract": "Safety alignment has enabled large language models to reliably refuse harmful requests directly, yet the same request distributed across a multi-turn conversation still succeeds far too often. This brittleness has a mechanistic root: Alignment is shallow, with safety behavior concentrated in a model's first few output tokens, and existing defenses inherit the weakness, supervising the surface form of the response without ever giving the model an explicit safety decision to learn. We take the opposite view of shallowness: if a short span determines the trajectory of an entire response, that span is the highest-leverage place to intervene, and the defender can occupy it first. We propose Assess $\\to$ Decide $\\to$ Respond, a framework in which the defender assesses the user's intent, commits to an explicit, parseable safety decision, and only then generates a reply conditioned on it, with the commitment trained by reinforcement learning at the payload turn. Because the decision is a token span, the reward can be a rule: a self-verified reward checks the committed label against the conversation's known nature, requiring no judge and no annotation, while the same format also supports an LLM-as-judge reward over a graded decision space with safe redirection. Across two model families and fourteen benchmarks spanning safety, utility, and helpfulness, our defenders achieve the strongest multi-turn safety in a controlled comparison, maintaining their lead in safety while preserving utility at a modest cost to helpfulness. A per-token KL analysis and interventional probes confirm why this works: training concentrates its effect on the brief deliberation that sets a response's trajectory, and the decision committed there is a causal control point. The very shallowness attackers exploit becomes the mechanism of defense.",
+        "authors": [
+          {
+            "authorId": "2383953166",
+            "name": "Qi-Yao Ma"
+          },
+          {
+            "authorId": "2257099218",
+            "name": "Xiao-Dong Liu"
+          },
+          {
+            "authorId": "2329110799",
+            "name": "Wei-Wei Yang"
+          },
+          {
+            "authorId": "2292144868",
+            "name": "Ming-Qian Feng"
+          },
+          {
+            "authorId": "2330384931",
+            "name": "Cheng-Quan Guo"
+          },
+          {
+            "authorId": "2311345635",
+            "name": "Jia-Lin Song"
+          },
+          {
+            "authorId": "2301159638",
+            "name": "Carolyn Buractaon"
+          },
+          {
+            "authorId": "2297832875",
+            "name": "Zhe Zhao"
+          },
+          {
+            "authorId": "2301415609",
+            "name": "Jun-Shan Zhang"
+          },
+          {
+            "authorId": "2122910149",
+            "name": "Sandeep Atluri"
+          },
+          {
+            "authorId": "2087034820",
+            "name": "Christopher M. White"
+          },
+          {
+            "authorId": "2288029756",
+            "name": "Jian-Feng Gao"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2610.40627",
+          "CorpusId": 295373990
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2610.40627, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "21e63c2208be3105ad6fbc51a32e2635126aff4f",
+        "title": "ShallowDefend: Harnessing Shallow Safety Alignment for Multi-Turn Defender",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "Assess $\\to$ Decide $\\to$ Respond, a framework in which the defender assesses the user's intent, commits to an explicit, parseable safety decision, and only then generates a reply conditioned on it, with the commitment trained by reinforcement learning at the payload turn."
+        },
+        "url": "https://www.semanticscholar.org/paper/21e63c2208be3105ad6fbc51a32e2635126aff4f",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2610.40646": {
+      "cached_at": "2026-11-01T06:37:37.511952+00:00",
+      "data": {
+        "abstract": "Robot manipulation in everyday environments inherently involves substantial tool usage. Seemingly simple household tasks, such as cooking pan-fried tofu, require forceful cutting, delicate brushing, and precise placement using different tools under contact-rich interaction. Thus, the ability to autonomously swap and use task-appropriate tools is important for tool-centric manipulation. We introduce SwapBot, a modular, tool-centric end effector system featuring low-cost adapters that quickly convert common household tools into robot end effectors. Rather than pursuing a single universal gripper, SwapBot adopts a unified design principle that combines a fixed robot-side coupling interface with low-cost, tool-side adapters, enabling compatibility with diverse tools, including articulated ones, and multiple robot platforms. Each adapter integrates compact tactile sensors, supports fast autonomous swapping, and interfaces with an intuitive teleoperation system for efficient demonstration collection. User studies show that, during teleoperation, SwapBot reduces task completion time and operator workload. Using collected demonstrations on the robot, we train imitation learning policies to successfully perform tool-centric tasks like cooking tofu, stirring salad, flipping meat. Our ablation study shows that using tactile-augmented demonstrations improves policy performance across contact-rich skills, increasing success rates by 15 to 25 percentage points over RGB-only policies. These results highlight modular, tactile-equipped tools as a practical and extensible pathway toward robust and capable robot manipulation. Project website https://personalrobotics.github.io/SwapBot.",
+        "authors": [
+          {
+            "authorId": "2260344636",
+            "name": "Yun-Chu Zhang"
+          },
+          {
+            "authorId": "2524788734",
+            "name": "Ray Song"
+          },
+          {
+            "authorId": "2524780072",
+            "name": "Jun-Han Jiao"
+          },
+          {
+            "authorId": "3383717",
+            "name": "Liyiming Ke"
+          },
+          {
+            "authorId": "2524815338",
+            "name": "Yu-Chen Yang"
+          },
+          {
+            "authorId": "117423648",
+            "name": "Rui-Han Gao"
+          },
+          {
+            "authorId": "2344831174",
+            "name": "Emma Romig"
+          },
+          {
+            "authorId": "1752197",
+            "name": "S. Srinivasa"
+          },
+          {
+            "authorId": "2364212378",
+            "name": "Yi-Yue Luo"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2610.40646",
+          "CorpusId": 295372909
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2610.40646, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "6c02616073b3c30f806a98c843e28659d503edd4",
+        "title": "SwapBot: Tool-Centric Robot Manipulation via Interchangeable End-Effectors and Tactile Sensing",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "The ablation study shows that using tactile-augmented demonstrations improves policy performance across contact-rich skills, increasing success rates by 15 to 25 percentage points over RGB-only policies, highlighting modular, tactile-equipped tools as a practical and extensible pathway toward robust and capable robot manipulation."
+        },
+        "url": "https://www.semanticscholar.org/paper/6c02616073b3c30f806a98c843e28659d503edd4",
         "venue": "",
         "year": 2026
       }
