@@ -15,10 +15,10 @@
   },
   "repo_learning:github_search": {
     "failed_runs": 0,
-    "ok_runs": 120,
+    "ok_runs": 121,
     "quality_score": 10.0,
     "rate_limited_runs": 0,
-    "runs": 120
+    "runs": 121
   },
   "repo_learning:static": {
     "failed_runs": 0,
@@ -29,10 +29,10 @@
   },
   "scholar:arxiv": {
     "failed_runs": 20,
-    "ok_runs": 100,
-    "quality_score": 8.33,
+    "ok_runs": 101,
+    "quality_score": 8.35,
     "rate_limited_runs": 0,
-    "runs": 120
+    "runs": 121
   },
   "scholar:dry_run": {
     "failed_runs": 0,
@@ -50,10 +50,10 @@
   },
   "scholar:openreview": {
     "failed_runs": 0,
-    "ok_runs": 120,
+    "ok_runs": 121,
     "quality_score": 10.0,
     "rate_limited_runs": 0,
-    "runs": 120
+    "runs": 121
   },
   "scholar:static": {
     "failed_runs": 0,
@@ -85,17 +85,17 @@
   },
   "tech_news:github_releases": {
     "failed_runs": 3,
-    "ok_runs": 117,
+    "ok_runs": 118,
     "quality_score": 9.75,
     "rate_limited_runs": 0,
-    "runs": 120
+    "runs": 121
   },
   "tech_news:hackernews": {
     "failed_runs": 0,
-    "ok_runs": 120,
+    "ok_runs": 121,
     "quality_score": 10.0,
     "rate_limited_runs": 0,
-    "runs": 120
+    "runs": 121
   },
   "tech_news:reddit": {
     "failed_runs": 17,
@@ -106,10 +106,10 @@
   },
   "tech_news:rss": {
     "failed_runs": 0,
-    "ok_runs": 120,
+    "ok_runs": 121,
     "quality_score": 10.0,
     "rate_limited_runs": 0,
-    "runs": 120
+    "runs": 121
   },
   "tech_news:static": {
     "failed_runs": 0,
@@ -134,9 +134,9 @@
   },
   "unified_digest:unified_sources": {
     "failed_runs": 0,
-    "ok_runs": 121,
+    "ok_runs": 122,
     "quality_score": 10.0,
     "rate_limited_runs": 0,
-    "runs": 121
+    "runs": 122
   }
 }
