@@ -15658,6 +15658,585 @@
         "year": 2026
       }
     },
+    "arxiv:2611.06438": {
+      "cached_at": "2026-11-07T06:23:06.896156+00:00",
+      "data": {
+        "abstract": "Chain-of-Thought (CoT) reasoning substantially improves Large Language Models (LLMs), yet its out-of-distribution (OOD) generalization mechanism remains theoretically underexplored. We study CoT as compositional OOD generalization: the target task lacks complete reasoning trajectories or direct input-output pairs, while training provides only in-distribution (ID) atomic step data. We show that CoT generalizes by repeatedly applying a shared single-step predictor to compose reusable ID transitions. Theoretically, let $T$ denote the number of reasoning steps in the target task, $n$ the number of training samples per sub-task, and $k$ the number of output tokens per step; then the OOD task risk is controlled by the sum of the ID sub-task risks, scaled by a coefficient of order $\\mathcal{O}(k)$ that is independent of $T$, although the summed risk itself may still grow with $T$. A Rademacher-complexity analysis further shows that the estimation term is of order $\\mathcal{O}(\\sqrt{T/n})$, rather than linear in $T$, due to predictor sharing under a uniform capacity control on the shared class. For autoregressive Next-Token Prediction, the final-task risk is bounded by the best-in-class step-level risk scaled by the same coefficient of order $\\mathcal{O}(k)$, plus an estimation term of order $\\widetilde{\\mathcal{O}}\\big(k\\sqrt{T/n}\\big)$. A parity-coupled construction further shows that, for the sub-task empirical risk minimizer, the expected final-task risk is at least the best in-class risk plus $\\Omega(\\sqrt{T/n})$ when $T\\le n$. Experiments on Atom-Task and GSM8K support the theory: CoT enables short-to-long and compositional generalization, while explicit state tracking is crucial. Our code is available at https://github.com/maxliang114514/CoT-OOD.",
+        "authors": [
+          {
+            "authorId": "2305640668",
+            "name": "Nuo-Jing Liang"
+          },
+          {
+            "authorId": "8515907",
+            "name": "Xiao-Tong Yuan"
+          },
+          {
+            "authorId": "2109890021",
+            "name": "Pan Zhou"
+          }
+        ],
+        "citationCount": 1,
+        "externalIds": {
+          "ArXiv": "2611.06438",
+          "CorpusId": 295589357
+        },
+        "fieldsOfStudy": [
+          "Computer Science",
+          "Mathematics"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2611.06438, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "acd95938a18ae9b53069516dfeeba667f18f0f03",
+        "title": "Understanding the Out-of-Distribution Generalization of Chain-of-Thought Reasoning in LLMs",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "It is shown that CoT generalizes by repeatedly applying a shared single-step predictor to compose reusable ID transitions to enable short-to-long and compositional generalization, while explicit state tracking is crucial."
+        },
+        "url": "https://www.semanticscholar.org/paper/acd95938a18ae9b53069516dfeeba667f18f0f03",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2611.06879": {
+      "cached_at": "2026-11-07T06:23:37.033526+00:00",
+      "data": {
+        "abstract": "The best classical optimizer for a continuous black-box problem depends on its budget and landscape. Existing routers decide from the dimension and budget, past improvement or features fitted to one benchmark, and few test an optimizer's implicit assumptions online. AMM (Adaptive Multi Mode) routes a known budget among quasi-Newton, trust-region, coordinate, multistart and evolution-strategy optimization engines with online probes of curvature, plateaus, separability, kinks, basins and fractal structure. Each probe has a default, a dimension-by-budget validity range and a cost charged to the budget. In its pre-registered development loop on bbob, 32 of 36 predictions held over the last 16 confirmations. AMM was then tested once on held-out bbob instances 101-110 (D=2-40, 10*D-1000*D) against up to seven competitors. It has the highest target share in 382 of 600 function-dimension-budget cells (236 outright, 146 tied) and, by a descriptive posterior rule, is credibly behind in 35, mostly at 10*D and 30*D. At every budget it also leads the controls built from its own engines (the best engine alone, the best engine per dimension and budget, and a greedy schedule), narrowly at 10*D and 30*D, and nevergrad's NgIohTuned. In pre-registered runs its lead over IPOP-CMA-ES holds under affine and box transformations, on box-constrained bbob and, pooled, on rotated f2-f4, but rotating the separable f3 and f4 removes most of the lead there. On held-out MA-BBOB its final share at 2000*D is level with IPOP-CMA-ES's and its anytime area lower. We published AMM as an open-source Python package (pip install amm-optimizer; https://github.com/BjBodner/amm-optimizer).",
+        "authors": [
+          {
+            "authorId": "73484353",
+            "name": "Ben Bodner"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2611.06879",
+          "CorpusId": 295589320
+        },
+        "fieldsOfStudy": [
+          "Computer Science",
+          "Mathematics"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2611.06879, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "21dc59245905abc003d4fa4e55c2a139a9761cbb",
+        "title": "Adaptive Multi Mode: Budget-Aware Routing of Optimizers By Online Landscape Probes",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "AMM (Adaptive Multi Mode) routes a known budget among quasi-Newton, trust-region, coordinate, multistart and evolution-strategy optimization engines with online probes of curvature, plateaus, separability, kinks, basins and fractal structure."
+        },
+        "url": "https://www.semanticscholar.org/paper/21dc59245905abc003d4fa4e55c2a139a9761cbb",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2611.07982": {
+      "cached_at": "2026-11-07T06:23:34.889744+00:00",
+      "data": {
+        "abstract": "Intent-based networking (IBN) promises QoS provisioning in which the network derives the configuration from operator-stated goals. Its first step, translating a natural-language intent into enforceable service-level objectives (SLOs) grounded in a live snapshot of the network state, increasingly relies on large language models (LLMs). These large models add cost and energy to the management loop and typically require multi-GPU, cloud-hosted infrastructure. Can lightweight open LLMs take over this step dependably? We answer this question with a five-dimensional evaluation of ten LLMs with<10B parameters from five families, under four prompting setups, on 716 placement intents. We evaluate translation performance, intent validation, hallucination, energy impact, and robustness to diverse phrasing. The best configurations translate intents with a strict F1 of 0.943 and reject up to 191 of 195 invalid intents. With few-shot reasoning, the strongest models hallucinate unsupported QoS requirements in only about one response in a hundred, whereas the zero-shot setup struggles. A translated intent costs 0.044-0.148 Wh of GPU energy without reasoning, and added energy cost for reasoning pays off for the weaker models. Furthermore, we show that realistic rephrasing lowers the rejection of invalid intents in 15 of 16 configurations for the best-performing models, leaving robust intent validation as a key open challenge for reliable IBN. Our code and data are available: https://github.com/ggck43/intent2slo.",
+        "authors": [
+          {
+            "authorId": "2527047151",
+            "name": "Sabbir Ahmed"
+          },
+          {
+            "authorId": "2526808372",
+            "name": "Hazem Abbas"
+          },
+          {
+            "authorId": "2282541195",
+            "name": "Salimur Choudhury"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2611.07982",
+          "CorpusId": 295594549
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2611.07982, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "d5590a6a72ffe24e2a343f459a7842fee0608a9d",
+        "title": "How Far Can Lightweight LLMs Go in Intent-to-SLO Translation?",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "Five-dimensional evaluation of ten lightweight open LLMs with<10B parameters from five families shows that realistic rephrasing lowers the rejection of invalid intents in 15 of 16 configurations for the best-performing models, leaving robust intent validation as a key open challenge for reliable IBN."
+        },
+        "url": "https://www.semanticscholar.org/paper/d5590a6a72ffe24e2a343f459a7842fee0608a9d",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2611.08075": {
+      "cached_at": "2026-11-07T06:23:39.159913+00:00",
+      "data": {
+        "abstract": "We consider the problem of sequential task continuation, where one robot acts in a workspace that has been affected by a previous robot. Current approaches in multi-robot cooperation rely heavily on co-training or co-optimization, assumingthat the robots have access to collective interaction data during the policy training or planning process. However, as increasingly varied robotic embodiments and policies are deployed and operate in the same real-world environment, learning policies for cooperation becomes infeasible due to the combinatorial explosion of possible robot combinations that need to be accounted for. To address this challenge, this paper considers the problem of ad hoc sequential cooperation between robots that have never before operated together in a shared environment. We demonstrate that robots can explicitly communicate their environmental preferences through sharing their value functions, enabling coordination without the need for prior joint training. To ground this exchange and prevent overconfidence in out-of-distribution states, we further introduce a k-nearest neighbors (KNN)- based uncertainty filter. Our method yields an increase of up to 48.5 pp compared with naive or even selfish agents, in task success rates across simulated and real-world experiments, demonstrating that value function transmission between agents is useful not merely as an internal learning tool, but as an effective basis for ad hoc coordination. Website: https://proroklab.github.io/PAVE/",
+        "authors": [
+          {
+            "authorId": "2327867405",
+            "name": "Mario G\u00f3mez Andreu"
+          },
+          {
+            "authorId": "2366425732",
+            "name": "Michael Amir"
+          },
+          {
+            "authorId": "2297770801",
+            "name": "Antonio Marino"
+          },
+          {
+            "authorId": "2287929496",
+            "name": "Tian-Xu An"
+          },
+          {
+            "authorId": "2247860967",
+            "name": "Marco Hutter"
+          },
+          {
+            "authorId": "2247284748",
+            "name": "Amanda Prorok"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2611.08075",
+          "CorpusId": 295593573
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2611.08075, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "3f34970e9a176b8db24d8a2225c32e345a961cde",
+        "title": "Leave It Better Than Found: Value-Guided Cooperation in Sequential Tasks",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "It is demonstrated that robots can explicitly communicate their environmental preferences through sharing their value functions, enabling coordination without the need for prior joint training, and a k-nearest neighbors (KNN)- based uncertainty filter is introduced."
+        },
+        "url": "https://www.semanticscholar.org/paper/3f34970e9a176b8db24d8a2225c32e345a961cde",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2611.08111": {
+      "cached_at": "2026-11-07T06:22:48.179190+00:00",
+      "data": {
+        "abstract": "World-action models (WAMs) jointly model future traffic states and driving actions for end-to-end autonomous driving in intelligent transportation systems. However, their action learning remains dominated by expert-trajectory imitation, leaving unsafe alternatives close to expert trajectories insufficiently constrained. To improve WAM robustness in safety-critical scenarios, we propose NegWAM, a safety post-training framework for unified WAMs that learns explicit safety boundaries from near-expert failure trajectories. NegWAM constructs negative trajectories that are geometrically close to the expert trajectory yet carry safety risks, uses them as repulsive anchors to steer predictions away from dangerous behavior, and encodes them as scene-conditioned rider tokens to learn scene--trajectory compatibility. During training, NegWAM jointly optimizes the flow-matching and near-expert negative objectives, while the auxiliary rider branch is discarded at inference, incurring no additional overhead. On NAVSIM v2, NegWAM achieves 40.4 EPDMS on navhard, a 4.1% relative improvement over the strongest compared scorer-free WAM baseline, and achieves 93.3 EPDMS on navtest. These results demonstrate that NegWAM achieves strong performance in safety-critical scenarios while preserving routine-driving performance. Zero-shot closed-loop evaluation on HUGSIM further demonstrates cross-benchmark generalization. The code is available at https://github.com/Zizizi-hao/NegWAM.",
+        "authors": [
+          {
+            "authorId": "2470241303",
+            "name": "Zi-Hao Zhang"
+          },
+          {
+            "authorId": "2517982684",
+            "name": "Xin-Yu Zhang"
+          },
+          {
+            "authorId": "2498797323",
+            "name": "Bing Zeng"
+          },
+          {
+            "authorId": "2526958492",
+            "name": "Xing-Yu Chen"
+          },
+          {
+            "authorId": "2273365115",
+            "name": "Zhen-Ning Li"
+          },
+          {
+            "authorId": "2527047543",
+            "name": "Bin Yu"
+          },
+          {
+            "authorId": "2306377421",
+            "name": "Zi-Yuan Pu"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2611.08111",
+          "CorpusId": 295593950
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2611.08111, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "1e5f4953633c595ccdd3e7a4819e3ef68a5c216c",
+        "title": "Reinforcing End-to-End Autonomous Driving Safety via Negative-Aware Planning in a Unified World-Action Model",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "NegWAM, a safety post-training framework for unified WAMs that learns explicit safety boundaries from near-expert failure trajectories, is proposed, demonstrating that NegWAM achieves strong performance in safety-critical scenarios while preserving routine-driving performance."
+        },
+        "url": "https://www.semanticscholar.org/paper/1e5f4953633c595ccdd3e7a4819e3ef68a5c216c",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2611.08216": {
+      "cached_at": "2026-11-07T06:22:31.699740+00:00",
+      "data": {
+        "abstract": "Multi-modal large language models (MLLMs) with impressive perception and understanding capabilities will enable a range of downstream applications. However, their substantial computational and memory requirements hinder the real-world implementation, particularly for resource-constrained edge devices. Quantization has emerged as an effective solution for deploying large models. While post-training quantization (PTQ) successfully retains the performance at moderate bit-width (e.g., W8A8), it suffers from severe performance degradation under low-bit quantization (e.g., W4A8), especially for small-scale models that are more suitable for edge deployment. In this paper, we propose ProQuant, a novel weight-activation quantization-aware training (QAT) framework tailored for low-bit MLLMs. First, to align the limited finetuning dataset distribution with the pretrained dataset distribution, we propose a self-relabeling (SRL) scheme to resample the responses of the open-source multimodal dataset. Second, we are the first to take a decoupled view of multi-modal (MM) understanding and language modeling abilities. We propose a progressive block activation (PBA) mechanism to prioritize the MM understanding recovery. We also introduce a vision-sensitive factor $\\vec{\\tau}$ that effectively identifies the MM-critical layers. Extensive experiments across various benchmarks, covering models with 2B-8B parameters, show that ProQuant significantly outperforms existing methods. For example, our W4A8 Qwen3-VL-2B-Instruct improves average accuracy by impressively 6.6% and achieves performance comparable to full precision counterparts with only approximately 1% performance drop. Code is available at https://github.com/yufeixue-ai/ProQuant/.",
+        "authors": [
+          {
+            "authorId": "2114921664",
+            "name": "Yu-Fei Xue"
+          },
+          {
+            "authorId": "2268626103",
+            "name": "Yu-Shi Huang"
+          },
+          {
+            "authorId": "2111877589",
+            "name": "Jia-Wei Shao"
+          },
+          {
+            "authorId": "2261493190",
+            "name": "Ping-Cheng Dong"
+          },
+          {
+            "authorId": "2293880867",
+            "name": "Yong-Hao Tan"
+          },
+          {
+            "authorId": "2242132627",
+            "name": "Shi-Yao Li"
+          },
+          {
+            "authorId": "2256381600",
+            "name": "Kwang-Ting Cheng"
+          },
+          {
+            "authorId": "2363726076",
+            "name": "Jun Zhang"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2611.08216",
+          "CorpusId": 295593790
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2611.08216, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "0157ba256a7bb61e859b10e38887b3bb61eb10b1",
+        "title": "ProQuant: Progressive Quantization-aware Training for Edge MLLMs",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "This paper proposes ProQuant, a novel weight-activation quantization-aware training (QAT) framework tailored for low-bit MLLMs, and is the first to take a decoupled view of multi-modal (MM) understanding and language modeling abilities."
+        },
+        "url": "https://www.semanticscholar.org/paper/0157ba256a7bb61e859b10e38887b3bb61eb10b1",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2611.08237": {
+      "cached_at": "2026-11-07T06:23:32.731276+00:00",
+      "data": {
+        "abstract": "Mathematical modeling turns an open-ended real-world problem into assumptions, a model, a solution, and a defended recommendation, and its answers matter only if they are both close to a credible reference and physically feasible; existing benchmarks either score solver fragments or grade reports with an LLM judge, leaving those numbers unchecked. We introduce TB-MathModel (the Terminal-style Mathematical Modeling Bench), the first benchmark to make complete contest-style modeling problems agentic, verifiable, and terminal at once, over 18 real CUMCM and MCM problems (2023--2025). Each task ships the verbatim statement, official attachments, and figures in a containerized terminal; the agent returns one JSON artifact, scored on the numeric core of the final question against a reproduction of the Outstanding-award paper. Two design choices distinguish it: direction-aware, one-sided scoring, which never penalises beating the anchor, and two-layer feasibility verification---a programmatic gate over six decidable invariant forms plus 624 Lean~4 obligations---with a hard gate that zeroes infeasible answers. Each task is scored against a panel of human outstanding papers rather than one, so a model must be close to many accepted answers; across seven multimodal entries (three seeds each) the strongest reach a multi-reference O-Eval of 64.58\\%, while the \\$2.54 open model holds 59.81\\% at $1/100$ the cost. TB-MathModel turns the numeric core of modeling into a reproducible, machine-checkable signal for measuring long-horizon modeling competence and for collecting agent trajectories. The source code is available at https://github.com/wxj630/terminal-bench-math-modeling.",
+        "authors": [
+          {
+            "authorId": "2330225360",
+            "name": "Xiao-Jun Wu"
+          },
+          {
+            "authorId": "2307038391",
+            "name": "Ce-Hao Yang"
+          },
+          {
+            "authorId": "144267788",
+            "name": "Xuhui Jiang"
+          },
+          {
+            "authorId": "2250617116",
+            "name": "Cheng-Jin Xu"
+          },
+          {
+            "authorId": "2330498509",
+            "name": "Jia Li"
+          },
+          {
+            "authorId": "2284217200",
+            "name": "Jian Guo"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2611.08237",
+          "CorpusId": 295593776
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2611.08237, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "b3ffec821d342186006a3b4766f22de459d76855",
+        "title": "Terminal-style Mathematical Modeling Bench: The First Agentic and Verifiable Benchmark for Mathematical Modeling",
+        "tldr": null,
+        "url": "https://www.semanticscholar.org/paper/b3ffec821d342186006a3b4766f22de459d76855",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2611.08263": {
+      "cached_at": "2026-11-07T06:22:57.571554+00:00",
+      "data": {
+        "abstract": "Recent neural decoding approaches achieve strong performance by training on large collections of paired neural-behavioral recordings, but such datasets are expensive, invasive, and difficult to scale. In contrast, behavioral data is abundant and easy to collect, raising the question of whether neural decoding can benefit from decoupling behavioral and neural representation learning. We introduce BEEMO, a flexible multi-session framework that enables training with arbitrary mixtures of paired neural-behavioral recordings and unpaired behavioral data. A behavior decoder learns movement dynamics directly from behavioral trajectories, while neural activity is incorporated through cross-attention layers when available, allowing behavioral and neural supervision to scale independently. Across multiple intracortical motor datasets and tasks in nonhuman primates, we show that incorporating unpaired behavioral data improves decoding performance, particularly when transferring to new tasks, and that adding even a small amount of behavioral data from the target task further improves transfer. By decoupling neural and behavioral data, we unlock a new dimension for scaling: unpaired behavioral data, which is substantially cheaper and easier to collect than paired neural recordings, can be used directly to improve decoding performance. We further show that behavior-only pretraining, without any neural pretraining, achieves performance comparable to models pretrained on substantially larger neural datasets. Together, our results suggest that scaling behavioral data offers a practical and cost-effective path toward neural decoding models that generalize across subjects and tasks. Code is available at https://github.com/nerdslab/beemo.",
+        "authors": [
+          {
+            "authorId": "2166676274",
+            "name": "Divyansha Lachi"
+          },
+          {
+            "authorId": "2261390667",
+            "name": "Vinam Arora"
+          },
+          {
+            "authorId": "2320582906",
+            "name": "S. Mahato"
+          },
+          {
+            "authorId": "2355084753",
+            "name": "Alexandre Andre"
+          },
+          {
+            "authorId": "2526807637",
+            "name": "Eva L. Dyer"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2611.08263",
+          "CorpusId": 295594416
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2611.08263, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "52fdd116fa291ccc8ca2587212cbee25e5a8f11e",
+        "title": "Scaling Neural Motor Decoding via Decoupled Behavioral Pretraining",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "Across multiple intracortical motor datasets and tasks in nonhuman primates, it is shown that incorporating unpaired behavioral data improves decoding performance, particularly when transferring to new tasks, and that adding even a small amount of behavioral data from the target task further improves transfer."
+        },
+        "url": "https://www.semanticscholar.org/paper/52fdd116fa291ccc8ca2587212cbee25e5a8f11e",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2611.08379": {
+      "cached_at": "2026-11-07T06:23:09.037568+00:00",
+      "data": {
+        "abstract": "Different optimizers impose different geometries on parameter updates. Adaptive methods such as Adam and AdamW use coordinate-wise updates, while matrix-aware optimizers such as Muon utilize weight-matrix structure through orthogonalized updates. For Graph Neural Networks (GNNs), however, the effective geometry of its weight matrices is shaped not only by its learned channel-mixing weights, but also by the graph-propagated representations it acts on. Thus, even if an update is well normalized as a matrix, its effect on the layer output can be amplified when applied to graph-propagated features. To address this gap, we introduce GraphMuon, a graph-aware optimizer that adapts Muon's matrix updates to the covariance structure of graph-propagated layer inputs. GraphMuon performs orthogonalization in a metric defined by these propagated representations and normalizes step sizes according to the update's induced effect on the layer representation. We show that theoretically, vanilla Muon can suffer from graph-induced update amplification, while our GraphMuon can mitigate this effect. As such, our GraphMuon yields a graph-metric analogue of Muon's polar update step. Empirically, GraphMuon achieves $1.32\\times$-$2.42\\times$ validation-loss time-to-target speedups over AdamW on three large-scale OGB benchmarks. Across 15 dataset-architecture configurations spanning node classification, inductive graph classification, and graph regression, it achieves lower time-to-target in 13 cases, while maintaining competitive or superior predictive performance. Code is available at https://github.com/guy-hadad/GraphMuon.",
+        "authors": [
+          {
+            "authorId": "2358035128",
+            "name": "Guy Hadad"
+          },
+          {
+            "authorId": "1799955",
+            "name": "Haggai Roitman"
+          },
+          {
+            "authorId": "104172497",
+            "name": "Moshe Eliasof"
+          },
+          {
+            "authorId": "2258639118",
+            "name": "Bracha Shapira"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2611.08379",
+          "CorpusId": 295626493
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2611.08379, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "46e1c287d87540035a5159c1fac83307d891d7c3",
+        "title": "Module-Aware Optimization for Graph Neural Networks",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "GraphMuon is a graph-aware optimizer that adapts Muon's matrix updates to the covariance structure of graph-propagated layer inputs and performs orthogonalization in a metric defined by these propagated representations and normalizes step sizes according to the update's induced effect on the layer representation."
+        },
+        "url": "https://www.semanticscholar.org/paper/46e1c287d87540035a5159c1fac83307d891d7c3",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2611.08390": {
+      "cached_at": "2026-11-07T06:23:48.547280+00:00",
+      "data": {
+        "abstract": "Latent communication enables agents to collaborate efficiently by directly exchanging intermediate model representations rather than raw sensor data or text messages. Existing approaches, however, are primarily designed for LLM agents and do not consider the bandwidth constraints and heterogeneous task deadlines faced by cyber-physical agents. In this work, we propose SCALE, a real-time latent communication method tailored for cyber-physical agents. Motivated by the spatio-temporal continuity of the physical world, SCALE matches tokens across consecutive latent messages using similarity scores to identify reusable information and avoid redundant transmission. It then profiles the semantic gain and communication cost of transmitting different amounts of latent information. Based on these profiles, SCALE employs a real-time scheduler that jointly determines which pending messages to transmit and how many latent tokens to send, subject to available bandwidth and task deadlines. We evaluate SCALE across three cyber-physical benchmarks and a physical spider robot case study under diverse network conditions and heterogeneous task deadlines. Our results show that SCALE significantly improves both task performance and on-time delivery in bandwidth-constrained networks. Our code is available at: https://anonymous.4open.science/r/SCALE-4E80/.",
+        "authors": [
+          {
+            "authorId": "2401251640",
+            "name": "Shang-Hao Shi"
+          },
+          {
+            "authorId": "2527047179",
+            "name": "Jian Xiao"
+          },
+          {
+            "authorId": "2304876046",
+            "name": "Chin-Hsiang Chan"
+          },
+          {
+            "authorId": "2262233041",
+            "name": "Sanjoy K. Baruah"
+          },
+          {
+            "authorId": "1783028",
+            "name": "S. Kompella"
+          },
+          {
+            "authorId": "1699600",
+            "name": "Yevgeniy Vorobeychik"
+          },
+          {
+            "authorId": "2282162187",
+            "name": "William Yeoh"
+          },
+          {
+            "authorId": "2273594553",
+            "name": "Ning Zhang"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2611.08390",
+          "CorpusId": 295626497
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2611.08390, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "1e3dde842b472392fa32c589d12fae25b6fffd5e",
+        "title": "SCALE: Real-Time Latent Communication for Cyber-Physical Agents",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "The proposed SCALE employs a real-time scheduler that jointly determines which pending messages to transmit and how many latent tokens to send, subject to available bandwidth and task deadlines, and significantly improves both task performance and on-time delivery in bandwidth-constrained networks."
+        },
+        "url": "https://www.semanticscholar.org/paper/1e3dde842b472392fa32c589d12fae25b6fffd5e",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2611.08458": {
+      "cached_at": "2026-11-07T06:23:57.827702+00:00",
+      "data": {
+        "abstract": "Learning dexterous manipulation from limited visual demonstrations is challenging because policies must acquire both perceptual grounding and precise control, while reinforcement learning (RL) in simulation can acquire rich control behaviors from large-scale interaction with privileged information. We introduce \\textbf{Latent RL Prior}, a two-stage framework that reuses this control knowledge for data-efficient visual policy learning. During privileged pretraining, we distill large-scale RL rollouts into a flow-matching action decoder conditioned on proprioception and latent task context. During visual adaptation, we freeze the decoder and learn a visual interface that maps images to its latent context using action supervision alone, without privileged labels or latent targets. The same decoder can further be shared across arms by learning coordinated visual contexts for bimanual manipulation. Across three simulated tasks, our method outperforms full-parameter fine-tuning of $\\pi_{0.5}$ and GR00T N1.7 in the low-data regime; on door lifting and bimanual assembly, it surpasses full-data baselines using $10\\times$ and $5\\times$ fewer demonstrations, respectively. Further analysis shows that direct visual-to-latent conditioning improves adaptation performance and training stability over routing visual predictions through the pretrained state encoder. Robustness to unseen mass variation and greater linear accessibility of contact-force information in decoder representations further provide evidence of retained RL-acquired control knowledge. Project website: https://yixiaowang7.github.io/latent-rl-prior-page/.",
+        "authors": [
+          {
+            "authorId": "2294387767",
+            "name": "Yi-Xiao Wang"
+          },
+          {
+            "authorId": "2514504548",
+            "name": "Pei-Yi Chen"
+          },
+          {
+            "authorId": "2874057",
+            "name": "Mustafa Mukadam"
+          },
+          {
+            "authorId": "3171086",
+            "name": "Shreekant Gayaka"
+          },
+          {
+            "authorId": "2261974717",
+            "name": "Masayoshi Tomizuka"
+          },
+          {
+            "authorId": "2527046823",
+            "name": "Son Tran"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2611.08458",
+          "CorpusId": 295626468
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2611.08458, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "1e9ddead581b97b84534d75a18cd2e47c87feaf8",
+        "title": "Latent RL Priors for Data-Efficient Dexterous Manipulation",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "Analysis shows that direct visual-to-latent conditioning improves adaptation performance and training stability over routing visual predictions through the pretrained state encoder, and robustness to unseen mass variation and greater linear accessibility of contact-force information in decoder representations further provide evidence of retained RL-acquired control knowledge."
+        },
+        "url": "https://www.semanticscholar.org/paper/1e9ddead581b97b84534d75a18cd2e47c87feaf8",
+        "venue": "",
+        "year": 2026
+      }
+    },
     "title:acesearcher bootstrapping reasoning and search for llms via reinforced self play": {
       "cached_at": "2026-06-29T05:15:21.571589+00:00",
       "data": {
