@@ -15740,6 +15740,51 @@
         "year": 2026
       }
     },
+    "arxiv:2611.06990": {
+      "cached_at": "2026-11-08T06:31:15.467121+00:00",
+      "data": {
+        "abstract": "Data arising in scientific applications often exhibits complex nonlinear structure. Identifying and parameterizing said nonlinearities can enable better modeling, enhance predictive analysis, data interpolation, denoising, and anomaly detection. In this paper, we develop theoretical and computational methods to detect and parametrize Euclidean point cloud data lying near a wedge sum of tori. Specifically, we use persistent cohomology and cup products to identify the distinct toroidal components, and on each component, we optimize over low-energy multivariate trigonometric polynomials for best data fit. The ensuing optimization problem reduces to generalized ridge regression, which can be solved efficiently via standard techniques. We demonstrate the utility of the proposed framework in both synthetic and real datasets, including interpolation of low frame-rate recurrent videos, attractor recovery in quasiperiodic dynamical systems, and the parametrization of gene-space cycle data for parasites and humans.",
+        "authors": [
+          {
+            "authorId": "2127090487",
+            "name": "Tanishq Bhatia"
+          },
+          {
+            "authorId": "144873803",
+            "name": "Jose A. Perea"
+          },
+          {
+            "authorId": "2331803620",
+            "name": "Tarek M. Zikry"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2611.06990",
+          "CorpusId": 295594534
+        },
+        "fieldsOfStudy": [
+          "Mathematics",
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2611.06990, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "e415d95cd2b50e9433ec05656a7d97f47d289477",
+        "title": "ToroFit: Fitting Wedge Sums of Tori to High-Dimensional Data",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "This paper develops theoretical and computational methods to detect and parametrize Euclidean point cloud data lying near a wedge sum of tori, using persistent cohomology and cup products to identify the distinct toroidal components, and optimize over low-energy multivariate trigonometric polynomials for best data fit."
+        },
+        "url": "https://www.semanticscholar.org/paper/e415d95cd2b50e9433ec05656a7d97f47d289477",
+        "venue": "",
+        "year": 2026
+      }
+    },
     "arxiv:2611.07982": {
       "cached_at": "2026-11-07T06:23:34.889744+00:00",
       "data": {
@@ -15964,6 +16009,70 @@
         "year": 2026
       }
     },
+    "arxiv:2611.08219": {
+      "cached_at": "2026-11-08T06:31:17.601686+00:00",
+      "data": {
+        "abstract": "Large language models have made rapid progress in agentic reasoning and tool use, raising expectations for agents that can take over realistic productivity work from humans. However, current agents still struggle to finish such tasks, where success requires following long-horizon professional workflows, understanding heterogeneous file contexts, and producing usable deliverables under fine-grained requirements. A key bottleneck is the lack of scalable post-training data that reflects real work intent, authentic file environments, and deliverable-level evaluation. To close this gap, we introduce Agent-R$^2$, a $\\textbf{r}$eal-source data synthesis framework that scales training data for $\\textbf{r}$ealistic productivity work. Instead of relying on manually specified workflows or LLM-generated files, Agent-R$^2$ grounds synthesis throughout the pipeline in real occupational seeds, corpus-derived workflow evidence, and authentic web-sourced files. From 10k web-corpus candidates, Agent-R$^2$ distills 4k task instances that pair real multi-format attachments with fine-grained, deliverable-level rubrics. On this data, we train Agent-R$^2$-4B via supervised fine-tuning and rubric-based reinforcement learning, improving both end-to-end productivity performance and file-grounded reasoning. Trained on only 4k instances, Agent-R$^2$-4B surpasses Qwen3-235B-A22B-Thinking-2507 on both GDPval (51.0$\\%$ vs. 48.0$\\%$) and OfficeQA (14.8$\\%$ vs. 13.8$\\%$). Further analysis shows that Agent-R$^2$ mitigates shortcut behavior, where agents produce superficially plausible deliverables before sufficiently grounding, constructing, or verifying them, while promoting sustained exploration.",
+        "authors": [
+          {
+            "authorId": "2374532957",
+            "name": "Teng-Teng Pan"
+          },
+          {
+            "authorId": "2363671350",
+            "name": "Zi-Xuan Wang"
+          },
+          {
+            "authorId": "2284984220",
+            "name": "Yuchen Yan"
+          },
+          {
+            "authorId": "2295269618",
+            "name": "Qi-Fei Wu"
+          },
+          {
+            "authorId": "2527213041",
+            "name": "Yao Chen"
+          },
+          {
+            "authorId": "51281403",
+            "name": "Ying-Qi Qu"
+          },
+          {
+            "authorId": "2129412850",
+            "name": "Rui-Qing Zhang"
+          },
+          {
+            "authorId": "2337846158",
+            "name": "Yong-Liang Shen"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2611.08219",
+          "CorpusId": 295593741
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2611.08219, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "e7c1cccf51858e8581463cd43a66911911649f4d",
+        "title": "Agent-R$^2$: Scaling Agents for Realistic Productivity Work via Real-Source Data Synthesis",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "This work introduces Agent-R, a $\\textbf{r}$eal-source data synthesis framework that scales training data forealistic productivity work, and trains Agent-R-4B via supervised fine-tuning and rubric-based reinforcement learning, improving both end-to-end productivity performance and file-grounded reasoning."
+        },
+        "url": "https://www.semanticscholar.org/paper/e7c1cccf51858e8581463cd43a66911911649f4d",
+        "venue": "",
+        "year": 2026
+      }
+    },
     "arxiv:2611.08237": {
       "cached_at": "2026-11-07T06:23:32.731276+00:00",
       "data": {
@@ -16065,6 +16174,258 @@
           "text": "Across multiple intracortical motor datasets and tasks in nonhuman primates, it is shown that incorporating unpaired behavioral data improves decoding performance, particularly when transferring to new tasks, and that adding even a small amount of behavioral data from the target task further improves transfer."
         },
         "url": "https://www.semanticscholar.org/paper/52fdd116fa291ccc8ca2587212cbee25e5a8f11e",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2611.08271": {
+      "cached_at": "2026-11-08T06:30:40.966166+00:00",
+      "data": {
+        "abstract": "Generalist Anomaly Detection (GAD) aims to detect anomalies in unseen domains using only a few reference samples. Recent normal-abnormal guided methods improve this setting by exploiting abnormal references, but their residuals often mix transferable anomaly cues with domain-specific appearance factors such as texture, geometry, and acquisition conditions. This residual domain entanglement limits cross-domain transfer and may produce spurious activations on novel domains. We propose DART, a plug-in framework for normal-abnormal guided GAD that learns to separate residuals into anomaly-relevant and domain-specific components. DART combines a Residual Disentanglement Module, which preserves anomaly-discriminative information while suppressing domain information, with Cross-Domain Meta-Training, which forms episodes across source domains to make the separation effective. The method is architecture-agnostic and can be inserted between residual computation and the detection head of existing GAD pipelines. Experiments on MVTec AD, VisA, and BraTS show consistent improvements over multiple base methods, with the largest gains under stronger domain shifts. https://github.com/aqeeelmirza/DART",
+        "authors": [
+          {
+            "authorId": "2289873810",
+            "name": "Muhammad Aqeel"
+          },
+          {
+            "authorId": "2376445215",
+            "name": "Maham Nazir"
+          },
+          {
+            "authorId": "2238815087",
+            "name": "Marco Cristani"
+          },
+          {
+            "authorId": "2329986546",
+            "name": "Francesco Setti"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2611.08271",
+          "CorpusId": 295593446
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2611.08271, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "fe570842c365a565506758fc42d7d93e6a871a11",
+        "title": "DART: Domain-Agnostic Residual Transfer for Generalist Anomaly Detection",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "DART is proposed, a plug-in framework for normal-abnormal guided GAD that learns to separate residuals into anomaly-relevant and domain-specific components, and can be inserted between residual computation and the detection head of existing GAD pipelines."
+        },
+        "url": "https://www.semanticscholar.org/paper/fe570842c365a565506758fc42d7d93e6a871a11",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2611.08273": {
+      "cached_at": "2026-11-08T06:31:11.118420+00:00",
+      "data": {
+        "abstract": "We investigate the problem of scaling safe reinforcement learning (safe RL) to massively parallel training regimes, where a large number of environments are exe- cuted with short rollout horizons. Although this setting improves data throughput and wall-clock efficiency, it creates a mismatch with constrained Markov decision processes (CMDPs), whose safety constraints are defined over full-episode cost returns. We address this mismatch by analyzing staggered environment resets as a phase-mixture distribution over short trajectory segments. This analysis charac- terizes the bias induced by phase coverage and motivates a phase-aggregated cost estimator that reconstructs episode-level cost estimates from short rollout batches. We further incorporate finite-sample uncertainty and distribution mismatch into a constraint-tightening framework, yielding a scalable Safe RL method compatible with on-policy optimization. Using an MJX-based implementation of Safety Gym, our experiments show that the proposed method achieves performance comparable to non-massively parallel implementations while substantially reducing wall-clock training time.",
+        "authors": [
+          {
+            "authorId": "2215158808",
+            "name": "Joonyoung Lim"
+          },
+          {
+            "authorId": "2061176114",
+            "name": "Younghwan Yoo"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2611.08273",
+          "CorpusId": 295593680
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2611.08273, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "87b70f169cbd4c73b35a72e23d66bc319d0d7396",
+        "title": "Accelerating Safe Reinforcement Learning with Massive Parallelism",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "This work analyzes staggered environment resets as a phase-mixture distribution over short trajectory segments and incorporates finite-sample uncertainty and distribution mismatch into a constraint-tightening framework, yielding a scalable Safe RL method compatible with on-policy optimization."
+        },
+        "url": "https://www.semanticscholar.org/paper/87b70f169cbd4c73b35a72e23d66bc319d0d7396",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2611.08277": {
+      "cached_at": "2026-11-08T06:30:29.404735+00:00",
+      "data": {
+        "abstract": "Neural theorem proving increasingly uses retrieved premises and project context to support proof generation. Evaluating these resources requires measuring the advantage of target-selected declarations over comparable alternatives and how this advantage depends on training. We introduce LeanContext, a benchmark of 129,826 Lean whole-proof generation problems, to investigate these questions. We group selected complete preceding mathematical declarations as Mathematical Context (MC) and the remaining selected local source commands as Environment Context (EC). Four aligned input views support crossed training and inference evaluations with shared targets and original Lean verification environments. For both diffusion- and autoregressive-based models, selected declarations outperform comparable alternatives by a larger margin when training includes MC. Final-input audits identify omitted declarations referenced by the target. Prioritizing these dependencies improves Pass@32 by 1.40% and 1.70% for LLaDA and Llama, respectively, on 2,000 targets. The selection experiment operates without access to target reference proofs and holds checkpoints, EC, and inference budgets constant. The code and dataset are available at https://github.com/haaaardcvZ/LeanContext.",
+        "authors": [
+          {
+            "authorId": "2508439890",
+            "name": "Han-Yi Zhang"
+          },
+          {
+            "authorId": "2253472204",
+            "name": "Qihao Ye"
+          },
+          {
+            "authorId": "2311451137",
+            "name": "Li-Tong Liu"
+          },
+          {
+            "authorId": "2221081346",
+            "name": "Yun-Bei Zhang"
+          },
+          {
+            "authorId": "2109363117",
+            "name": "Yugyung Lee"
+          },
+          {
+            "authorId": "2527048360",
+            "name": "Yue Zhou"
+          },
+          {
+            "authorId": "2525376918",
+            "name": "Bo Liu"
+          },
+          {
+            "authorId": "2295988294",
+            "name": "Emily First"
+          },
+          {
+            "authorId": "2185018157",
+            "name": "Cheng Han"
+          },
+          {
+            "authorId": "2502678342",
+            "name": "Qiao Zhuang"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2611.08277",
+          "CorpusId": 295594525
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2611.08277, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "2da691097aec3d7fb5312887ac419cd314014c35",
+        "title": "LeanContext: Disentangling Mathematical Resources from Local Formal Context in Lean Whole-Proof Generation",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "LeanContext, a benchmark of 129,826 Lean whole-proof generation problems, is introduced, to investigate the advantage of target-selected declarations over comparable alternatives and how this advantage depends on training."
+        },
+        "url": "https://www.semanticscholar.org/paper/2da691097aec3d7fb5312887ac419cd314014c35",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2611.08315": {
+      "cached_at": "2026-11-08T06:30:43.200328+00:00",
+      "data": {
+        "abstract": "Large language models (LLMs) are increasingly used in biomedical and cognitive neuroscience, but their ability to reason reliably over heterogeneous knowledge graphs (KGs) remains unclear. We benchmark five LLMs (GPT-5.1, Gemini 2.0 Pro, Llama 3, Qwen, and BioGPT) across five KGs: DrugBank, NeuroSynth, Cognitive Atlas, Brain Map, and GDPKG. We introduce a multitier query dataset to evaluate reasoning depth and factual accuracy under KG-aware (graph-grounded) and KG-agnostic conditions. Inter-annotator agreement was substantial, with Cohen's kappa of 0.781 (range: 0.753-0.807) and Fleiss'kappa of 0.77. Results show that general-purpose models, particularly GPT-5.1 and Gemini 2.0 Pro, generally outperform domain-specific models on multi-hop and high-level reasoning tasks, although performance declines as query complexity increases. KG grounding reduces hallucination rates across all evaluated models. Contrary to our initial hypothesis, domain-specific models do not consistently outperform general-purpose models on specialized tasks without graph grounding. These findings highlight the value of combining broad language-model capabilities with structured domain knowledge. We provide practical guidance for selecting LLM-KG integration strategies based on task complexity and computational constraints, and discuss hybrid neurosymbolic architectures for personalized medicine, cognitive disorder diagnosis, and explainable AI.",
+        "authors": [
+          {
+            "authorId": "2349375590",
+            "name": "Ali Sarabadani"
+          },
+          {
+            "authorId": "2314450400",
+            "name": "Kheirolah Rahsepar Fard"
+          },
+          {
+            "authorId": "2526806819",
+            "name": "Tahereh Jeirani"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2611.08315",
+          "CorpusId": 295594372
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2611.08315, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "f954d69178f38cdfef19c470202f5c9c0d223fb4",
+        "title": "Benchmarking Large Language Models on Heterogeneous Cognitive and Biomedical Knowledge Graphs: The Role of Graph Grounding in Multi-Hop Reasoning and Hallucination Mitigation",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "This work benchmarks five large language models, provides practical guidance for selecting LLM-KG integration strategies based on task complexity and computational constraints, and discusses hybrid neurosymbolic architectures for personalized medicine, cognitive disorder diagnosis, and explainable AI."
+        },
+        "url": "https://www.semanticscholar.org/paper/f954d69178f38cdfef19c470202f5c9c0d223fb4",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2611.08362": {
+      "cached_at": "2026-11-08T06:30:31.629514+00:00",
+      "data": {
+        "abstract": "Masked diffusion language models offer parallel text generation, but independently sampling multiple tokens can disrupt their dependencies and change the output distribution. Exact continuous-time sampling avoids this approximation, yet typically requires one sequential model evaluation per token. We introduce SpecCTMC, a training-free speculative sampler that reduces this sequential bottleneck without a separate draft model. SpecCTMC proposes successive token updates using previously computed model predictions, evaluates their intermediate states in parallel, and applies an exact acceptance-and-correction procedure. We prove that SpecCTMC preserves the joint distribution of event times, generation order, and token values of the underlying continuous-time Markov chain. It therefore introduces neither time-discretization error nor additional factorization error from parallel decoding. Experiments on LLaDA-8B-Instruct and Dream-v0-Instruct-7B across five benchmarks demonstrate 1.73-4.38x fewer sequential model evaluations than direct continuous-time sampling, while preserving the reference sampling distribution. Our code is available at: https://github.com/kasakh/specctmc",
+        "authors": [
+          {
+            "authorId": "89604589",
+            "name": "Siva Rajesh Kasa"
+          },
+          {
+            "authorId": "2425623680",
+            "name": "Ya-Song Dai"
+          },
+          {
+            "authorId": "34593143",
+            "name": "Sumit Negi"
+          },
+          {
+            "authorId": "2354491628",
+            "name": "Hong-Dong Li"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2611.08362",
+          "CorpusId": 295626419
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2611.08362, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "1c32a3568f305fa449fb3df3abf00d7a513b6322",
+        "title": "SpecCTMC: Exact Speculative Simulation of Diffusion Language Model Continuous-Time Markov Chains",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "This work introduces SpecCTMC, a training-free speculative sampler that reduces this sequential bottleneck without a separate draft model, and proves that it preserves the joint distribution of event times, generation order, and token values of the underlying continuous-time Markov chain."
+        },
+        "url": "https://www.semanticscholar.org/paper/1c32a3568f305fa449fb3df3abf00d7a513b6322",
         "venue": "",
         "year": 2026
       }
@@ -16181,6 +16542,146 @@
         "year": 2026
       }
     },
+    "arxiv:2611.08407": {
+      "cached_at": "2026-11-08T06:31:13.331663+00:00",
+      "data": {
+        "abstract": "Humanoid robots are typically trained as solitary agents, leaving them unable to coordinate physically with human partners who naturally anticipate and adjust to one another. To bridge this gap, we present Social Humanoid, a hierarchical system that generates and executes socially responsive whole-body motion on a 29-DoF Unitree G1 conditioned on a human partner's motion. Its high-level policy performs flexible sequence modeling of human and humanoid motion through a shared tokenized representation, generating reactive humanoid motion and anticipating the partner's motion when they are occluded, while a low-level whole-body tracking controller executes the generated motion on the robot. To train the system, we introduce a two-phase adaptive retargeting procedure that retargets one interaction partner to the robot while morphing the other partner to preserve contact dynamics, reachability, and relative body scale. We apply this procedure across five motion-capture datasets to produce a new Human-Humanoid Interaction (HHI) benchmark of 260 hours of human-humanoid interactions. Our results demonstrate that Social Humanoid produces coordinated, human-aligned behavior across diverse interaction types in simulation and the real world. Project page: https://von31.github.io/social-humanoid/",
+        "authors": [
+          {
+            "authorId": "90137288",
+            "name": "Vongani H. Maluleke"
+          },
+          {
+            "authorId": "2396462813",
+            "name": "James Ni"
+          },
+          {
+            "authorId": "88859327",
+            "name": "Kie Horiuchi"
+          },
+          {
+            "authorId": "2399958725",
+            "name": "Lea Wilken"
+          },
+          {
+            "authorId": "2052835670",
+            "name": "Jia-Hui Lei"
+          },
+          {
+            "authorId": "143874453",
+            "name": "Evonne Ng"
+          },
+          {
+            "authorId": "46796686",
+            "name": "Roei Herzig"
+          },
+          {
+            "authorId": "2257249601",
+            "name": "Jitendra Malik"
+          },
+          {
+            "authorId": "2355862630",
+            "name": "Trevor Darrell"
+          },
+          {
+            "authorId": "20615377",
+            "name": "Angjoo Kanazawa"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2611.08407",
+          "CorpusId": 295626403
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2611.08407, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "41c8dafbef5cfb8f8a5626206617a0dd4173ef79",
+        "title": "Social Humanoid: Socially Responsive Human-Humanoid Interaction",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "Social Humanoid is a hierarchical system that generates and executes socially responsive whole-body motion on a 29-DoF Unitree G1 conditioned on a human partner's motion, and produces coordinated, human-aligned behavior across diverse interaction types in simulation and the real world."
+        },
+        "url": "https://www.semanticscholar.org/paper/41c8dafbef5cfb8f8a5626206617a0dd4173ef79",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2611.08425": {
+      "cached_at": "2026-11-08T06:30:52.495992+00:00",
+      "data": {
+        "abstract": "Vision-Language-Action models (VLAs) enable general-purpose embodied intelligence, but their performance is brittle under distribution shift, where unanticipated failures can damage equipment or endanger people. Deploying VLAs in real-world systems therefore requires a runtime monitor that is timely, calibrated, and informative while being efficient enough to run on the edge. Existing methods fail to fulfill these requirements. We present VLA-Tug, a lightweight probe over the latent layers of a VLA backbone that improves early failure detection and bounds the missed-detection and false-alarm rates, with minimal inference overhead. We show that supervising on the pre-failure segment of a trajectory increases early failure detection at matched false-positive rates by up to 30% over the strongest learned baseline. Under shift to unseen tasks, the bounds on missed-detection and false-alarm rates remain valid in up to 86% of runs, versus at most 21% for baselines. Unlike existing methods, VLA-Tug predicts the failure mode to enable corrective actions, raising top-3 accuracy on unseen tasks by up to 44% over a majority baseline. VLA-Tug enables real-time monitoring where the well-timed and informative probe supports lightweight steering that improves task success. We release a dataset of 3,180 annotated manipulation episodes to support future work on latent failure detection in VLAs at https://vla-tug.github.io.",
+        "authors": [
+          {
+            "authorId": "2527046595",
+            "name": "Michal P. Podolinsky"
+          },
+          {
+            "authorId": "1655407483",
+            "name": "Yunhao Yang"
+          },
+          {
+            "authorId": "3365608",
+            "name": "Daniel R. Little"
+          },
+          {
+            "authorId": "2344596210",
+            "name": "Hong Lu"
+          },
+          {
+            "authorId": "2329095258",
+            "name": "Rohan Siva"
+          },
+          {
+            "authorId": "2527046425",
+            "name": "Olin Goudey"
+          },
+          {
+            "authorId": "2042522543",
+            "name": "N. Bhatt"
+          },
+          {
+            "authorId": "2296007982",
+            "name": "Matthias Scheutz"
+          },
+          {
+            "authorId": "3199888",
+            "name": "U. Topcu"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2611.08425",
+          "CorpusId": 295626394
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2611.08425, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "39fcaa8177a92ba293790903aad13609cd037dee",
+        "title": "Failure Prediction and Classification in Vision-Language-Action Models Via Calibrated Latent Probing",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "VLA-Tug is presented, a lightweight probe over the latent layers of a VLA backbone that improves early failure detection and bounds the missed-detection and false-alarm rates, with minimal inference overhead and enables real-time monitoring where the well-timed and informative probe supports lightweight steering that improves task success."
+        },
+        "url": "https://www.semanticscholar.org/paper/39fcaa8177a92ba293790903aad13609cd037dee",
+        "venue": "",
+        "year": 2026
+      }
+    },
     "arxiv:2611.08458": {
       "cached_at": "2026-11-07T06:23:57.827702+00:00",
       "data": {
@@ -16233,6 +16734,78 @@
           "text": "Analysis shows that direct visual-to-latent conditioning improves adaptation performance and training stability over routing visual predictions through the pretrained state encoder, and robustness to unseen mass variation and greater linear accessibility of contact-force information in decoder representations further provide evidence of retained RL-acquired control knowledge."
         },
         "url": "https://www.semanticscholar.org/paper/1e9ddead581b97b84534d75a18cd2e47c87feaf8",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2611.08487": {
+      "cached_at": "2026-11-08T06:30:54.616519+00:00",
+      "data": {
+        "abstract": "User embeddings are central components of modern recommendation, personalization, and behavioral modeling systems. Though these embeddings can compactly encode rich behavioral information, they are inherently dense and opaque, limiting interpretability. To address this gap, we argue that user embeddings can be understood as sparse superpositions of interpretable behavioral modes. This structure is directly predicted by generative models of user behavior for linear embeddings and extends approximately to deep-learning representations by the superposition hypothesis. Superimposed modes can naturally be recovered by sparse dictionary learning methods, such as sparse autoencoders (SAEs), and recovered modes can be automatically named and queried in natural language. We validate mode recovery against known ground truth on synthetic data, where SAEs recover modes better than classical sparse baselines, including on transformer-encoded embeddings. We then apply the method to classical and transformer-based user embeddings from two real-world datasets. We also show how the corresponding natural-language labels enable zero-shot audience retrieval and characterization over embeddings never trained on text. The framework is post-hoc and model-agnostic, requiring no modification to the upstream embedding system.",
+        "authors": [
+          {
+            "authorId": "2287940587",
+            "name": "Jonathan Kozaczuk"
+          },
+          {
+            "authorId": "2093920652",
+            "name": "Zheng Dong"
+          },
+          {
+            "authorId": "28136682",
+            "name": "Noyan Evirgen"
+          },
+          {
+            "authorId": "2527046958",
+            "name": "Keivan Majidi"
+          },
+          {
+            "authorId": "2527046626",
+            "name": "Eddie K. H. Ng"
+          },
+          {
+            "authorId": "2527046899",
+            "name": "Chris Porter"
+          },
+          {
+            "authorId": "2527328943",
+            "name": "Qi Zhao"
+          },
+          {
+            "authorId": "2527046940",
+            "name": "Jia Geng"
+          },
+          {
+            "authorId": "13334616",
+            "name": "Changmao Li"
+          },
+          {
+            "authorId": "2329560632",
+            "name": "Brandon R. Feng"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2611.08487",
+          "CorpusId": 295626474
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2611.08487, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "d7de2d737b1ea94e84c6506f1eb87abc11b9f3e3",
+        "title": "User Embeddings are Superpositions of Interpretable Behavioral Modes",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "It is argued that user embeddings can be understood as sparse superpositions of interpretable behavioral modes, directly predicted by generative models of user behavior for linear embeddings and extends approximately to deep-learning representations by the superposition hypothesis."
+        },
+        "url": "https://www.semanticscholar.org/paper/d7de2d737b1ea94e84c6506f1eb87abc11b9f3e3",
         "venue": "",
         "year": 2026
       }
