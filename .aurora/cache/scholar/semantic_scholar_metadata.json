@@ -15658,6 +15658,54 @@
         "year": 2026
       }
     },
+    "arxiv:2611.03597": {
+      "cached_at": "2026-11-09T07:01:11.124412+00:00",
+      "data": {
+        "abstract": "Understanding how neurons respond to visual stimulus is an important question in both deep learning and neuroscience. It has significant implications for enhancing the interpretability of black-box artificial neural networks and for understanding the visual representation in the human brain. We propose a structured visual representations landscape and design an activation-based prior that allows us to effectively regularize the landscape with activations from brain regions or neural network units. Our model Vis-Lens integrates a variational autoencoder and a diffusion model into an image generation framework. It enables the generation of natural, realistic preferred images by directly modifying the activation-regularized latent codes without per-image iterative optimization. We demonstrate the effectiveness of our framework on both artificial neural networks and human visual cortex using functional magnetic resonance imaging (fMRI) data. Our framework improves activation modulation and image realism compared with a recent state-of-the-art method for generating preferred visual representations of these neural targets.",
+        "authors": [
+          {
+            "authorId": "2442882592",
+            "name": "Yu-Song Zhao"
+          },
+          {
+            "authorId": "144334775",
+            "name": "Edgar Y. Walker"
+          },
+          {
+            "authorId": "2307433841",
+            "name": "Hao Wang"
+          },
+          {
+            "authorId": "2494557057",
+            "name": "Miao-Miao Lu"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2611.03597",
+          "CorpusId": 295502006
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2611.03597, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "b5bb36a0fad8fb26dc8b6e2a7135096c52793633",
+        "title": "Structured Visual Landscape: Generating Preferred Representations in Biological and Artificial Neural Networks",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "The model Vis-Lens integrates a variational autoencoder and a diffusion model into an image generation framework that enables the generation of natural, realistic preferred images by directly modifying the activation-regularized latent codes without per-image iterative optimization."
+        },
+        "url": "https://www.semanticscholar.org/paper/b5bb36a0fad8fb26dc8b6e2a7135096c52793633",
+        "venue": "",
+        "year": 2026
+      }
+    },
     "arxiv:2611.06438": {
       "cached_at": "2026-11-07T06:23:06.896156+00:00",
       "data": {
