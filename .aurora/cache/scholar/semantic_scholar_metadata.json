@@ -16858,6 +16858,156 @@
         "year": 2026
       }
     },
+    "arxiv:2611.12057": {
+      "cached_at": "2026-11-12T07:32:37.649273+00:00",
+      "data": {
+        "abstract": "Multi-objective evolutionary optimization increasingly involves large populations, expensive problem evaluations, and diverse algorithmic structures. These workloads expose the limited parallelism of loop-based implementations, while rewrites for accelerator execution can alter selection order, tie handling, and population updates. AscendMOEA is presented as a scalable platform that executes multi-objective evolutionary algorithms (MOEAs) on Huawei Ascend neural processing units (NPUs) and conventional central processing units (CPUs). The platform represents the decision vectors, objectives, constraints, and auxiliary states as tensors and provides reusable interfaces for algorithms, problems, population operators, quality indicators, monitoring, and repeated experiments. Dense computations are executed in batches, such as dominance, distance, variation, and problem-evaluation calculations. Short recurrences with causal dependencies retain their prescribed order and consume precomputed tensor results, which preserves the behavior of the original algorithms. AscendMOEA contains 18 algorithms, 155 benchmark and application problems, 19 public operator interfaces, and 11 quality indicators. Experiments on eight Ascend NPUs and 192 physical CPU cores evaluate operator throughput, end-to-end runtime, memory consumption, numerical agreement, and implementation ablation. Tensorized operators obtain a median acceleration of 1.58 times on the NPU. At large population scales, complete algorithms achieve a median acceleration of 5.76 times while retaining the recorded quality indicators. Moreover, the results identify the workload scale and ordered computation that determine whether accelerator execution is beneficial. AscendMOEA is open-sourced at https://github.com/dqlme/AscendMOEA.",
+        "authors": [
+          {
+            "authorId": "1569581643",
+            "name": "Qian-Long Dang"
+          },
+          {
+            "authorId": "2368512937",
+            "name": "Zhi-Yang Zhang"
+          },
+          {
+            "authorId": "2118423765",
+            "name": "Bao-Sheng Li"
+          },
+          {
+            "authorId": "2528570005",
+            "name": "Tian-Qing Zhu"
+          },
+          {
+            "authorId": "2284375447",
+            "name": "Jun-Hu Ruan"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2611.12057",
+          "CorpusId": 295732018
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2611.12057, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "2cd937141effb66d84a080f9037c6cfa7a9fb0aa",
+        "title": "AscendMOEA: An Ascend NPU-Accelerated Platform for Tensorized Multi-Objective Evolutionary Algorithms",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "The results identify the workload scale and ordered computation that determine whether accelerator execution is beneficial and identify the decision vectors, objectives, constraints, and auxiliary states as tensors that determine whether accelerator execution is beneficial."
+        },
+        "url": "https://www.semanticscholar.org/paper/2cd937141effb66d84a080f9037c6cfa7a9fb0aa",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2611.13997": {
+      "cached_at": "2026-11-12T07:32:28.324694+00:00",
+      "data": {
+        "abstract": "Large Vision-Language Models (LVLMs) have demonstrated remarkable capabilities but raise significant privacy concerns due to their abilities to infer sensitive personal information from images with high precision. While current LVLMs are relatively well aligned to protect universal privacy, e.g., credit card data, we argue that privacy is inherently personalized and context-dependent. This work pivots towards a novel task: can LVLMs achieve Inference-Time Personalized Privacy Protection (ITP3), allowing users to dynamically specify privacy boundaries through language specifications? To this end, we present SPY-Bench, the first systematic assessment of ITP3 ability, which comprises (1) 32,700 unique samples with image-question pairs and personalized privacy instructions across 67 categories and 24 real-world scenarios, and (2) novel metrics grounded in user specifications and context awareness. Benchmarking the ITP3 ability of 21 SOTA LVLMs, we reveal that: (i) most models, even the top-performing o4-mini, perform poorly, with only ~24% compliance accuracy; (ii) they show quite limited contextual privacy understanding capability. Therefore, we implemented initial ITP3 alignment methods, including a novel Noise Contrastive Alignment variant which achieves 96.88% accuracy while maintaining reasonable general performance. These results mark an initial step towards the ethical deployment of more controllable LVLMs. Code and data are at https://github.com/achernarwang/specify-privacy-yourself.",
+        "authors": [
+          {
+            "authorId": "2187468640",
+            "name": "Xingqi Wang"
+          },
+          {
+            "authorId": "2258961742",
+            "name": "Xiao-Yuan Yi"
+          },
+          {
+            "authorId": "2329897476",
+            "name": "Xing Xie"
+          },
+          {
+            "authorId": "2202746283",
+            "name": "Jia Jia"
+          }
+        ],
+        "citationCount": 2,
+        "externalIds": {
+          "ArXiv": "2611.13997",
+          "CorpusId": 282394677,
+          "DBLP": "conf/mm/0003Y0025",
+          "DOI": "10.1145/3746027.3758156"
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2611.13997, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": "CCBYNCND",
+          "status": "HYBRID",
+          "url": "https://doi.org/10.1145/3746027.3758156"
+        },
+        "paperId": "aab85ac2c87afb84da39f8f8ddeaa0d4ab3a87be",
+        "title": "Specify Privacy Yourself: Assessing Inference-Time Personalized Privacy Preservation Ability of Large Vision-Language Models",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "SPY-Bench is presented, the first systematic assessment of ITP3 ability, and initial ITP3 alignment methods are implemented, including a novel Noise Contrastive Alignment variant which achieves 96.88% accuracy while maintaining reasonable general performance."
+        },
+        "url": "https://www.semanticscholar.org/paper/aab85ac2c87afb84da39f8f8ddeaa0d4ab3a87be",
+        "venue": "ACM Multimedia",
+        "year": 2025
+      }
+    },
+    "arxiv:2611.14320": {
+      "cached_at": "2026-11-12T07:32:11.830298+00:00",
+      "data": {
+        "abstract": "External memory enables LLM agents to improve from experience by distilling trajectories of past tasks into concise lessons for new tasks. However, memory can also lead to memory-induced degradation, where an agent fails on tasks it would solve without memory, often because it follows a lesson that is incorrect, or misapplies or misreads a valid one. This is because lessons are inferred from trajectories labeled only with task success or failure, yet are typically provided without the trajectories they came from, leaving the agent no way to check them. To address this, we introduce WikiTrace, an evidence-linked memory system designed to let agents check each lesson against its original trajectory. Specifically, motivated by the finding that a trajectory often still holds the evidence needed to catch an erroneous lesson, WikiTrace stores each lesson as a concise insight linked to a summary of why its trajectory succeeded or failed and to the raw trajectory itself. Then, on a new task, the agent starts from all insights and, whenever one lacks details needed to act, conflicts with another, or comes from a failed task, descends through its links with terminal tools to fill in missing details or correct the insight before acting. We validate WikiTrace on five agentic benchmarks, showing that it consistently outperforms existing memory approaches and a baseline given the same insights alone, while also reducing memory-induced degradation. Our code is available at https://github.com/yukyeongleee/wikitrace",
+        "authors": [
+          {
+            "authorId": "2469284034",
+            "name": "Yukyeong Lee"
+          },
+          {
+            "authorId": "2361494441",
+            "name": "Yumin Choi"
+          },
+          {
+            "authorId": "90765684",
+            "name": "Jinheon Baek"
+          },
+          {
+            "authorId": "2260611009",
+            "name": "Sung Ju Hwang"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2611.14320",
+          "CorpusId": 295745178
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2611.14320, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "cd3cbdcb5bbb01bb93ebb6bf081a055a0901c31d",
+        "title": "Don't Just Trust Your Memory: Evidence-Linked Memory Reduces Memory-Induced Degradation in LLM Agents",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "WikiTrace is introduced, an evidence-linked memory system designed to let agents check each lesson against its original trajectory, and validated on five agentic benchmarks, showing that it consistently outperforms existing memory approaches and a baseline given the same insights alone, while also reducing memory-induced degradation."
+        },
+        "url": "https://www.semanticscholar.org/paper/cd3cbdcb5bbb01bb93ebb6bf081a055a0901c31d",
+        "venue": "",
+        "year": 2026
+      }
+    },
     "title:acesearcher bootstrapping reasoning and search for llms via reinforced self play": {
       "cached_at": "2026-06-29T05:15:21.571589+00:00",
       "data": {
