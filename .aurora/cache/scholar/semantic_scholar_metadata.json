@@ -17008,6 +17008,378 @@
         "year": 2026
       }
     },
+    "arxiv:2611.14665": {
+      "cached_at": "2026-11-14T06:53:50.868056+00:00",
+      "data": {
+        "abstract": "Genetic programming (GP) evolves populations of heterogeneous programs, whereas GPUs achieve their highest throughput when groups of threads execute the same instructions. To better align GP evaluation with GPU execution, we present Galop, a hybrid CPU-GPU linear GP system that assigns one individual to each CUDA warp, a group of 32 threads that execute the same instructions across different fitness cases. We compare Galop against EvoGP, a recent high-performance GPU-based tree GP system, on data-rich symbolic regression across two unique GPUs, varying population size and fitness-case count. Galop completes evolutionary runs faster than EvoGP in 27 of the 28 main comparisons, with speedups of up to 13.6 times. Solution quality comparisons favour EvoGP overall, although Galop remains competitive on several problems. Galop also completes a full generation with 2.15 billion individuals on a single H100 GPU, approximately 4.0 times the largest population achieved by any other tested GP system. All five runs at this population complete 100 generations, with a median wall-clock time of 2.23 hours. These results make it practical to study GP populations in the billions on a single GPU. Galop's source code, experimental data, and reproducibility scripts are publicly available at https://github.com/xavierhillroy/Galop.",
+        "authors": [],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2611.14665",
+          "CorpusId": 295824995
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2611.14665, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "54cab4841bf9504e81a2469652b755bdfd555923",
+        "title": "Galop: Billion-Scale Genetic Programming on a Single GPU",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "Galop, a hybrid CPU-GPU linear GP system that assigns one individual to each CUDA warp, a group of 32 threads that execute the same instructions across different fitness cases, is presented and compared against EvoGP, a recent high-performance GPU-based tree GP system."
+        },
+        "url": "https://www.semanticscholar.org/paper/54cab4841bf9504e81a2469652b755bdfd555923",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2611.16374": {
+      "cached_at": "2026-11-14T06:53:33.067806+00:00",
+      "data": {
+        "abstract": "Recent advances in robotic manipulation have enabled increasingly complex and dexterous behaviors, yet existing benchmarks still focus on simple pick-and-place tasks and lack a systematic framework for measuring progress in robot learning along the axis of task difficulty. We present ManiLadder, a large-scale and organized simulation benchmark for robotic manipulation. ManiLadder contains 112 carefully designed tasks stratified into 4 difficulty levels, with 8 categories in each level, spanning rigid-body and deformable-object manipulation, single-arm and dual-arm settings, and gripper and dexterous-hand end-effectors. To calibrate difficulty, we fix the data amount the same for every task and use a unified flow- matching imitation learning policy under the same training and evaluation protocols, then use its evaluation success rate as an operational empirical difficulty signal. All tasks are iteratively refined until they fall into target difficulty ranges, which are then verified across different random seeds, policies, and agentic learning systems. We further analyze the task properties, compare different policy performances and training settings, analyze task transfer and data scaling behaviors, and conduct real-world experiments showing that the designed tasks preserve their difficulty ordering beyond simulation. ManiLad- der provides a calibrated ladder for measuring, comparing, and advancing robotic manipulation capabilities. More results are available at https://maniladder-benchmark.github.io/.",
+        "authors": [],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2611.16374",
+          "CorpusId": 295823318
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2611.16374, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "afd592f0ecfd3a140bec05ead490a2b9fafa6830",
+        "title": "ManiLadder: Benchmarking Robot Manipulation Through a Categorized and Multi-Difficulty Level Task Ladder",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "ManiLad- der provides a calibrated ladder for measuring, comparing, and advancing robotic manipulation capabilities, and verified across different random seeds, policies, and agentic learning systems."
+        },
+        "url": "https://www.semanticscholar.org/paper/afd592f0ecfd3a140bec05ead490a2b9fafa6830",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2611.16422": {
+      "cached_at": "2026-11-14T06:53:52.963840+00:00",
+      "data": {
+        "abstract": "Whole-body motion tracking lets a humanoid robot follow reference motions, but training a tracking policy for a library of motions has usually taken hours of GPU time. SuperMimic showed that the policy can instead be trained by backpropagating through a world model learned from parallel simulation, and InstantTrack added Muon updates, a residual policy around the reference and an averaged deployed policy. We build on both and present BlinkMimic, a recipe that makes this training faster. On a simulated Unitree G1, BlinkMimic trains one policy for all 40 LAFAN1 clips in 3.4 minutes on a single RTX 4090, measured until three consecutive checkpoints reach a normalized return of at least 0.82 with no failed clip (mean of three seeds). We split training time into the cost of an iteration, the iterations needed to fit the motions, and the iterations needed to remove the last failures, and assign each component, inherited or new, to one of these terms. The new components are a step size that decreases once training has progressed, resets directed by failures of the deployed policy under deployment conditions, and GPU graph capture of the whole iteration. A leave-one-out ablation with three seeds per component shows which term each component affects, and further measurements of the gradient, the update rule and the failure cases explain these effects. Code and per-seed results are available at https://github.com/fuyichen0725/blinkmimic.",
+        "authors": [],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2611.16422",
+          "CorpusId": 295823763
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2611.16422, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "8e27358f8e40888f6caa9eaa12c741ece8c81ee2",
+        "title": "BlinkMimic: Training a Humanoid Motion Tracker in Minutes on a Single GPU",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "BlinkMimic, a recipe that makes training a tracking policy for a library of motions for whole-body motion tracking faster, and splits training time into the cost of an iteration, the iterations needed to fit the motions, and the iterations needed to remove the last failures."
+        },
+        "url": "https://www.semanticscholar.org/paper/8e27358f8e40888f6caa9eaa12c741ece8c81ee2",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2611.16439": {
+      "cached_at": "2026-11-14T06:53:46.562728+00:00",
+      "data": {
+        "abstract": "Learning whole-body mobile manipulation requires demonstrations that coordinate bimanual actions with locomotion across extended workspaces. However, existing interfaces trade off direct robot control, perception and action alignment, and natural operator mobility, making such demonstrations difficult to collect. We introduce HALO, a human-aligned data collection system for whole-body mobile manipulation. The system aligns the operator's perception and action space with the robot while preserving direct physical feedback and natural locomotion. Operators guide the robot end-effectors through kinesthetic teaching and move a low-resistance platform without the deployed mobile base while performing bimanual manipulation. This interface enables more natural whole-body demonstrations, but the close human-robot coupling introduces discrepancies between the demonstration and deployment settings. We address these discrepancies with deployment-aligned demonstration processing, which calibrates and temporally aligns platform motion with the deployed base response and masks and inpaints demonstrator hands in recorded observations. Compared with Mobile ALOHA and VR teleoperation, HALO enables up to 2.9x faster demonstration collection while maintaining comparable or higher success rates. Policies trained with HALO perform precise manipulation tasks, including zip-tie fastening, and achieve a 73.3% success rate on a six-stage long-horizon mobile manipulation task involving repeated coordinated base and arm motion. Project page: https://robbyant-research.github.io/Lingbot-ALOHA/",
+        "authors": [],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2611.16439",
+          "CorpusId": 295824398
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2611.16439, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "20cb2435a01a2b8f23763be05538b2acb2e2f679",
+        "title": "HALO: Human-Aligned Data Collection for WhoLe-body MObile Manipulation",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "HALO, a human-aligned data collection system for whole-body mobile manipulation, aligns the operator's perception and action space with the robot while preserving direct physical feedback and natural locomotion and enables more natural whole-body demonstrations."
+        },
+        "url": "https://www.semanticscholar.org/paper/20cb2435a01a2b8f23763be05538b2acb2e2f679",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2611.16590": {
+      "cached_at": "2026-11-14T06:53:48.752401+00:00",
+      "data": {
+        "abstract": "Long-term spacecraft autonomy requires embodied agents to use operational history under communication delays, time-critical operations, environmental uncertainty, complex physical interactions, power and computational constraints, and safety and reliability requirements. We introduce AstroMemBench and a Scenario-Challenge-Capability design method that maps these requirements to executable memory tests. The benchmark covers 16 memory subchallenges through 140 templates and 2240 instances across nine tasks in planetary surface operations, on-orbit servicing, and deep-space exploration. A deterministic environment scores actions for task completion, state changes, safety, and resource use. Ablations under nine conditions show that the benchmark is sensitive to how accurately agents recover and use historical information and to differences in memory-system design. Main experiments compare six configurations. Mem0, Chain-of-Memory, LightMem, and retrieval-augmented generation (RAG) improve same-session mean scores over native Pi Agent, with no clear advantage of the three memory systems over RAG. After a session restart, Mem0 outperforms RAG by 12.25 points. Benefits favor instruction retention and result reuse over ongoing state tracking and energy reservation. AstroMemBench supports the design, development, and selection of memory systems for embodied spacecraft agents. AstroMemBench 1.0 and its evaluation code are publicly available: https://github.com/flyingView/AstroMemBench-v1.",
+        "authors": [],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2611.16590",
+          "CorpusId": 295822953
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2611.16590, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "fb02283a36bf8f3ab8f17b39843146e7e6cdf1b7",
+        "title": "AstroMemBench: A Benchmark for Memory Systems in Embodied Spacecraft Agents",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "AstroMemBench supports the design, development, and selection of memory systems for embodied spacecraft agents and a Scenario-Challenge-Capability design method that maps these requirements to executable memory tests is introduced."
+        },
+        "url": "https://www.semanticscholar.org/paper/fb02283a36bf8f3ab8f17b39843146e7e6cdf1b7",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2611.16671": {
+      "cached_at": "2026-11-14T06:53:07.209478+00:00",
+      "data": {
+        "abstract": "Planning for a heterogeneous robot team from a scene image and an instruction involves two kinds of decisions. Some must be judged from the scene: which goals are already met, how the task splits, and which robot does what. Others follow from these and can be computed: prerequisite actions, handoffs between robots, and timing. We argue that each kind should go to the component suited to it: a small vision-language model learns the first, and a deterministic solver computes the second. In NSDL (Neuro-Symbolic Division of Labor), the trained model writes its judgments as a plan sketch, which lists the goals that still need action and the intended steps in order, each with a robot. The solver expands the sketch into an executable joint plan. The model calls two tools, a detector for evidence and the solver, and is trained with the solver in the loop. We evaluate on the public VIKI-L2 benchmark and on LOCUS-Bench, a new benchmark that grades the two kinds of difficulty separately. NSDL outperforms end-to-end planners and formalize-then-plan baselines on both benchmarks and with three backbones from 3B to 8B; the 7B model reaches 97.0% out-of-distribution accuracy on VIKI-L2. Ordering and scheduling errors nearly disappear once the solver writes the structure; the remaining failures are misjudged states, and most goals the model misses are ones it never lists. Code, model weights, and LOCUS-Bench are publicly available at https://github.com/Xincheng-Tan/NSDL.",
+        "authors": [],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2611.16671",
+          "CorpusId": 295824601
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2611.16671, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "d650a434598d68930f49737f635fdb3a654e3295",
+        "title": "NSDL: Neuro-Symbolic Division of Labor for Multi-Robot Task Planning",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "NSDL outperforms end-to-end planners and formalize-then-plan baselines on both benchmarks and with three backbones from 3B to 8B; the 7B model reaches 97.0% out-of-distribution accuracy on VIKI-L2."
+        },
+        "url": "https://www.semanticscholar.org/paper/d650a434598d68930f49737f635fdb3a654e3295",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2611.16991": {
+      "cached_at": "2026-11-14T06:53:57.287210+00:00",
+      "data": {
+        "abstract": "Coding agents have demonstrated strong capabilities in software development, yet their ability to tackle long-horizon engineering tasks governed by physical constraints remains less understood. We study this question through analog circuit layout, which demands domain knowledge, geometric reasoning, and iterative interaction with design and verification tools. We introduce \\textbf{AnalogLayoutWorld}, an open-source agent benchmark with 40 expert-reviewed tasks for end-to-end layout generation from fixed transistor-level netlists. It combines an integrated design environment with independent physical and post-layout electrical verification, as well as objective layout quality metrics co-designed with analog layout experts. Across 13 model--harness configurations, 91.1\\% of attempts produce GDS layouts, but only 23.0\\% satisfy the benchmark's acceptance criteria. We also evaluate Novara, an internally developed agent system, which achieves the highest reported aggregate score. Our analysis links performance differences to test-time scaling under fixed budgets, suggesting that reasoning efficiency and effective use of verification feedback help sustain design quality as task complexity grows.",
+        "authors": [],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2611.16991",
+          "CorpusId": 295822967
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2611.16991, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "21344168f3608c01b12e91af3a902c60f19a8a8b",
+        "title": "AnalogLayoutWorld: An Open Benchmark for Agentic Analog Layout Design",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "AnalogLayoutWorld, an open-source agent benchmark with 40 expert-reviewed tasks for end-to-end layout generation from fixed transistor-level netlists, is introduced, suggesting that reasoning efficiency and effective use of verification feedback help sustain design quality as task complexity grows."
+        },
+        "url": "https://www.semanticscholar.org/paper/21344168f3608c01b12e91af3a902c60f19a8a8b",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2611.17068": {
+      "cached_at": "2026-11-14T06:53:37.271669+00:00",
+      "data": {
+        "abstract": "Program evolution provides a promising approach to discover agent memory designs and study the choices underlying their effectiveness. We introduce MAPE, a framework that evolves whole memory programs from minimal seeds through a standardized lifecycle interface and an iterative diagnosis-proposal loop. Experiments on LoCoMo and LongMemEval yield an absolute accuracy gain of up to 12% over manually designed baselines at 35% of the serving cost, with further evaluations supporting transfer across serving backbones and benchmarks. Empirical analyses and ablations identify and validate two recurring design patterns: retaining raw conversations as retrievable evidence preserves details omitted from extracted memories, while composing retrieved evidence according to query intent helps the answering model use it effectively. Transplanting the composition module into five existing memory systems improves accuracy across all five. Beyond these patterns, the search objective shapes where computation goes: optimizing serving cost alongside accuracy shifts computation from LLM-based memory construction to selective processing at query time while retaining competitive accuracy. Together, these findings offer empirical lessons for agent memory design. Code is available at https://github.com/ash-ding/MAPE.",
+        "authors": [],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2611.17068",
+          "CorpusId": 295822768
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2611.17068, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "c98efe761ffc0d0c39505c60ab43632e66f525bd",
+        "title": "Discovering Effective Agent Memory Designs through Program Evolution",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "MAPE is introduced, a framework that evolves whole memory programs from minimal seeds through a standardized lifecycle interface and an iterative diagnosis-proposal loop that improves accuracy across all five existing memory systems."
+        },
+        "url": "https://www.semanticscholar.org/paper/c98efe761ffc0d0c39505c60ab43632e66f525bd",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2611.17167": {
+      "cached_at": "2026-11-14T06:53:23.811844+00:00",
+      "data": {
+        "abstract": "Decision models answer a question with a typed output, such as a choice among options with a probability for each, so one model can choose an agent's actions, evaluate actions already taken, or score every action to teach a policy with reinforcement learning. Prior work has studied them mainly as actors, judging their usefulness by how well they act. We ask whether a decision model that acts poorly can still teach well. We compare three decision models and three general LLMs as actors and judges on ALFWorld, and use JEV as a teacher on ALFWorld and WebShop. As actors, all six models are pulled away from a subgoal that must come first by an easier one. As judges that see the whole trajectory, the same models credit the steps toward that subgoal, and asking whether each action helped, rather than whether the task will succeed, separates useful from useless actions. As a teacher, JEV raises a Qwen2.5-1.5B policy over GRPO from 72.8% to 82.9% success on ALFWorld and from 56.8% to 71.4% on WebShop. These results suggest that a poor actor can still teach well, because judging an action after the episode ends reveals the consequences that acting must anticipate. Code is available at https://github.com/ZJU-REAL/decision-agents.",
+        "authors": [],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2611.17167",
+          "CorpusId": 295824364
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2611.17167, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "8f78e206a453dcd1423cb149fbdd4ddf61db6d0f",
+        "title": "Actor, Judge, or Teacher? Understanding Decision Models in Long-Horizon Agents",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": null
+        },
+        "url": "https://www.semanticscholar.org/paper/8f78e206a453dcd1423cb149fbdd4ddf61db6d0f",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2611.17191": {
+      "cached_at": "2026-11-14T06:53:55.119487+00:00",
+      "data": {
+        "abstract": "Low-Rank Adaptation (LoRA) often underperforms full fine-tuning, especially in heterogeneous and continual-learning settings in which substantial forgetting occurs. In general, it suffers from an undesirable learning-forgetting trade-off across diverse fine-tuning settings. We identify a potential contributor: LoRA adapters, especially high-rank ones, frequently fail to realize the available capacity afforded by the configured rank. Specifically, we find that standard LoRA updates have effective rank far below their configured rank, limiting how broadly the update energy is distributed. Therefore, we propose training mechanisms that optimize the original objective while maximizing adapter effective rank. Our main method adds a simple, stable, differentiable, and SVD-free R\\'enyi-2 effective-rank regularizer to the language-modeling loss. We also connect capacity maximization to norm-bounded updates. In mixed-domain rank sweeps on three models evaluated with multiple random seeds, a penalty weight of $\\lambda=0.01$ lowers mean Wiki perplexity at every tested rank of at least $16$ relative to unpenalized LoRA. Mean training perplexity improves or increases by at most $0.02$ in all but one model-rank comparison. Single-task and scheduling experiments further show that the balance between learning and retention depends on the configuration. We also observe that several LoRA variants in the literature also suffer from the identified capacity issue, and our approach provides a complementary axis of improvement to LoRA-based parameter-efficient fine-tuning. These results suggest that effective rank is not only a post-hoc diagnostic of adapter quality, but a trainable objective for improving the learning-forgetting frontier. Our code is available at https://github.com/tomohiro-sawada/lora-capacity-utilization",
+        "authors": [],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2611.17191",
+          "CorpusId": 295824323
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2611.17191, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "096fd7c7ab0329f05ac0f5bfb7417c7eddf35d9c",
+        "title": "Maximizing Capacity Utilization of LoRA Adapters for Mitigating the Learning-Forgetting Trade-off",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "It is found that standard LoRA updates have effective rank far below their configured rank, limiting how broadly the update energy is distributed, and a complementary axis of improvement to LoRA-based parameter-efficient fine-tuning is provided."
+        },
+        "url": "https://www.semanticscholar.org/paper/096fd7c7ab0329f05ac0f5bfb7417c7eddf35d9c",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2611.17287": {
+      "cached_at": "2026-11-14T06:54:06.642996+00:00",
+      "data": {
+        "abstract": "Reinforcement learning with verifiable rewards (RLVR) typically relies on a verifier that can reliably judge whether sampled solutions are correct. However, in many realistic settings, complete verification is generally unavailable, while cheap checks can only falsify failures. We formalize this regime as one-sided verifiability (OSV): verified negatives are reliable counterexamples, but verified positives are merely non-falsified candidates and may contain many false positives. This asymmetry makes standard RLVR unreliable, because reinforcing verified positives can directly reward shortcuts that pass partial checks. To address this issue, we propose Negative-Only Policy Optimization (NOPO), which treats verified positives as unlabeled and updates the policy only by suppressing trusted verified negatives. Specifically, NOPO combines a reference-relative negative suppression loss with a group-level adapter that scales each update by the proportion of non-falsified responses. Across unit-test, constraint-check, and LLM self-verifiers, NOPO improves pass@k over baselines on code, logic, and math benchmarks when oracle rewards are unavailable. These gains persist under inference-time scaling and cross-benchmark transfer.",
+        "authors": [],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2611.17287",
+          "CorpusId": 295824536
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2611.17287, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "2135404e97888284c3ac6604b4d35b706f1141c8",
+        "title": "Negative-Only Policy Optimization for One-Sided Verifiable Rewards",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "Negative-Only Policy Optimization (NOPO), which treats verified positives as unlabeled and updates the policy only by suppressing trusted verified negatives, and improves pass@k over baselines on code, logic, and math benchmarks when oracle rewards are unavailable."
+        },
+        "url": "https://www.semanticscholar.org/paper/2135404e97888284c3ac6604b4d35b706f1141c8",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2611.17302": {
+      "cached_at": "2026-11-14T06:53:35.160244+00:00",
+      "data": {
+        "abstract": "Local Binary Patterns (LBP) remain among the most widely used texture descriptors, from industrial inspection to medical imaging. Yet their radius, sampling angles, color transform and thresholds are fixed by hand for each dataset. We present FLEX-LBP, which learns these parameters by backpropagation while every forward pass computes exact binary codes and hard histogram counts. A straight-through estimator acts only in the backward pass, so the deployed descriptor is an interpretable hard-binary LBP with 90 learnable parameters and unchanged inference cost. In a controlled ablation on six color texture benchmarks, the component worth learning is dataset-dependent. One configuration, applied unchanged everywhere, learns the geometry and thresholds with the color transform frozen. It improves the nearest-neighbor accuracy of the identical fixed descriptor by 3.55 points on average over five seeds, significantly on five of six benchmarks and never significantly worse. With a linear discriminant readout, it gains 0.9 points; the fully learned descriptor gains 2.7 and has the highest mean. FLEX-LBP is more accurate than five classical LBP-family descriptors, PCANet and a neural LBP on five of six benchmarks. Its mean nearest-neighbor accuracy exceeds that of frozen ImageNet ResNet-50 features (23.5 million parameters). On the Kather colorectal cancer histology benchmark, the fully learned descriptor reaches 93.8%, significantly above the best classical descriptor (Completed LBP, 92.8%). The learned radii adapt in directions that recur across seeds. Noise drowns single-pixel comparisons and illuminant change flips inter-channel ones; median sampling or gray-world normalization restores 96-97%. The code is available as a drop-in PyTorch layer at https://github.com/medalimoussa/FLEX-LBP.",
+        "authors": [],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2611.17302",
+          "CorpusId": 295823762
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2611.17302, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "cfc53d6291700fd87eab8bb9541c4d9add0972a6",
+        "title": "FLEX-LBP: Learning Local Binary Patterns with Exact Binary Inference for Texture Classification",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "FLEX-LBP is more accurate than five classical LBP-family descriptors, PCANet and a neural LBP on five of six benchmarks, and its mean nearest-neighbor accuracy exceeds that of frozen ImageNet ResNet-50 features (23.5 million parameters)."
+        },
+        "url": "https://www.semanticscholar.org/paper/cfc53d6291700fd87eab8bb9541c4d9add0972a6",
+        "venue": "",
+        "year": 2026
+      }
+    },
     "title:acesearcher bootstrapping reasoning and search for llms via reinforced self play": {
       "cached_at": "2026-06-29T05:15:21.571589+00:00",
       "data": {
