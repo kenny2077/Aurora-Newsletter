@@ -17132,6 +17132,82 @@
         "year": 2026
       }
     },
+    "arxiv:2611.16589": {
+      "cached_at": "2026-11-15T06:57:57.819233+00:00",
+      "data": {
+        "abstract": "Robotic manipulation often requires both spatial scene understanding and task history. However, many vision-language-action (VLA) policies rely primarily on current observations, without explicitly integrating spatial structure and task history. Appearance-based memories can be sensitive to occlusion and viewpoint changes, while spatial representations of the current scene alone do not preserve how the scene has changed during task execution. We introduce STVLA, a framework that incorporates features from a pretrained visual geometry foundation model into temporal memory alongside visual representations. This allows the policy to recall past scene structure as context for current action decisions. To select informative history, STVLA uses a mathematically grounded scoring rule that balances relevance to the current observation with complementary evidence from memory. Across evaluations on LIBERO, LIBERO-Mem, MIKASA-Robo, and SimplerEnv Bridge, STVLA achieves the highest average success rate among the compared methods on each benchmark. On real-world block stacking, object organization, and phone packaging, it improves success over $\\pi_{0.5}$ by $58.33$, $30.00$, and $35.00$ percentage points, respectively. These results support integrating scene geometry into temporal memory to improve manipulation requiring both spatial precision and task history. Project website: \\href{https://stvla.github.io/}{https://stvla.github.io/}",
+        "authors": [
+          {
+            "authorId": "2449754912",
+            "name": "Zhuo Han"
+          },
+          {
+            "authorId": null,
+            "name": "Ye-Qiang Wang"
+          },
+          {
+            "authorId": "2531980838",
+            "name": "Xin-Ran Wang"
+          },
+          {
+            "authorId": "2532024190",
+            "name": "Hong-Wei Han"
+          },
+          {
+            "authorId": "2531963906",
+            "name": "Yi Xiong"
+          },
+          {
+            "authorId": "2355869575",
+            "name": "Zu-Nian Wan"
+          },
+          {
+            "authorId": "2503721018",
+            "name": "Jian-Bo Mao"
+          },
+          {
+            "authorId": "2531997840",
+            "name": "Huan Peng"
+          },
+          {
+            "authorId": "2313580839",
+            "name": "Yong-Cheng Liu"
+          },
+          {
+            "authorId": "2470506513",
+            "name": "Shan Wei"
+          },
+          {
+            "authorId": "2395512682",
+            "name": "Mao-Qing Yao"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2611.16589",
+          "CorpusId": 295825083
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2611.16589, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "f94c6d3e9b323046c582c0095315d3e54d52a64c",
+        "title": "STVLA: Spatial-aware and Temporal-memory forVision-Language-Action Models",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "STVLA is introduced, a framework that incorporates features from a pretrained visual geometry foundation model into temporal memory alongside visual representations that allows the policy to recall past scene structure as context for current action decisions."
+        },
+        "url": "https://www.semanticscholar.org/paper/f94c6d3e9b323046c582c0095315d3e54d52a64c",
+        "venue": "",
+        "year": 2026
+      }
+    },
     "arxiv:2611.16590": {
       "cached_at": "2026-11-14T06:53:48.752401+00:00",
       "data": {
@@ -17194,6 +17270,310 @@
         "year": 2026
       }
     },
+    "arxiv:2611.16816": {
+      "cached_at": "2026-11-15T06:57:55.671967+00:00",
+      "data": {
+        "abstract": "To keep long interaction contexts tractable, stepwise group-relative training for multi-turn LLM agents materializes each source trajectory into multiple response rows and valid tokens. This expansion creates an outer-accounting problem distinct from within-trajectory credit assignment: row-based outcome statistics can count one episode outcome multiple times, while token-level reduction can assign unequal aggregate objective mass across trajectories. We term these effects outcome-statistics multiplicity and objective-mass imbalance. We introduce Outcome-Mass Alignment (OMA), a two-component method that makes both accounting choices explicit. Outcome Alignment computes outcome statistics over unique source trajectories, while Mass Alignment controls aggregate objective mass after within-trajectory aggregation of optimizer-native token objectives. Neither redesigns the base optimizer's credit assignment, importance ratios, or clipping. Across matched ALFWorld GRPO comparisons at two model scales, where failed trajectories typically expand much more than successful ones, OMA improves matched-horizon endpoint success by 7.0-9.4 percentage points. Ordinary WebShop exhibits weak or reversed expansion-outcome coupling and correspondingly mixed effects, whereas in a success-oriented WebShop setting, WebShop-SOL, OMA improves success nAUC from 0.399 to 0.511. Component ablations and GiGPO and GSPO comparisons further support component separability and cross-optimizer compatibility. These results show that trajectory expansion always defines an implicit weighting rule, but its practical effect depends on how expansion couples to outcomes and optimizer-native updates.",
+        "authors": [
+          {
+            "authorId": "2526385544",
+            "name": "Da-Wei Zhang"
+          },
+          {
+            "authorId": "2150620747",
+            "name": "Yu-Bin Huangfu"
+          },
+          {
+            "authorId": "2310395090",
+            "name": "Jessica Fan"
+          },
+          {
+            "authorId": "2526206910",
+            "name": "Bo-Yu Wei"
+          },
+          {
+            "authorId": "12892739",
+            "name": "Li-Kang Wu"
+          },
+          {
+            "authorId": "2869628",
+            "name": "Hong-Ke Zhao"
+          },
+          {
+            "authorId": "2213667496",
+            "name": "Ming He"
+          },
+          {
+            "authorId": "1943020",
+            "name": "Zhu Teng"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2611.16816",
+          "CorpusId": 295823833
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2611.16816, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "17033ab221c251ddaa8e03887483a921251b5415",
+        "title": "Outcome-Mass Alignment: Controlling Length-Dependent Trajectory Influence in Multi-Turn LLM Agent Reinforcement Learning",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "Results show that trajectory expansion always defines an implicit weighting rule, but its practical effect depends on how expansion couples to outcomes and optimizer-native updates, and Outcome-Mass Alignment is introduced, a two-component method that makes both accounting choices explicit."
+        },
+        "url": "https://www.semanticscholar.org/paper/17033ab221c251ddaa8e03887483a921251b5415",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2611.16843": {
+      "cached_at": "2026-11-15T06:57:09.392684+00:00",
+      "data": {
+        "abstract": "Pre-trained encoders fine-tuned on natural language inference (NLI) and other language understanding tasks keep much of their accuracy after the input is perturbed, e.g. by removing all nouns or shuffling the words. Does the same hold for large language models (LLMs), and if so, is it because they have seen the benchmarks during pre-training? In this paper we revisit these perturbation experiments with eight LLMs alongside fine-tuned encoders on GLUE and the three rounds of ANLI. Regardless of model size, every system that answers directly retains 36-72% of its above-chance performance without nouns on MNLI compared to only 14-29% on ANLI. Only a model that reasons before answering departs from this pattern. We also check contamination indicators (including exact $n$-gram counts in the public pre-training data of two of the models) and find no link between exposure and robustness. Our strongest evidence comes from 368 new, human-validated items that none of the models can have seen. All eight LLMs keep more of their performance without nouns on items written in MNLI's style than on items written without its cues. When the perturbation instead removes the function words carrying such cues, this advantage reverses. In light of these results, we argue that robustness to perturbation on familiar NLI benchmarks reflects dataset shortcuts rather than memorisation, and tells us more about the benchmark than about the model.",
+        "authors": [
+          {
+            "authorId": "51230976",
+            "name": "Aarne Talman"
+          },
+          {
+            "authorId": "2136336",
+            "name": "S. Chatzikyriakidis"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2611.16843",
+          "CorpusId": 295823167
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2611.16843, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "d8f645c33d2c3963af8474dd39a644f1f3a95edf",
+        "title": "Shortcuts or Memorisation? Revisiting Data Corruption in Natural Language Understanding with Large Language Models",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "It is argued that robustness to perturbation on familiar NLI benchmarks reflects dataset shortcuts rather than memorisation, and tells us more about the benchmark than about the model."
+        },
+        "url": "https://www.semanticscholar.org/paper/d8f645c33d2c3963af8474dd39a644f1f3a95edf",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2611.16872": {
+      "cached_at": "2026-11-15T06:57:53.526029+00:00",
+      "data": {
+        "abstract": "Recent advances in frontier models have pushed the boundaries of agentic robot control, enabling agents to perform complex robotic tasks through reasoning and interaction. However, repeated calls to these models during execution can substantially increase task completion time. Code as Policies (CaP) offers a route for coding agents to acquire physical skills through experience and retain them in executable programs, allowing the reasoning invested in development to be reused across runs. Developing reliable code policies while limiting the cost of physical experimentation remains a central challenge. We investigate human guidance as a source of priors for feasible actions and simulation as an auxiliary environment for exploring and testing candidate policies. Our findings favor robot demonstrations available on request and simulation used selectively during real-world policy refinement. These findings inform ACE-CaP-0, an agentic recipe that couples policy revision with experience acquisition through Demonstrations on Request and Simulation on Demand. Across eight real-world manipulation tasks spanning alignment, multi-object handling, and bimanual coordination, the resulting frozen programs achieve 92.1\\% success (221/240 trials). Mean execution times across tasks range from 0.97 to 2.27 minutes. The programs execute with runtime perception and control, without a human or coding agent in the loop. These results highlight CaP's potential to turn experience into reliable, reusable physical skills.",
+        "authors": [
+          {
+            "authorId": "2530990255",
+            "name": "ACE-CaP Team"
+          },
+          {
+            "authorId": "2365334804",
+            "name": "Chang-Xu Wei"
+          },
+          {
+            "authorId": "2190750836",
+            "name": "Yun-Peng Qing"
+          },
+          {
+            "authorId": "2171444073",
+            "name": "Guo-Zheng Ma"
+          },
+          {
+            "authorId": "2484856296",
+            "name": "Bo-Wen Liu"
+          },
+          {
+            "authorId": "2182002504",
+            "name": "Zexin He"
+          },
+          {
+            "authorId": "2267333752",
+            "name": "Yi-Lun Kong"
+          },
+          {
+            "authorId": "2448014287",
+            "name": "Hao-Ming Gu"
+          },
+          {
+            "authorId": "2448653304",
+            "name": "Jing-Yuan Liu"
+          },
+          {
+            "authorId": "2448019047",
+            "name": "Tian-Yu Zhu"
+          },
+          {
+            "authorId": "2531978706",
+            "name": "Jian-Fei Wang"
+          },
+          {
+            "authorId": "1380852082",
+            "name": "Jun-Qiang Kou"
+          },
+          {
+            "authorId": "2530990602",
+            "name": "Hui-Nan Mo"
+          },
+          {
+            "authorId": "2530991729",
+            "name": "Hao Lv"
+          },
+          {
+            "authorId": "2531981845",
+            "name": "Peng-Bin Li"
+          },
+          {
+            "authorId": null,
+            "name": "Yue-Song Wang"
+          },
+          {
+            "authorId": "2531993228",
+            "name": "Bo Li"
+          },
+          {
+            "authorId": "2531059365",
+            "name": "Huan Zhou"
+          },
+          {
+            "authorId": "2128786021",
+            "name": "Shunyu Liu"
+          },
+          {
+            "authorId": "2107926923",
+            "name": "Chun-Xiao Liu"
+          },
+          {
+            "authorId": "2530962856",
+            "name": "Bi-Xuan Jin"
+          },
+          {
+            "authorId": "2463761613",
+            "name": "Shao-Peng Yin"
+          },
+          {
+            "authorId": "2366141565",
+            "name": "Fei Wang"
+          },
+          {
+            "authorId": "2327007688",
+            "name": "Zhi Hou"
+          },
+          {
+            "authorId": "2333251144",
+            "name": "Jia-Xing Huang"
+          },
+          {
+            "authorId": "2303255617",
+            "name": "Chang-Qing Zou"
+          },
+          {
+            "authorId": "2281943279",
+            "name": "Da-Cheng Tao"
+          },
+          {
+            "authorId": "2454431270",
+            "name": "Xiao-Gang Wang"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2611.16872",
+          "CorpusId": 295823937
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2611.16872, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "2a878d625579e85e4e2f96d46e5f9294bbcac75a",
+        "title": "ACE-CaP-0: Real-World Code-as-Policies in the Era of Experience",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "This work investigates human guidance as a source of priors for feasible actions and simulation as an auxiliary environment for exploring and testing candidate policies to highlight CaP's potential to turn experience into reliable, reusable physical skills."
+        },
+        "url": "https://www.semanticscholar.org/paper/2a878d625579e85e4e2f96d46e5f9294bbcac75a",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2611.16877": {
+      "cached_at": "2026-11-15T06:57:25.928541+00:00",
+      "data": {
+        "abstract": "Accurate environmental monitoring relies on Informative Path Planning (IPP) to deploy autonomous systems that maximize information gain. While Gaussian Processes (GPs) provide a robust mathematical foundation for modeling the environment, contemporary IPP approaches remain hindered by heuristic operational constraints and the lack of simultaneous theoretical guarantees for worst-case estimation error and approximation quality. Rather than introducing yet another heuristic, this paper presents a rigorous theoretical analysis of existing error bounds and algorithms to further develop the mathematical foundation for IPP. By evaluating probabilistic and deterministic bounds on reconstruction error, we establish that predictive variance is the theoretically ideal optimization objective for GP-based IPP. Furthermore, we analyze GreedyCover, a recent approach for optimizing predictive variance, and demonstrate that its near-optimal approximation guarantee matches the fundamental hardness-of-approximation limit for the problem. Comprehensive benchmarking confirms that this approach delivers superior estimation accuracy and computational efficiency compared to prominent information-theoretic objectives and optimization methods used in IPP. Finally, this theoretical analysis establishes a rigorous, near-optimal foundation for discrete offline IPP under bounded uncertainty constraints, offering clear and principled guidance for future work in continuous-space and online formulations.",
+        "authors": [
+          {
+            "authorId": "67269706",
+            "name": "Kalvik Jakkala"
+          },
+          {
+            "authorId": "2127468151",
+            "name": "Jennifer Wakulicz"
+          },
+          {
+            "authorId": "2531022368",
+            "name": "Donald G. Dansereau"
+          },
+          {
+            "authorId": "144138008",
+            "name": "Srinivas Akella"
+          },
+          {
+            "authorId": "1777505",
+            "name": "Lan-Tao Liu"
+          },
+          {
+            "authorId": "2408792932",
+            "name": "Jason M. O'Kane"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2611.16877",
+          "CorpusId": 295825265
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2611.16877, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "9855be222bfae7ce264cb64449ea9927eb9f5400",
+        "title": "Informative Path Planning with Gaussian Processes: Error Bounds, Algorithms, and Benchmarks",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "A rigorous theoretical analysis of existing error bounds and algorithms establishes a rigorous, near-optimal foundation for discrete offline IPP under bounded uncertainty constraints, offering clear and principled guidance for future work in continuous-space and online formulations."
+        },
+        "url": "https://www.semanticscholar.org/paper/9855be222bfae7ce264cb64449ea9927eb9f5400",
+        "venue": "",
+        "year": 2026
+      }
+    },
     "arxiv:2611.16991": {
       "cached_at": "2026-11-14T06:53:57.287210+00:00",
       "data": {
@@ -17225,6 +17605,126 @@
         "year": 2026
       }
     },
+    "arxiv:2611.16995": {
+      "cached_at": "2026-11-15T06:57:07.254687+00:00",
+      "data": {
+        "abstract": "We develop score-based generative models for time series and standard finite-dimensional data, building on the analytical computation of the expected signature of a new class of jump-diffusions, called entire sig-jump-diffusions. These are semimartingales whose characteristics are given by linear combinations of potentially infinitely many components of their own signature. We show that their expected signature can be computed by solving linear ODEs in the extended tensor algebra, providing a tractable foundation for learning procedures. Specifically, the learning of a generalized score function for jump diffusions, a key ingredient of our generative modeling framework, can be reduced to solving linear ODEs and a deterministic optimization problem. We further prove that polynomial jump-diffusions can be embedded into this framework, and that their expected signature reduces to a finite-dimensional system of linear ODEs. Building on this result, we develop an alternative approach for finite-dimensional data, based on inverse signature matching, a method that learns the score by matching the expected signature of the reverse process with that of the inverse forward signature.",
+        "authors": [
+          {
+            "authorId": "2329564203",
+            "name": "Christa Cuchiero"
+          },
+          {
+            "authorId": "2162174050",
+            "name": "Francesca Primavera"
+          },
+          {
+            "authorId": "2329554884",
+            "name": "Sara Svaluto-Ferro"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2611.16995",
+          "CorpusId": 295824262
+        },
+        "fieldsOfStudy": [
+          "Mathematics"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2611.16995, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "432a88fc94ee3dc83be83176b6c697eee368cad6",
+        "title": "Entire sig-jump-diffusions, their expected signature and applications to score-based generative modeling",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "It is proved that polynomial jump-diffusions can be embedded into the generative modeling framework, and that their expected signature reduces to a finite-dimensional system of linear ODEs."
+        },
+        "url": "https://www.semanticscholar.org/paper/432a88fc94ee3dc83be83176b6c697eee368cad6",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2611.17041": {
+      "cached_at": "2026-11-15T06:57:28.044601+00:00",
+      "data": {
+        "abstract": "Multi-agent deep-research systems use delegation to parallelize search and keep long tool traces out of the main agent's context. Yet delegation helps only when task allocation and subtask execution are coordinated: the main agent must issue useful subtasks, while subagents must return reliable evidence. Existing training either optimizes only the main agent or broadcasts the same team advantage to all agents, which can reward misleading subagent reports and penalize useful ones. We introduce LEAD-RL (Learning Effective Agent Delegation with Reinforcement Learning), a joint main-agent-subagent training framework with contribution-aware credit assignment. A training-time rubric evaluates the research utility of each subagent report and gates its inherited team advantage, while final-answer correctness remains the only team reward; no token, step, or speedup reward is used. Across five benchmarks and two model families, LEAD-RL improves answer quality. On BrowseComp, it improves accuracy by 2.49 percentage points and reduces critical-path cost by 24.5% over joint training with shared team credit. During validation, accuracy increases by 6.78 points at approximately constant critical-path cost. These results show that contribution-aware credit assignment improves the quality-efficiency trade-off of multi-agent deep research.",
+        "authors": [
+          {
+            "authorId": "2303702506",
+            "name": "Yu-Yang Wu"
+          },
+          {
+            "authorId": "2531985484",
+            "name": "Yang Liu"
+          },
+          {
+            "authorId": "2363411371",
+            "name": "Ze-Qun Xie"
+          },
+          {
+            "authorId": "2375396277",
+            "name": "Jun-Jie Wang"
+          },
+          {
+            "authorId": "2215590272",
+            "name": "Dan Yang"
+          },
+          {
+            "authorId": "2531160675",
+            "name": "Ze-Hao Tan"
+          },
+          {
+            "authorId": "2364624178",
+            "name": "Ding-Chu Zhang"
+          },
+          {
+            "authorId": "2367748261",
+            "name": "Jun-Ming Yang"
+          },
+          {
+            "authorId": "2290138094",
+            "name": "Yue Shen"
+          },
+          {
+            "authorId": "2356554128",
+            "name": "Jian Wang"
+          },
+          {
+            "authorId": "2269769748",
+            "name": "Jin-Jie Gu"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2611.17041",
+          "CorpusId": 295825515
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2611.17041, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "615fa6204614d2d25e3635e64dfeaae6f51aac3f",
+        "title": "From Delegation to Coordination: Learning Efficient Multi-Agent Deep Research",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "Results show that contribution-aware credit assignment improves the quality-efficiency trade-off of multi-agent deep research, and introduces LEAD-RL (Learning Effective Agent Delegation with Reinforcement Learning), a joint main-agent-subagent training framework with contribution-aware credit assignment."
+        },
+        "url": "https://www.semanticscholar.org/paper/615fa6204614d2d25e3635e64dfeaae6f51aac3f",
+        "venue": "",
+        "year": 2026
+      }
+    },
     "arxiv:2611.17068": {
       "cached_at": "2026-11-14T06:53:37.271669+00:00",
       "data": {
@@ -17252,6 +17752,150 @@
           "text": "MAPE is introduced, a framework that evolves whole memory programs from minimal seeds through a standardized lifecycle interface and an iterative diagnosis-proposal loop that improves accuracy across all five existing memory systems."
         },
         "url": "https://www.semanticscholar.org/paper/c98efe761ffc0d0c39505c60ab43632e66f525bd",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2611.17142": {
+      "cached_at": "2026-11-15T06:57:30.316619+00:00",
+      "data": {
+        "abstract": "Humanoid loco-manipulation requires coordinated locomotion, balance regulation, and manipulation under frequent contacts, making teleoperated demonstration collection difficult: a practical controller must simultaneously provide precision, stability, and contact awareness. We propose FORGE, a force-aware multi-granularity control system with a coarse-to-fine command space spanning velocity navigation, planar foot placement, wrist-pose tracking, and optional force-conditioning inputs. Policy training requires no full-body human motion trajectories or joint-angle references; deployment consumes only sparse bilateral wrist poses relative to the pelvis, coarse motion commands, and optional desired wrist-load inputs. For sustained contact, FORGE combines a momentum observer with a learned correction trained using simulator contact-force supervision. At deployment, it estimates low-frequency, wrist-equivalent interaction forces from proprioception and reconstructed low-level arm PD torques, without wrist force/torque sensors. A quasi-static virtual-target loop uses this estimate and an optional desired applied-force input to adapt the wrist target. A frozen locomotion prior and asymmetric residual actions stabilize manipulation-induced whole-body corrections. Experiments evaluate unified-control stability, task-space tracking, quasi-static wrist-equivalent force estimation, squeezing forces during sustained contact with a rigid box, and downstream diffusion-policy execution of a squat-and-lift task across payload conditions. Website: https://bb0928.github.io/forge/.",
+        "authors": [
+          {
+            "authorId": "2367278874",
+            "name": "Liang-Jun Xing"
+          },
+          {
+            "authorId": "2350864614",
+            "name": "Ke Fan"
+          },
+          {
+            "authorId": "2023790905",
+            "name": "Kailin Li"
+          },
+          {
+            "authorId": "2531986987",
+            "name": "Bin Wang"
+          },
+          {
+            "authorId": "2361881548",
+            "name": "Xiao-Jie Niu"
+          },
+          {
+            "authorId": "2293395502",
+            "name": "Qingwei Ben"
+          },
+          {
+            "authorId": "2242639073",
+            "name": "Jia-Fei Cao"
+          },
+          {
+            "authorId": "2268676820",
+            "name": "Wei Yao"
+          },
+          {
+            "authorId": "2268716372",
+            "name": "Ye-Bin Liu"
+          },
+          {
+            "authorId": "2363513787",
+            "name": "Jing-Bo Wang"
+          },
+          {
+            "authorId": "2344034124",
+            "name": "Wei-Nan Zhang"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2611.17142",
+          "CorpusId": 295824763
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2611.17142, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "f2771534bdb3e66cb682a499d01b6d34ddf844c6",
+        "title": "FORGE: Force-Aware Multi-Granularity Control for Efficient Humanoid Loco-Manipulation",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "ForGE, a force-aware multi-granularity control system with a coarse-to-fine command space spanning velocity navigation, planar foot placement, wrist-pose tracking, wrist-pose tracking, and optional force-conditioning inputs, is proposed."
+        },
+        "url": "https://www.semanticscholar.org/paper/f2771534bdb3e66cb682a499d01b6d34ddf844c6",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2611.17163": {
+      "cached_at": "2026-11-15T06:57:51.396760+00:00",
+      "data": {
+        "abstract": "Language-guided UAV navigation has largely focused on long-horizon route planning, leaving short-range, object-relative flight maneuvers underexplored. To address this gap, we formulate Flying-on-a-Word (Flow), a task requiring a UAV to convert concise natural-language instruction, egocentric visual observation, and current state dynamics into continuous flight actions. Flow encompasses both primitive motion commands and complex object-interactive behaviors, assessing motion intent comprehension and spatial context grounding. To enable policy learning and closed-loop evaluation, we introduce UAV-Flow, a comprehensive dataset comprising 30,692 expert-piloted real-world trajectories across eight distinct motion categories, alongside 10,109 simulation trajectories in the UAV-Flow-Sim environment equipped with task-specific completion criteria. Furthermore, we develop FlowVLA, which undergoes imitation pretraining on mixed real-sim demonstrations and online post-training via Tail-Aware GRPO (TGRPO). By leveraging group reward distributions, TGRPO effectively reinforces high-reward action sequences. Evaluated on 273 held-out UAV-Flow-Sim episodes, pretrained FlowVLA achieves a mean success rate of 75.58%, outperforming the strongest baseline by 6.72 percentage points, which TGRPO post-training further elevates to 93.16% with superior sample efficiency. Physical UAV experiments demonstrate robust execution of object-relative commands in both indoor and outdoor real-world scenes. Together, Flow establishes a novel benchmark and learning framework for language-conditioned flight maneuvers.",
+        "authors": [
+          {
+            "authorId": "2239165347",
+            "name": "Dong-Lin Yang"
+          },
+          {
+            "authorId": "2325199197",
+            "name": "Xiang-Yu Wang"
+          },
+          {
+            "authorId": "2532011843",
+            "name": "Yan-Tong Zhong"
+          },
+          {
+            "authorId": "2301424385",
+            "name": "Wen-Hao Zheng"
+          },
+          {
+            "authorId": "2264574237",
+            "name": "Zi-Han Ding"
+          },
+          {
+            "authorId": "2325825544",
+            "name": "Yue Liao"
+          },
+          {
+            "authorId": "2274921216",
+            "name": "Hong-Sheng Li"
+          },
+          {
+            "authorId": "2531994100",
+            "name": "Ke Xu"
+          },
+          {
+            "authorId": "2325537006",
+            "name": "Si Liu"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2611.17163",
+          "CorpusId": 295823123
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2611.17163, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "ae2b9f177040b96566df753692b4861cfe658a88",
+        "title": "UAV-Flow++: A Unified Suite for Benchmarking and Learning Language-Guided UAV Flight",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "Flying-on-a-Word (Flow) is formulated, a task requiring a UAV to convert concise natural-language instruction, egocentric visual observation, and current state dynamics into continuous flight actions, and UAV-Flow, a comprehensive dataset comprising 30,692 expert-piloted real-world trajectories across eight distinct motion categories equipped with task-specific completion criteria."
+        },
+        "url": "https://www.semanticscholar.org/paper/ae2b9f177040b96566df753692b4861cfe658a88",
         "venue": "",
         "year": 2026
       }
@@ -17349,6 +17993,70 @@
         "year": 2026
       }
     },
+    "arxiv:2611.17294": {
+      "cached_at": "2026-11-15T06:57:42.011344+00:00",
+      "data": {
+        "abstract": "On-device inference requires kernels that make effective use of local accelerators. Efficient training and evaluation of models that generate Apple Metal kernels benefit from native macOS tools and concurrent agent sessions. These sessions alternate between model requests, development commands, and GPU execution, leaving GPU capacity idle for much of a rollout. We present Metal Sandbox, infrastructure that combines restricted per-instance file access, native command execution, and command-level scheduling across interconnected Macs. Each agent retains its workspace and private development environment. Parallel commands can run concurrently, while serial commands share one execution slot per node; eligible waiting commands can migrate to available Macs and return results to the original agent. Integration with Harbor supports task execution, automatic verification, and rollout collection through a common workflow. Controlled experiments on four Mac mini M4 nodes achieve $1.68\\times$--$2.05\\times$ gains in command throughput under concentrated demand. Sixteen static agent traces give an estimated $2.14\\times$ sustained-throughput gain for four sessions per node versus one, assuming continuously replenished sessions and unchanged mean durations. Replaying these measured traces under dynamic scheduling reduces mean tool waiting by 18.8% and batch elapsed time by 22.3%, assuming unchanged phase durations. Metal Sandbox and its Harbor integration are open-source on GitHub.",
+        "authors": [
+          {
+            "authorId": "2532004914",
+            "name": "Hao-Zhe Wang"
+          },
+          {
+            "authorId": "2367322094",
+            "name": "Li-Na Chen"
+          },
+          {
+            "authorId": "2403670556",
+            "name": "Fan-Qi Wan"
+          },
+          {
+            "authorId": "2237797247",
+            "name": "Qi Han"
+          },
+          {
+            "authorId": "2337763383",
+            "name": "Yin-Min Zhang"
+          },
+          {
+            "authorId": "2341525983",
+            "name": "Zheng Ge"
+          },
+          {
+            "authorId": "2344432165",
+            "name": "Da-Xin Jiang"
+          },
+          {
+            "authorId": "2373580811",
+            "name": "Jun-Chi Yan"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2611.17294",
+          "CorpusId": 295824344
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2611.17294, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "3cffdbc8d467c037693d9a165d77cb78de90b24b",
+        "title": "Metal Sandbox: Isolated Execution and Command Scheduling for GPU Coding Agents on Apple Silicon",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "Metal Sandbox is presented, infrastructure that combines restricted per-instance file access, native command execution, native command execution, and command-level scheduling across interconnected Macs across interconnected Macs."
+        },
+        "url": "https://www.semanticscholar.org/paper/3cffdbc8d467c037693d9a165d77cb78de90b24b",
+        "venue": "",
+        "year": 2026
+      }
+    },
     "arxiv:2611.17302": {
       "cached_at": "2026-11-14T06:53:35.160244+00:00",
       "data": {
@@ -17376,6 +18084,58 @@
           "text": "FLEX-LBP is more accurate than five classical LBP-family descriptors, PCANet and a neural LBP on five of six benchmarks, and its mean nearest-neighbor accuracy exceeds that of frozen ImageNet ResNet-50 features (23.5 million parameters)."
         },
         "url": "https://www.semanticscholar.org/paper/cfc53d6291700fd87eab8bb9541c4d9add0972a6",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2611.17323": {
+      "cached_at": "2026-11-15T06:57:32.547948+00:00",
+      "data": {
+        "abstract": "Applying machine learning systems to new domains introduces bottlenecks in both labeled data acquisition and manual pipeline engineering. While recent MLE agents show promise in automating pipeline design, they have been studied almost exclusively in fully supervised settings, leaving them untested in realistic regimes where labeled data is scarce but unlabeled data is abundant. In this work, we introduce Agentic Semi-Supervised Learning (AgentSSL), framing SSL as a program search problem and studying how agents navigate this space under limited supervision. We find that even under weak feedback and matched compute, agents can synthesize code that combines and adapts established SSL techniques, exceeding the strongest human-engineered baselines in 8 of 12 settings by up to +21.8%. However, our results identify program selection as a critical bottleneck in AgentSSL, where performance drops by as much as 47% when selecting based on the agent's feedback metric. To systematically study this bottleneck, we introduce ProgramSelectBench, a large-scale benchmark with a combined total of 16,977 agent-generated and human-engineered SSL programs, and evaluate both unsupervised and active program selection methods. We further evaluate AgentSSL on real-world ecology detection tasks, highlighting the opportunities and challenges of transferring agent-discovered strategies beyond controlled benchmarks.",
+        "authors": [
+          {
+            "authorId": "2372274660",
+            "name": "Ethan Lin"
+          },
+          {
+            "authorId": "2381261562",
+            "name": "Akanksha Sarkar"
+          },
+          {
+            "authorId": "2282012038",
+            "name": "Ziang Liu"
+          },
+          {
+            "authorId": "2292038014",
+            "name": "Kristin M. Branson"
+          },
+          {
+            "authorId": "2260597081",
+            "name": "Jennifer J. Sun"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2611.17323",
+          "CorpusId": 295825320
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2611.17323, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "3207d06ebb2cb07491bdfa561039b9f68a3ea8ff",
+        "title": "AgentSSL: Can MLE Agents Leverage Unlabeled Data?",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "This work introduces Agentic Semi-Supervised Learning (AgentSSL), framing SSL as a program search problem and studying how agents navigate this space under limited supervision, and finds that even under weak feedback and matched compute, agents can synthesize code that combines and adapts established SSL techniques."
+        },
+        "url": "https://www.semanticscholar.org/paper/3207d06ebb2cb07491bdfa561039b9f68a3ea8ff",
         "venue": "",
         "year": 2026
       }
