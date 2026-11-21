@@ -18201,6 +18201,469 @@
         "year": 2026
       }
     },
+    "arxiv:2611.26069": {
+      "cached_at": "2026-11-21T07:34:51.322107+00:00",
+      "data": {
+        "abstract": "Spreadsheets are widely used for data analysis and supporting decision-making. Automating spreadsheet analysis while protecting sensitive data and controlling deployment costs motivates locally deployed open-weight large language models (LLMs). Meanwhile, complex spreadsheet tasks require both task reasoning and workbook understanding, while predefined operation interfaces impose additional tool-selection and invocation demands. We introduce SheetAlign, a spreadsheet manipulation framework with stage-isolated policy learning, organized around where to operate, what to change, and how to implement transformations. Task-guided inspection and API grounding anchor code generation in workbook observations and available operations, while stage-isolated learning optimizes program generation and review using edit-progress rewards. At inference, execution consistency selects programs through agreement among workbook states. On SpreadsheetBench, our grounded task interface improves Qwen3-4B's accuracy from 13.5% to 29.2% on average without training. With learning and execution consistency, SheetAlign achieves 32.8% accuracy on average on SpreadsheetBench and 30.1% on Domain-Spreadsheet, outperforming comparable baselines. The code will be made publicly available upon publication.",
+        "authors": [
+          {
+            "authorId": null,
+            "name": "Yu-Xiang Wang"
+          },
+          {
+            "authorId": "2273975129",
+            "name": "Jun-Hao Gan"
+          },
+          {
+            "authorId": "2326328173",
+            "name": "Jian-Zhong Qi"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2611.26069",
+          "CorpusId": 296054599
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2611.26069, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "9e1d008b593e206605a1cd88e92a37224dea1d03",
+        "title": "SheetAlign: Grounded Interaction and Stage-Isolated Learning for Spreadsheet Agents",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "This work introduces SheetAlign, a spreadsheet manipulation framework with stage-isolated policy learning, organized around where to operate, what to change, and how to implement transformations, and achieves 32.8% accuracy on average on SpreadsheetBench and 30.1% on Domain-Spreadsheet, outperforming comparable baselines."
+        },
+        "url": "https://www.semanticscholar.org/paper/9e1d008b593e206605a1cd88e92a37224dea1d03",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2611.26242": {
+      "cached_at": "2026-11-21T07:34:30.514460+00:00",
+      "data": {
+        "abstract": "Off-road vision-language-action (VLA) models generate scene-conditioned plans, but frequent trajectory updates can repeatedly invoke expensive multimodal inference. Reusing a prediction reduces this demand while leaving its commands exposed to changes in vehicle motion. FastRoverVLA addresses this mismatch by decoupling visual plan generation from motion-conditioned execution. Its training-free interface maintains decoded plans between visual predictions. A speed-curvature action buffer is aligned with measured motion at each update, integrated into a local trajectory, and advanced by consuming the current action. The corrected remainder is written back to the buffer, preserving motion corrections across successive updates. A bounded refresh rule normalizes speed and curvature variations within a newly decoded plan and assigns a short or long reuse budget according to the resulting plan-roughness score. The interface requires neither backbone features nor an additional learned driving policy. Over a 3 s horizon, independent real-request evaluation achieves average displacement error (ADE) and final displacement error (FDE) of 0.328/0.596 m on ORAD-3D and 0.266/0.526 m on RELLIS-3D, reducing FDE by 18.0% and 36.7% at request rates of 6.0% and 4.8%, respectively. These runs retain lower errors across four backbones and both datasets and reduce Qwen3-VL request-processing cost by factors of 16.6 and 20.8 under serial replay, while mechanism and motion-only controls identify persistent state correction as the main source of the observed accuracy benefit. The source code and evaluation materials are publicly available at https://github.com/ADEPT-ORG/FastRoverVLA.",
+        "authors": [
+          {
+            "authorId": null,
+            "name": "Chang-Tao Zhao"
+          },
+          {
+            "authorId": "2441406737",
+            "name": "Ying-Xue Guan"
+          },
+          {
+            "authorId": null,
+            "name": "Li Wang"
+          },
+          {
+            "authorId": null,
+            "name": "Shi-Jie Zhao"
+          },
+          {
+            "authorId": null,
+            "name": "Yu-Hang Zhang"
+          },
+          {
+            "authorId": null,
+            "name": "Sheng-Kai Zhang"
+          },
+          {
+            "authorId": null,
+            "name": "Qing Wang"
+          },
+          {
+            "authorId": null,
+            "name": "Zi-Ying Song"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2611.26242",
+          "CorpusId": 296053997
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2611.26242, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "65ccfa09b05565ba5659cee8def5b60ed0bc8432",
+        "title": "FastRoverVLA: Fast Vision-Language-Action Execution for Off-Road Autonomous Driving",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "Off-road vision-language-action models generate scene-conditioned plans, but frequent trajectory updates can repeatedly invoke expensive multimodal inference, so FastRoverVLA addresses this mismatch by decoupling visual plan generation from motion-conditioned execution."
+        },
+        "url": "https://www.semanticscholar.org/paper/65ccfa09b05565ba5659cee8def5b60ed0bc8432",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2611.26293": {
+      "cached_at": "2026-11-21T07:34:16.953213+00:00",
+      "data": {
+        "abstract": "LocoMuJoCo is an open-source benchmark for imitation learning (IL) and reinforcement learning (RL) on whole-body control. The library couples MuJoCo (CPU) with MJX and the MjWarp backend (GPU) under a single API, exposes 9 humanoid, 3 (musculo-)skeletal, and 4 quadruped embodiments, and ships a curated native motion-capture dataset for every humanoid, to which it can also retarget AMASS and LAFAN1. A modular plug-in architecture makes observations, rewards, control modes, terrains, and domain randomization fully interchangeable, while compact JAX implementations of many RL and IL algorithms provide JIT-compiled end-to-end training, and the companion loco-mujoco-real repository provides sim-to-real deployment. We describe the design, the SMPL-to-robot and robot-to-robot retargeting pipeline, and a usage example. LocoMuJoCo is released under MIT at https://github.com/robfiras/loco-mujoco.",
+        "authors": [
+          {
+            "authorId": "2150500936",
+            "name": "Firas Al-Hafez"
+          },
+          {
+            "authorId": "2309004144",
+            "name": "Davide Tateo"
+          },
+          {
+            "authorId": "2329101724",
+            "name": "Oleg Kaidanov"
+          },
+          {
+            "authorId": "2314117578",
+            "name": "Aditya Bhatt"
+          },
+          {
+            "authorId": "2587277042",
+            "name": "Artur Zelik"
+          },
+          {
+            "authorId": null,
+            "name": "Zheng-Yi Luo"
+          },
+          {
+            "authorId": "2257194996",
+            "name": "Jan Peters"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2611.26293",
+          "CorpusId": 296054642
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2611.26293, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "d60a5ed70ba37987d0c598fe5639444bea97ce16",
+        "title": "LocoMuJoCo: A Comprehensive Imitation Learning Benchmark for Whole-Body Control",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "The design, the SMPL-to-robot and robot-to-robot retargeting pipeline, and a usage example are described."
+        },
+        "url": "https://www.semanticscholar.org/paper/d60a5ed70ba37987d0c598fe5639444bea97ce16",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2611.26363": {
+      "cached_at": "2026-11-21T07:34:19.087520+00:00",
+      "data": {
+        "abstract": "Attention in large language models (LLMs) scores every query against every key with a full dot product. We investigate whether this dot product must be computed completely for attention to be effective. We propose Hidden Sparse Attention (HiSA), which keeps the query and key projections intact but only computes a partial dot product, following a static, parameter-free rule set by the token positions: attention becomes sparse in the hidden (feature) dimension, an axis much less explored than token sparsity, rather than over tokens as in almost all sparse attention methods. Based on the structure of rotary position embeddings (RoPE), we decompose keys and queries into parts which can be omitted when computing attention. By training LLMs from scratch with HiSA, we find that this partial dot product does not hurt but improves performance compared with the complete product while computing only about a third of the query-key products. During inference HiSA improves decoding speed and shrinks memory footprint. We also extend HiSA to FlashAttention-3 kernels for training and inference. Finally, we motivate our approach by showing that dense attention learns to suppress the attention score parts that HiSA drops. Code is available at https://github.com/ambroise-b/hisa.",
+        "authors": [
+          {
+            "authorId": "2587271008",
+            "name": "Ambroise Borbely"
+          },
+          {
+            "authorId": "2862871",
+            "name": "M. Salzmann"
+          },
+          {
+            "authorId": "2587270653",
+            "name": "Olivier Verscheure"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2611.26363",
+          "CorpusId": 296054594
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2611.26363, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "cc1c3f1db690c45e67f9c61eaa9ea05a1d01878d",
+        "title": "HiSA: Sparsifying the Hidden Dimension of RoPE Attention in LLMs",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "Hidden Sparse Attention (HiSA) is proposed, which keeps the query and key projections intact but only computes a partial dot product, following a static, parameter-free rule set by the token positions: attention becomes sparse in the hidden (feature) dimension, an axis much less explored than token sparsity."
+        },
+        "url": "https://www.semanticscholar.org/paper/cc1c3f1db690c45e67f9c61eaa9ea05a1d01878d",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2611.26412": {
+      "cached_at": "2026-11-21T07:35:14.984919+00:00",
+      "data": {
+        "abstract": "The transition from fossil fuels presents significant challenges in energy management. To ensure a sustainable energy future, it is crucial to reduce energy consumption when possible and to synchronize electricity consumption and storage with the production from sources with low greenhouse gas emissions. This thesis explores a variety of energy management methods used to manage batteries, heat pumps, and other energy-related systems. The thesis presents three simulation cases alongside one real-world experiment to compare energy management done through simple rules, optimization, and machine learning methods. Furthermore, this thesis introduces TreeC, a novel machine learning-based method that learns understandable yet efficient energy management strategies, applicable to many cases. The three key contributions of this thesis can be summarized as follows: 1) The developed TreeC method demonstrates competitive performance compared to a variety of energy management approaches, such as model predictive control and reinforcement learning, across a diverse set of energy management problems. The understandability of TreeC's energy management strategies greatly improves the transparency and trustworthiness of machine learning-based energy management. 2) The real-world experiment highlights the need to validate energy management methods on actual hardware and not solely on simulations. Both TreeC and model predictive control performed worse than in simulations, due to, respectively, insufficiently representative training data and the real-time input data not being reliable enough. 3) Energy management algorithms reduce costs in electrified Belgian dwellings, particularly in poorly insulated dwellings, electric vehicle chargers, and photovoltaic installations. However, on average, these cost savings do not yet outweigh the current costs and effort required to implement such algorithms.",
+        "authors": [
+          {
+            "authorId": "2310230266",
+            "name": "Julian Ruddick"
+          }
+        ],
+        "citationCount": 1,
+        "externalIds": {
+          "ArXiv": "2611.26412",
+          "CorpusId": 296054835,
+          "DOI": "10.13140/RG.2.2.13155.41763"
+        },
+        "fieldsOfStudy": [
+          "Engineering",
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2611.26412, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "8911034c33fd96f8108431404e7503f2f8ad8f45",
+        "title": "How to Effectively Manage the Energy in Residential Systems: Development and Comparison of Methods",
+        "tldr": null,
+        "url": "https://www.semanticscholar.org/paper/8911034c33fd96f8108431404e7503f2f8ad8f45",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2611.26440": {
+      "cached_at": "2026-11-21T07:34:28.374835+00:00",
+      "data": {
+        "abstract": "The learning to defer (L2D) framework enables safety in machine learning and AI systems by allocating difficult or critical decisions to a human expert. However, most prior work on L2D assumes fixed expert reliability, overlooking temporal fluctuations in human performance due to factors such as fatigue and cognitive biases. Humans commonly exhibit such substantial, systematic performance shifts across a wide range of domains, from high-stakes settings such as radiology, aviation, and judicial decision-making, to everyday tasks such as crowdsourced image annotation. We propose Expert-Drift-Adapted Learning-to-Defer (EDA-L2D), a novel expert-aware L2D framework that explicitly models these temporal shifts by conditioning the deferral head on recent histories of expert outcomes via a sequence model. This history-aware approach enables adaptive deferral policies that anticipate reliability fluctuations and better allocate decisions between human and machine over time. We provide comprehensive experiments across three diverse tasks -- image classification, medical diagnosis, and hate speech detection -- including generalization analyses under realistic deferral conditions and irregular shifts in expert reliability. Our results show that EDA-L2D adapts more effectively than prior L2D methods to diverse temporal patterns of expert reliability, resulting in improved system performance and more effective deferral decisions. Code is available at https://github.com/ZiyaoMou/L2D-Expert-Drift.",
+        "authors": [
+          {
+            "authorId": "2587273333",
+            "name": "Zi-Yao Mou"
+          },
+          {
+            "authorId": "2383975683",
+            "name": "Andrea Wynn"
+          },
+          {
+            "authorId": "2478908",
+            "name": "Eric T. Nalisnick"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2611.26440",
+          "CorpusId": 296055154
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2611.26440, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "973210e18c669ad1331421dfd5e530d542031aea",
+        "title": "Learning to Defer under Expert Drift",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "Expert-Drift-Adapted Learning-to-Defer (EDA-L2D), a novel expert-aware L2D framework that explicitly models temporal shifts in human performance by conditioning the deferral head on recent histories of expert outcomes via a sequence model, is proposed."
+        },
+        "url": "https://www.semanticscholar.org/paper/973210e18c669ad1331421dfd5e530d542031aea",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2611.26441": {
+      "cached_at": "2026-11-21T07:34:46.893429+00:00",
+      "data": {
+        "abstract": "As dwellings electrify and more complex electricity pricing spreads in Belgium, the question arises: What are the potential benefits of installing an advanced energy management systems in an electrified Belgian dwelling ? To answer this question, we simulate 500 representative Belgian dwellings in which fossil systems are replaced by controllable electric technologies: space heating via air-to-air heat pumps, domestic hot water via electric boilers, and private transport via electric vehicles with home chargers. Photovoltaic systems are assigned according to current adoption rates. We evaluate two advanced energy management systems (EMS): model predictive control (MPC) and TreeC, a machine learning method using decision trees to model the EMS strategy. These are compared to a rule-based controller (RBC) that mimics default operation and an MPC with perfect forecasts (MPC P) as an upper bound. Performance for these EMSs is assessed for 2023 under a real contract with hourly prices and a monthly peak tariff. Average annual savings versus RBC are 82.5 \u20ac, 116.6 \u20ac, and 177.4 \u20ac for TreeC, MPC, and MPC P, respectively. All EMSs deliver similar thermal comfort (26\u201331 Kh). MPC saves more, while TreeC achieves higher EV charge completion (93.3% vs 88.8% for MPC, with a max charge of 95%) and a smoother aggregate load across the 500 dwellings. Savings remain modest relative to EMS purchase (280\u2013680 \u20ac) and subscription (0\u2013360 \u20ac/year) costs which is not favourable towards widespread adoption. The data and code to reproduce this study are available at https://github.com/EVERGi/should_belgians_install_advanced_ems_paper.",
+        "authors": [
+          {
+            "authorId": "2310230266",
+            "name": "Julian Ruddick"
+          },
+          {
+            "authorId": "113992139",
+            "name": "C. De Cauwer"
+          },
+          {
+            "authorId": "4255385",
+            "name": "T. Coosemans"
+          },
+          {
+            "authorId": "31009483",
+            "name": "M. Messagie"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2611.26441",
+          "CorpusId": 289536011,
+          "DBLP": "conf/buildsys/RuddickCCM26",
+          "DOI": "10.1145/3744256.3812575"
+        },
+        "fieldsOfStudy": [
+          "Engineering",
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2611.26441, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": "CCBY",
+          "status": "HYBRID",
+          "url": "https://doi.org/10.1145/3744256.3812575"
+        },
+        "paperId": "085e0ce293177a395c2fcc3dee32afcb129f018a",
+        "title": "Should Belgians Install an Advanced Energy Management System in Their Electrified Dwelling ?",
+        "tldr": null,
+        "url": "https://www.semanticscholar.org/paper/085e0ce293177a395c2fcc3dee32afcb129f018a",
+        "venue": "International Conference on Systems for Energy-Efficient Built Environments",
+        "year": 2026
+      }
+    },
+    "arxiv:2611.26553": {
+      "cached_at": "2026-11-21T07:34:49.025792+00:00",
+      "data": {
+        "abstract": "Agents based on large language models (LLMs) can now delete files and send payments on behalf of their users. News media reports routinely describe failures of these agents (e.g., Replit's coding agent deleting a production database), but a report often only says what went wrong and rarely (in)validates the incident or finds its root cause. Incident catalogs collect these reports, and benchmarks record whether agents fail, but neither replicates an incident nor tests the cause its report might identify. In this paper, we present ROGUE-AI (Replication of Agentic Security Events: Audit and Investigation), a multi-agent framework that closes the above gap and rebuilds each reported incident offline together with a matched control that lacks only the blamed cause, and runs agents on both. Our results suggest that ROGUE-AI is able to reproduce the reported harm in 89% of its 108 attempted replications. Agents built on five current GPT, Claude, Gemini and DeepSeek models made the reported mistake in 18% to 33% of runs, against at most 1% without the blamed cause. Of the 72 incidents with real-world harm, 62 had no underlying attacker, and in these, agents did what their task asked for but missed an ordinary hazard, such as a database shared with the live site. Replications without an attacker caused more harm than replications of prompt injection for all five models. Defenses against prompt injection look for injected instructions, but these replications contain none. Further, a warning after each tool output that names the hazard and its consequence lowered harm for all five models, whereas a note of the same length that does not mention the hazard left most of the harm in place. Built from real incidents, the ROGUE-AI replications form a reusable audit framework that vendors can rerun before each new release.",
+        "authors": [
+          {
+            "authorId": null,
+            "name": "Meng-Xiao Wang"
+          },
+          {
+            "authorId": null,
+            "name": "Mahbub Alam"
+          },
+          {
+            "authorId": "2198141480",
+            "name": "Kalyan Nakka"
+          },
+          {
+            "authorId": "2303848672",
+            "name": "Nitesh Saxena"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2611.26553",
+          "CorpusId": 296054491
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2611.26553, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "9db0ac7b086f48688e8165f0a12dcdb263a175d1",
+        "title": "Replication of Agentic Security Events: Audit and Investigation (ROGUE-AI)",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "ROGUE-AI (Replication of Agentic Security Events: Audit and Investigation), a multi-agent framework that rebuilds each reported incident offline together with a matched control that lacks only the blamed cause, and runs agents on both."
+        },
+        "url": "https://www.semanticscholar.org/paper/9db0ac7b086f48688e8165f0a12dcdb263a175d1",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2611.26565": {
+      "cached_at": "2026-11-21T07:35:17.117104+00:00",
+      "data": {
+        "abstract": "Vision-Language-Action (VLA) models have advanced rapidly in language-conditioned robotic manipulation, yet existing benchmarks mainly evaluate gripper--object contact and largely ignore how objects interact with the environment through gravity, friction, inertia, and mass distribution. As a result, it remains unclear whether current policies truly understand physics or merely interpolate from their training data. We address this gap through the lens of dynamic extrinsic dexterity and introduce PhyDEX, a throwing benchmark in which a robot must infer an object's mass, center of mass, and friction to send it to a destination beyond its kinematic workspace. PhyDEX contains 35K trajectories (143 hours) across nine tasks and 100 scenes, covering uniform, irregular, and dynamic-mass objects with static, multiple, and moving destinations. All data are generated by a scalable, fully automatic pipeline that combines grasp generation, motion planning, and closed-loop throw optimization under randomized physical properties. We evaluate three representative VLAs, GR00T N1.7, DynamicVLA, and ForceVLA, and find that all achieve success rates below 3\\%. Our analysis reveals two key bottlenecks: limited robustness of pretrained models, which causes most failures before the throw, and physical blindness, as providing ground-truth physical properties roughly doubles success. Experiments on a humanoid robot and in the real world show the same failure patterns. We hope PhyDEX will drive the development of physically grounded robot policies.",
+        "authors": [
+          {
+            "authorId": "2269919620",
+            "name": "Hao Vo"
+          },
+          {
+            "authorId": "2219924862",
+            "name": "Taisei Hanyu"
+          },
+          {
+            "authorId": "2330082693",
+            "name": "Yuki Ikebe"
+          },
+          {
+            "authorId": "2482019356",
+            "name": "Quang Tri Pham"
+          },
+          {
+            "authorId": "2559819697",
+            "name": "Sreevenkata Anjani Tishita Godavarthi"
+          },
+          {
+            "authorId": "26910508",
+            "name": "N. Bui"
+          },
+          {
+            "authorId": "1696663",
+            "name": "Daniel Sonntag"
+          },
+          {
+            "authorId": "2354559693",
+            "name": "Chase Rainwater"
+          },
+          {
+            "authorId": null,
+            "name": "Duy Minh Ho Nguyen"
+          },
+          {
+            "authorId": "2257301403",
+            "name": "Anh Nguyen"
+          },
+          {
+            "authorId": "2323041712",
+            "name": "Ngan Le"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2611.26565",
+          "CorpusId": 296054495
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2611.26565, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "a0a9ff49f9acf61a6b98da7add757522ec64bdf8",
+        "title": "PhyDEX: A Benchmark for Physical Reasoning in Vision-Language-Action Models via Dynamic Extrinsic Dexterity",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "This work introduces PhyDEX, a throwing benchmark in which a robot must infer an object's mass, center of mass, and friction to send it to a destination beyond its kinematic workspace, and reveals two key bottlenecks: limited robustness of pretrained models, which causes most failures before the throw, and physical blindness, as providing ground-truth physical properties roughly doubles success."
+        },
+        "url": "https://www.semanticscholar.org/paper/a0a9ff49f9acf61a6b98da7add757522ec64bdf8",
+        "venue": "",
+        "year": 2026
+      }
+    },
     "title:acesearcher bootstrapping reasoning and search for llms via reinforced self play": {
       "cached_at": "2026-06-29T05:15:21.571589+00:00",
       "data": {
