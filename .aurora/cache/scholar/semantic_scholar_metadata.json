@@ -18664,6 +18664,166 @@
         "year": 2026
       }
     },
+    "arxiv:2611.33622": {
+      "cached_at": "2026-11-28T08:16:30.757178+00:00",
+      "data": {
+        "abstract": "When benchmark problems share sources, such as variants of one template or tasks from one repository, an evaluation budget must fix the number of sources as well as the number of problems. We ask whether pilot data or earlier evaluation results can predict, before an evaluation is run, how much the standard deviation (SD) of the score grows when the same budget is concentrated on fewer sources. We use the classical design effect with an intraclass correlation estimated on data disjoint from those used to check the prediction. On GSM-Symbolic, 100 problems drawn as 10 templates x 10 variants have an SD of 9.2 pp against 2.7 pp from 100 templates; pilot data on 15 other questions predict the ratio as 3.49 against 3.52 measured on held-out questions (medians over 20 splits; single splits err by -13% to +16%), once the actual sampling plan is included. On SWE-bench Verified, 10 randomly selected public submissions predict the median ratio for 119 other submissions within 3% for 2 or more repositories, and 3 submissions are nearly as good. Dropping the finite-population terms from the design prediction gives errors of 13-21% on GSM-Symbolic, where it reduces to the textbook formula, and 25-35% on SWE-bench. Widening iid intervals by the square root of the pilot design effect brings pass@1 coverage on concentrated designs to 0.93-0.98, but not pass@16 (0.85, 0.76). We also report two lessons for anyone validating such predictions: split pilot and held-out data by question source, not by difficulty version, and do not read a good fit of the formula as evidence of source clustering (MATH-500). The method is not new; we contribute a held-out test of its advance predictions and a recipe for using them. Code: https://github.com/Guang627/deff-eval",
+        "authors": [
+          {
+            "authorId": "2589228882",
+            "name": "Guang Qiu"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2611.33622",
+          "CorpusId": 296293295
+        },
+        "fieldsOfStudy": [
+          "Mathematics"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2611.33622, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "b048e3fcdc3d13ebd5dcc12dd10f1bcc8d8c4060",
+        "title": "How Many Sources, Not Just How Many Problems: Planning the Precision of LLM Evaluations from Earlier Results",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "The classical design effect with an intraclass correlation estimated on data disjoint from those used to check the prediction is used, and an intraclass correlation estimated on data disjoint from those used to check the prediction is used."
+        },
+        "url": "https://www.semanticscholar.org/paper/b048e3fcdc3d13ebd5dcc12dd10f1bcc8d8c4060",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2611.34402": {
+      "cached_at": "2026-11-28T08:16:58.775646+00:00",
+      "data": {
+        "abstract": "Nested multi-precision quantization derives multiple precisions from a single checkpoint by reading only the leading bits of each weight, which makes it attractive for on-device deployment under varying memory and energy budgets. However, existing methods offer only integer bits, leaving large accuracy gaps between adjacent precisions and severe degradation at 2 bits. To address this, we propose Any-Rate, which serves 2-8 bits from one checkpoint, in half-bit steps over 2-4 bits. Any-Rate restricts some bit-planes to extended Hamming codewords in 8-weight blocks (0.5 bits per weight), shares one LUT per row across precisions, and encodes all precisions jointly with a separate target for each, reducing the loss from sharing bit-planes. Across four LLMs, Any-Rate achieves state-of-the-art accuracy among multi-precision methods at 2 and 3 bits, keeping 69% of FP16 accuracy at 2 bits, and is within one point of the best at 4 bits. It decodes about as fast as existing kernels, and an LPDDR energy model estimates up to 27% less energy at equal accuracy. Code is available at https://github.com/hoonki2002/Any-Rate.",
+        "authors": [
+          {
+            "authorId": "2462592925",
+            "name": "Hoonki Lee"
+          },
+          {
+            "authorId": "2589582565",
+            "name": "Haechan Shin"
+          },
+          {
+            "authorId": "2589493767",
+            "name": "Hyuntaek Jung"
+          },
+          {
+            "authorId": "2589542246",
+            "name": "Yeonu Choi"
+          },
+          {
+            "authorId": "2116191427",
+            "name": "Sangyeob Kim"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2611.34402",
+          "CorpusId": 296292497
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2611.34402, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "da31d75085a3967451d7970f86439a1d7adb3117",
+        "title": "Any-Rate: Half-Bit Multi-Precision LLM Quantization with Coded Bit-Planes",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "Any-Rate, which serves 2-8 bits from one checkpoint, in half-bit steps over 2-4 bits, achieves state-of-the-art accuracy among multi-precision methods at 2 and 3 bits and is within one point of the best at 4 bits."
+        },
+        "url": "https://www.semanticscholar.org/paper/da31d75085a3967451d7970f86439a1d7adb3117",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2611.34655": {
+      "cached_at": "2026-11-28T08:16:33.023892+00:00",
+      "data": {
+        "abstract": "Dexterous mobile manipulation is essential for robots to perform useful tasks in complex, unstructured environments. However, existing systems face two challenges. First, navigation remains too coarse for downstream manipulation, which often requires a precise base position and approach orientation rather than merely reaching a meter-scale goal region. Second, navigation and manipulation are commonly trained in isolation, lacking a feedback loop that enables the two capabilities to co-evolve. These limitations prevent current systems from reliably executing long-horizon dexterous mobile-manipulation tasks in real-world environments. To address them, we introduce Nav4Manip, a bidirectionally coupled co-evolution system for long-horizon dexterous mobile manipulation. It comprises two complementary architectures: Nav4Manip-N learns long-horizon navigation and refines its policy through manipulation feedback, while Nav4Manip-M trains a world-action model (WAM) for downstream dexterous manipulation. We train Nav4Manip-N in three stages: multi-task co-tuning learns navigation behavior and manipulation-aware affordance prediction; rejection sampling fine-tuning (RFT) rejects low-quality policy-generated paths and fine-tunes the model on retained trajectories; and reinforcement learning from AI feedback (RLAIF) uses counterfactual preferences to further improve navigation decisions. To support this framework, we establish the Nav-N-Manip benchmark and construct Nav4Manip-Pairs from benchmark rollouts, providing large-scale paired navigation--manipulation trajectories and affordance supervision. Extensive experiments on public vision-language navigation (VLN) benchmarks and Nav-N-Manip demonstrate state-of-the-art performance, while real-world evaluations show that Nav4Manip completes diverse dexterous mobile-manipulation tasks. Project website: https://nav4manip.github.io/.",
+        "authors": [
+          {
+            "authorId": "2410458406",
+            "name": "Yu-Sen Feng"
+          },
+          {
+            "authorId": "2366068169",
+            "name": "Zi-Xi Kang"
+          },
+          {
+            "authorId": "2589418812",
+            "name": "Zhi-Jun Yin"
+          },
+          {
+            "authorId": "2589546502",
+            "name": "Chang-Xiao Liu"
+          },
+          {
+            "authorId": "2292857373",
+            "name": "Tian-Hong Gao"
+          },
+          {
+            "authorId": "2107990526",
+            "name": "Jiazhao Zhang"
+          },
+          {
+            "authorId": "2364072653",
+            "name": "Jia-Hang Liu"
+          },
+          {
+            "authorId": "2395527849",
+            "name": "Li-Bin Liu"
+          },
+          {
+            "authorId": "2287041015",
+            "name": "Zhi-Zheng Zhang"
+          },
+          {
+            "authorId": "2334325487",
+            "name": "He Wang"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2611.34655",
+          "CorpusId": 296292188
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2611.34655, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "640559f8d4d779b7b6b6c17ce6a04da62f9b4f21",
+        "title": "Nav4Manip: From Navigation to Dexterous Mobile Manipulation through Co-Evolution",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "Nav4Manip is introduced, a bidirectionally coupled co-evolution system for long-horizon dexterous mobile manipulation that comprises two complementary architectures: Nav4Manip-N learns long-horizon navigation and refines its policy through manipulation feedback, while Nav4Manip-M trains a world-action model (WAM) for downstream dexterous manipulation."
+        },
+        "url": "https://www.semanticscholar.org/paper/640559f8d4d779b7b6b6c17ce6a04da62f9b4f21",
+        "venue": "",
+        "year": 2026
+      }
+    },
     "arxiv:2611.34708": {
       "cached_at": "2026-11-27T08:56:01.398949+00:00",
       "data": {
@@ -18716,6 +18876,230 @@
           "text": "This work proposes INSPIRE (Integrating Shared Patterns and Individual Evidence for Reasoning), a two-stage forecasting framework over a known catalog that improves Emerging MRR and decomposes evaluation by endpoint roles and track longitudinal emerging-answer cohorts via query-micro and answer-entity macro metrics."
         },
         "url": "https://www.semanticscholar.org/paper/62221b348fe44219db90b920c89bc36543bbf84c",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2611.34750": {
+      "cached_at": "2026-11-28T08:16:49.490844+00:00",
+      "data": {
+        "abstract": "LLM agents have made remarkable progress in robot manipulation, yet they suffer from expensive inference, dense step-by-step control, and tool bottlenecks. We introduce SOLVE, a training-free, versatile and efficient agent policy: a multimodal LLM agent writes a sparse, ordered sequence of 6-DoF end-effector keyposes per call, observes the result, and writes the next, while a motion planner interpolates between them. The agent decides the number and spacing of keyposes for both fast long-range motion and fine-grained manipulation. This granularity matches the sparsity of teleoperated manipulation: most demonstrations in DROID can be compressed into a few keyposes instead of dense actions. SOLVE grounds keyposes with sparse depth queries answered by noisy sources, such as multi-view triangulation, stereo, or monocular depth, and copes with that noise itself. It also improves from execution feedback, reflecting on its own rollouts and distilling a few rules per task. SOLVE reaches state-of-the-art performance of 74.5% on RoboDojo and 84.5% on RoboLab, with only $1.7 per episode on average, 12x less than previous dense-control agent policies. On a real robot, the same agent achieves an 88% success rate (75 of 85 episodes) over 16 challenging zero-shot tasks. Our project page is at https://serenos.github.io/solve-website.",
+        "authors": [
+          {
+            "authorId": "2272841708",
+            "name": "Xiang Li"
+          },
+          {
+            "authorId": "2507870254",
+            "name": "Hong-Yu Zhou"
+          },
+          {
+            "authorId": "47002847",
+            "name": "Yali Li"
+          },
+          {
+            "authorId": "2375837626",
+            "name": "Tao Li"
+          },
+          {
+            "authorId": "2281911044",
+            "name": "Rui Zhang"
+          },
+          {
+            "authorId": "2404423850",
+            "name": "Jun-Jie Lai"
+          },
+          {
+            "authorId": "2424201532",
+            "name": "Wei-Hua Zhang"
+          },
+          {
+            "authorId": "2255485475",
+            "name": "Sheng-Jin Wang"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2611.34750",
+          "CorpusId": 296293286
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2611.34750, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "7aadca68f31ec1338d3c71bc5778a1ea7245b9d8",
+        "title": "SOLVE: Sparse, Ordered Keyposes Make LLM Agents Versatile and Efficient Robot Manipulator",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "SOLVE is introduced, a training-free, versatile and efficient agent policy: a multimodal LLM agent writes a sparse, ordered sequence of 6-DoF end-effector keyposes per call, observes the result, and writes the next, while a motion planner interpolates between them."
+        },
+        "url": "https://www.semanticscholar.org/paper/7aadca68f31ec1338d3c71bc5778a1ea7245b9d8",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2611.34811": {
+      "cached_at": "2026-11-28T08:17:17.395645+00:00",
+      "data": {
+        "abstract": "World-action models jointly predict future observations and actions, yet visual corruption can disrupt the resulting policies. We introduce HOG-WAM, which adds future Histograms of Oriented Gradients (HOG) as structural supervision derived directly from demonstration images. An auxiliary HOG diffusion transformer (DiT) module reads RGB features through asymmetric attention, allowing its objective to shape the visual representation used for control. The module is used only during training and removed at inference, preserving FastWAM's RGB-to-action architecture. We evaluate four controlled observation corruptions through a visual-corruption extension of RoboTwin, termed RoboTwin-Plus; HOG-WAM achieves the highest success among the compared policies under all four. Mixed-noise success increases from 78.86% to 82.86% relative to FastWAM, with comparable performance on clean scenes. On LIBERO Plus, overall success increases from 74.49% to 75.26%, with the largest gain under sensor noise, from 74.14% to 78.89%. Across four Franka tasks, average success increases from 40% to 59% under clean observations and from 17% to 24% under noisy observations. A representation ablation favors combining RGB observations with auxiliary HOG prediction over replacing RGB with HOG. These findings support future-gradient prediction as complementary supervision for visually robust control, with larger absolute gains on physical tasks than in simulation. Code is available at https://github.com/iPPLab/HOG-WAM.",
+        "authors": [
+          {
+            "authorId": "2588886825",
+            "name": "Bo-Xuan Dong"
+          },
+          {
+            "authorId": "2589511604",
+            "name": "Yu-Peng Qian"
+          },
+          {
+            "authorId": "2588940973",
+            "name": "Ying Wu"
+          },
+          {
+            "authorId": "2588926957",
+            "name": "He-Shuai Li"
+          },
+          {
+            "authorId": "2297321761",
+            "name": "Jun-Hao Tan"
+          },
+          {
+            "authorId": "2266802195",
+            "name": "Zhen-Xiong Tan"
+          },
+          {
+            "authorId": "2589410704",
+            "name": "Wei-Jia Wu"
+          },
+          {
+            "authorId": "2588964394",
+            "name": "Wei-Hao Yu"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2611.34811",
+          "CorpusId": 296292423
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2611.34811, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "d6d35a6142ff7f68f7c39b4fad7852b0b6739591",
+        "title": "HOG-WAM: Improving Visual Robustness through Future Gradient Prediction",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "HOG-WAM is introduced, which adds future Histograms of Oriented Gradients (HOG) as structural supervision derived directly from demonstration images to support future-gradient prediction as complementary supervision for visually robust control, with larger absolute gains on physical tasks than in simulation."
+        },
+        "url": "https://www.semanticscholar.org/paper/d6d35a6142ff7f68f7c39b4fad7852b0b6739591",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2611.34848": {
+      "cached_at": "2026-11-28T08:16:28.630841+00:00",
+      "data": {
+        "abstract": "Large language models (LLMs) are increasingly applied to time series reasoning. However, current evaluations often give models events in chronological order and already matched to the time series. This makes it unclear whether models use timestamps to connect events with observations or simply take shortcuts. To expose this ambiguity, we reformulate time series reasoning from a world-to-series projection perspective, viewing timestamps as explicit indices that connect numerical observations and external events to shared world states. We identify three structures that timestamps can make explicit: temporal causal structure, time semantics, and event-series alignment. Building on this perspective, we develop a diagnostic protocol that distinguishes timestamp-grounded reasoning from correlational shortcuts, a distinction that accuracy-based benchmarks cannot make. Controlled interventions on 310 questions from two tasks show that high accuracy can persist when timestamps are replaced by relative offsets or removed, while breaking event-series alignment induces systematic failures. When context is pre-aligned, models barely need timestamps. When order is missing, they use dates to recall world knowledge. Without dates, they rely on correlational shortcuts and rarely notice incorrect timestamps. These findings show that high accuracy on pre-aligned, ordered inputs does not establish that a model uses timestamps to synchronize observations with the world. We release our code, model outputs, and trajectory labels at https://github.com/tingrui-huang/timestamps-matter.",
+        "authors": [
+          {
+            "authorId": "2510537402",
+            "name": "Ting-Rui Huang"
+          },
+          {
+            "authorId": "2505385751",
+            "name": "Yuan-Yuan Deng"
+          },
+          {
+            "authorId": "2326120888",
+            "name": "Qing-Ren Yao"
+          },
+          {
+            "authorId": "1717534",
+            "name": "J. Vanschoren"
+          },
+          {
+            "authorId": "1691997",
+            "name": "Mykola Pechenizkiy"
+          },
+          {
+            "authorId": "37202548",
+            "name": "Songgaojun Deng"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2611.34848",
+          "CorpusId": 296292965
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2611.34848, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "f5f8f0333af96d635273c670737cc43b1ada0b41",
+        "title": "Put the World Back: Timestamps Matter in Time Series Reasoning",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "It is shown that high accuracy on pre-aligned, ordered inputs does not establish that a model uses timestamps to synchronize observations with the world, and a diagnostic protocol is developed that distinguishes timestamp-grounded reasoning from correlational shortcuts, a distinction that accuracy-based benchmarks cannot make."
+        },
+        "url": "https://www.semanticscholar.org/paper/f5f8f0333af96d635273c670737cc43b1ada0b41",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2611.34863": {
+      "cached_at": "2026-11-28T08:17:15.247526+00:00",
+      "data": {
+        "abstract": "Vision transformers are strong but costly image encoders for video object segmentation. Training-free token merging cuts compute uniformly across the frame, including on tracked objects. We give a frozen DINOv3 ViT inside a trained Cutie head a training-free focus map: full resolution where the segmenter expects its objects and coarser merging elsewhere. Protecting only the previous frame's mask works on short clips but fails on long videos, where fast motion pushes targets outside the margin and into background merging, locking in loss. Our policy instead takes the union of velocity-shifted and block-matched masks, runs a camera-compensated surprise check, delegates uncertain regions to the compared merger, and falls back to it when all objects are lost. On long videos (LVOS V2 valid, pre-specified protocol, three ViT-S seeds), it beats ALGM 0.98 by +2.76 J&F (95% object CI [+1.22,+4.44]; video-cluster [+0.99,+4.52]) at 16% fewer counted encoder FLOPs (0.385 vs. 0.459), sitting 1.0 J&F point below the dense-encoder baseline; at ViT-B the gain over ALGM 0.95 is +3.89 [+2.03,+5.87]. On DAVIS 2017 val it stays within -0.19 J&F of the dense encoder at ViT-S (-0.12 at ViT-B). Controls qualify the result: protecting only the previous mask under ALGM matches or exceeds accuracy at higher FLOPs (0.486), so expectation and surprise mainly reduce counted encoder compute. Practically, lower counted encoder compute did not reduce startup-inclusive mean Cutie step time on a 12-video LVOS sample (3%-8% lower in steady state; an equally engineered ALGM is faster at ViT-S and ViT-B). Section 5.2 separately examines a Cutie permanent-memory schedule and its latency and memory trade-offs. Code: https://github.com/boletoms/focused-cv",
+        "authors": [
+          {
+            "authorId": "2589229114",
+            "name": "Harsha Karipineni"
+          },
+          {
+            "authorId": "2589228920",
+            "name": "Rajesh Reddy Chintha"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2611.34863",
+          "CorpusId": 296293187
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2611.34863, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "c9ad7f6ee15d0d86e4ca860165863e65aceda772",
+        "title": "Focus Only on What's Important: Training-Free Focus Maps for Frozen Vision Transformers in Long-Video Object Segmentation",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "A frozen DINOv3 ViT inside a trained Cutie head is given a training-free focus map: full resolution where the segmenter expects its objects and coarser merging elsewhere, and lower counted encoder compute did not reduce startup-inclusive mean Cutie step time on a 12-video LVOS sample."
+        },
+        "url": "https://www.semanticscholar.org/paper/c9ad7f6ee15d0d86e4ca860165863e65aceda772",
         "venue": "",
         "year": 2026
       }
